@@ -1,22 +1,45 @@
-# 关键词配置文件
-# 在此文件中配置需要监控的关键词
-# 支持以下语法：
-
-# 1. 普通关键词 - 基础匹配
-#    示例：华为 OPPO 苹果
-#    作用：新闻标题包含其中任意一个词就会被捕获
-
-# 2. 必须词 +词汇 - 限定范围
-#    示例：华为 OPPO +手机
-#    作用：必须同时包含普通词和必须词才会被捕获
-
-# 3. 过滤词 !词汇 - 排除干扰
-#    示例：苹果 华为 !水果 !价格
-#    作用：包含过滤词的新闻会被直接排除
-
-# 配置示例（取消注释以启用）：
-# 人工智能 AI ChatGPT +技术
-# 华为 OPPO 小米 +发布
-# 比亚迪 特斯拉 +新能源 !广告
-
-# 请在下方添加您的关键词：
+OpenAI
+Google DeepMind
+Microsoft AI
+Anthropic
+NVIDIA AI
+IBM Watson
+Meta AI
+Amazon AWS AI
+Baidu AI
+Alibaba Cloud AI
+Tencent AI Lab
+Huawei Cloud AI
+iFlytek 科大讯飞
+SenseTime 商汤科技
+Megvii 旷视科技
+YITU 依图科技
+Horizon Robotics 地平线机器人
+Cambricon 寒武纪
+OpenCV AI
+Stability AI
+人工智能应用方案
+AI大模型企业服务
+AI自动化办公工具
+AI智能客服系统
+AI语音识别技术
+AI文案生成工具
+AI图片生成平台
+AI视频生成软件
+AI数据标注服务
+AI教育智能辅导系统
+AI医疗影像识别
+AI金融风控系统
+AI人脸识别解决方案
+AI机器人流程自动化RPA
+AI大数据分析平台
+多模态大模型应用
+企业级AI部署方案
+AI算力服务器
+AI芯片供应商
+AI行业解决方案供应商
+AI模型训练平台
+AI网络安全防护
+生成式AI营销工具
+AI算法外包服务
+AI人才培训课程
