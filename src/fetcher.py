@@ -400,31 +400,196 @@ class TrendFetcher:
             print(f"Error fetching Hacker News: {e}")
             return []
 
+    def fetch_producthunt(self):
+        """Fetch Product Hunt Top Products"""
+        url = "https://www.producthunt.com/"
+        try:
+            response = requests.get(url, headers=self.headers, timeout=10)
+            soup = BeautifulSoup(response.text, 'html.parser')
+            items = soup.select('[data-test="post-item"] a[href^="/posts/"]')
+            trends = []
+            for item in items[:15]:
+                title = item.get_text().strip()
+                link = "https://www.producthunt.com" + item.get('href', '')
+                if title:
+                    trends.append({'title': title, 'url': link})
+            return trends
+        except Exception as e:
+            print(f"Error fetching Product Hunt: {e}")
+            return []
+
+    def fetch_techcrunch(self):
+        """Fetch TechCrunch Latest News"""
+        url = "https://techcrunch.com/feed/"
+        try:
+            response = requests.get(url, headers=self.headers, timeout=10)
+            soup = BeautifulSoup(response.text, 'xml')
+            items = soup.find_all('item')
+            trends = []
+            for item in items[:15]:
+                title = item.find('title').get_text() if item.find('title') else ''
+                link = item.find('link').get_text() if item.find('link') else ''
+                if title:
+                    trends.append({'title': title, 'url': link})
+            return trends
+        except Exception as e:
+            print(f"Error fetching TechCrunch: {e}")
+            return []
+
+    def fetch_sspai(self):
+        """Fetch Sspai (少数派) Hot Articles"""
+        url = "https://sspai.com/api/v1/article/tag/page/get?limit=15&offset=0&sort=hot&tag=热门文章"
+        try:
+            response = requests.get(url, headers=self.headers, timeout=10)
+            data = response.json()
+            trends = []
+            if data.get('data'):
+                for item in data['data'][:15]:
+                    trends.append({
+                        'title': item.get('title', ''),
+                        'url': f"https://sspai.com/post/{item.get('id', '')}"
+                    })
+            return trends
+        except Exception as e:
+            print(f"Error fetching Sspai: {e}")
+            return []
+
+    def fetch_huxiu(self):
+        """Fetch Huxiu (虎嗅) Hot Articles"""
+        url = "https://www.huxiu.com/"
+        try:
+            response = requests.get(url, headers=self.headers, timeout=10)
+            response.encoding = 'utf-8'
+            soup = BeautifulSoup(response.text, 'html.parser')
+            items = soup.select('.article-item__title a')
+            trends = []
+            for item in items[:15]:
+                title = item.get_text().strip()
+                link = item.get('href', '')
+                if not link.startswith('http'):
+                    link = 'https://www.huxiu.com' + link
+                if title:
+                    trends.append({'title': title, 'url': link})
+            return trends
+        except Exception as e:
+            print(f"Error fetching Huxiu: {e}")
+            return []
+
+    def fetch_tmtpost(self):
+        """Fetch Tmtpost (钛媒体) Hot Articles"""
+        url = "https://www.tmtpost.com/api/v1/web/article/list?page=1&pageSize=15"
+        try:
+            response = requests.get(url, headers=self.headers, timeout=10)
+            data = response.json()
+            trends = []
+            if data.get('data') and data['data'].get('list'):
+                for item in data['data']['list'][:15]:
+                    trends.append({
+                        'title': item.get('title', ''),
+                        'url': f"https://www.tmtpost.com/{item.get('id', '')}.html"
+                    })
+            return trends
+        except Exception as e:
+            print(f"Error fetching Tmtpost: {e}")
+            return []
+
+    def fetch_ifanr(self):
+        """Fetch Ifanr (爱范儿) Hot Articles"""
+        url = "https://www.ifanr.com/"
+        try:
+            response = requests.get(url, headers=self.headers, timeout=10)
+            response.encoding = 'utf-8'
+            soup = BeautifulSoup(response.text, 'html.parser')
+            items = soup.select('.article-title a')
+            trends = []
+            for item in items[:15]:
+                title = item.get_text().strip()
+                link = item.get('href', '')
+                if title and link:
+                    trends.append({'title': title, 'url': link})
+            return trends
+        except Exception as e:
+            print(f"Error fetching Ifanr: {e}")
+            return []
+
+    def fetch_bbc(self):
+        """Fetch BBC News Top Stories"""
+        url = "http://feeds.bbci.co.uk/news/rss.xml"
+        try:
+            response = requests.get(url, headers=self.headers, timeout=10)
+            soup = BeautifulSoup(response.text, 'xml')
+            items = soup.find_all('item')
+            trends = []
+            for item in items[:15]:
+                title = item.find('title').get_text() if item.find('title') else ''
+                link = item.find('link').get_text() if item.find('link') else ''
+                if title:
+                    trends.append({'title': title, 'url': link})
+            return trends
+        except Exception as e:
+            print(f"Error fetching BBC: {e}")
+            return []
+
+    def fetch_theverge(self):
+        """Fetch The Verge Latest News"""
+        url = "https://www.theverge.com/rss/index.xml"
+        try:
+            response = requests.get(url, headers=self.headers, timeout=10)
+            soup = BeautifulSoup(response.text, 'xml')
+            items = soup.find_all('item')
+            trends = []
+            for item in items[:15]:
+                title = item.find('title').get_text() if item.find('title') else ''
+                link = item.find('link').get_text() if item.find('link') else ''
+                if title:
+                    trends.append({'title': title, 'url': link})
+            return trends
+        except Exception as e:
+            print(f"Error fetching The Verge: {e}")
+            return []
+
     def fetch_all(self):
         """Fetch all trends from different platforms"""
         results = {}
         
         # 中文 + 国际平台
         platforms = {
+            # 中文主流平台
             '微博': self.fetch_weibo,
             '知乎': self.fetch_zhihu,
             '百度': self.fetch_baidu,
-            '36氪': self.fetch_36kr,
             '抖音': self.fetch_douyin,
             'B站': self.fetch_bilibili,
             '贴吧': self.fetch_tieba,
             '今日头条': self.fetch_toutiao,
-            '澎湃新闻': self.fetch_thepaper,
-            '虎扑': self.fetch_hupu,
+            
+            # 中文科技/商业媒体
+            '36氪': self.fetch_36kr,
+            '虎嗅': self.fetch_huxiu,
+            '钛媒体': self.fetch_tmtpost,
+            '爱范儿': self.fetch_ifanr,
+            '少数派': self.fetch_sspai,
             'IT之家': self.fetch_ithome,
-            'V2EX': self.fetch_v2ex,
-            '豆瓣': self.fetch_douban,
+            
+            # 中文新闻媒体
+            '澎湃新闻': self.fetch_thepaper,
             '网易新闻': self.fetch_netease,
             '凤凰网': self.fetch_ifeng,
+            
+            # 中文社区
+            '虎扑': self.fetch_hupu,
+            'V2EX': self.fetch_v2ex,
+            '豆瓣': self.fetch_douban,
+            
+            # 国际平台
             'Google趋势': self.fetch_google_trends,
             'Reddit': self.fetch_reddit,
             'Yahoo新闻': self.fetch_yahoo_news,
-            'Hacker News': self.fetch_hackernews
+            'Hacker News': self.fetch_hackernews,
+            'Product Hunt': self.fetch_producthunt,
+            'TechCrunch': self.fetch_techcrunch,
+            'BBC News': self.fetch_bbc,
+            'The Verge': self.fetch_theverge
         }
         
         for name, fetch_func in platforms.items():
