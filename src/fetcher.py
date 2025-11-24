@@ -548,6 +548,75 @@ class TrendFetcher:
             print(f"Error fetching The Verge: {e}")
             return []
 
+    def fetch_rss_feeds(self):
+        """Fetch RSS feeds from config file"""
+        import os
+        config_file = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'config', 'rss_feeds.txt')
+        
+        if not os.path.exists(config_file):
+            print("RSS配置文件不存在，跳过RSS抓取")
+            return {}
+        
+        results = {}
+        
+        try:
+            with open(config_file, 'r', encoding='utf-8') as f:
+                for line in f:
+                    line = line.strip()
+                    # 跳过注释和空行
+                    if not line or line.startswith('#'):
+                        continue
+                    
+                    # 解析配置：名称|URL|是否启用
+                    parts = line.split('|')
+                    if len(parts) < 3:
+                        continue
+                    
+                    name, url, enabled = parts[0].strip(), parts[1].strip(), parts[2].strip().lower()
+                    
+                    # 只抓取启用的源
+                    if enabled != 'true':
+                        continue
+                    
+                    # 抓取RSS
+                    try:
+                        response = requests.get(url, headers=self.headers, timeout=15)
+                        soup = BeautifulSoup(response.text, 'xml')
+                        items = soup.find_all('item')
+                        
+                        if not items:  # 尝试Atom格式
+                            items = soup.find_all('entry')
+                        
+                        trends = []
+                        for item in items[:10]:  # 每个RSS源取前10条
+                            # RSS格式
+                            title_tag = item.find('title')
+                            link_tag = item.find('link')
+                            
+                            if title_tag:
+                                title = title_tag.get_text().strip()
+                                # RSS link可能是标签内容或href属性
+                                if link_tag:
+                                    link = link_tag.get_text().strip() if link_tag.string else link_tag.get('href', '')
+                                else:
+                                    link = ''
+                                
+                                if title:
+                                    trends.append({'title': title, 'url': link})
+                        
+                        if trends:
+                            results[name] = trends
+                            print(f"成功抓取RSS: {name} ({len(trends)}条)")
+                    
+                    except Exception as e:
+                        print(f"抓取RSS失败 {name}: {e}")
+                        continue
+        
+        except Exception as e:
+            print(f"读取RSS配置文件失败: {e}")
+        
+        return results
+
     def fetch_all(self):
         """Fetch all trends from different platforms"""
         results = {}
@@ -599,5 +668,13 @@ class TrendFetcher:
                     results[name] = data
             except Exception as e:
                 print(f"Error fetching {name}: {e}")
+        
+        # 抓取RSS订阅源
+        try:
+            rss_results = self.fetch_rss_feeds()
+            if rss_results:
+                results.update(rss_results)
+        except Exception as e:
+            print(f"Error fetching RSS feeds: {e}")
         
         return results
