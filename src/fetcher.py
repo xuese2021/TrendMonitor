@@ -98,14 +98,13 @@ class TrendFetcher:
             print(f"Error fetching GitHub: {e}")
             return []
 
+
     def fetch_36kr(self):
         """Fetch 36Kr Hot List"""
         url = "https://36kr.com/hot-list/catalog"
         try:
             response = requests.get(url, headers=self.headers, timeout=10)
             soup = BeautifulSoup(response.text, 'html.parser')
-            # 36kr uses SSR but sometimes data is in script
-            # Or simple selector
             items = soup.select('.article-item-info')
             trends = []
             for item in items:
@@ -114,22 +113,126 @@ class TrendFetcher:
                     title = a_tag.get_text().strip()
                     link = "https://36kr.com" + a_tag['href']
                     trends.append({'title': title, 'url': link})
-            
-            # Fallback if HTML parsing fails (dynamic content)
-            if not trends:
-                # Try API approach if possible, but for now return empty or try another selector
-                pass
-                
             return trends[:15]
         except Exception as e:
             print(f"Error fetching 36Kr: {e}")
             return []
 
+    def fetch_douyin(self):
+        """Fetch Douyin Hot Search"""
+        # 抖音热搜需要API，这里使用一个公开的聚合API
+        url = "https://www.imsyy.top/api/hotlist/douyin"
+        try:
+            response = requests.get(url, headers=self.headers, timeout=10)
+            data = response.json()
+            trends = []
+            if data.get('data'):
+                for item in data['data'][:15]:
+                    trends.append({
+                        'title': item.get('title', ''),
+                        'url': item.get('url', 'https://www.douyin.com')
+                    })
+            return trends
+        except Exception as e:
+            print(f"Error fetching Douyin: {e}")
+            return []
+
+    def fetch_bilibili(self):
+        """Fetch Bilibili Hot Search"""
+        url = "https://api.bilibili.com/x/web-interface/ranking/v2?rid=0&type=all"
+        try:
+            response = requests.get(url, headers=self.headers, timeout=10)
+            data = response.json()
+            trends = []
+            if data.get('data') and data['data'].get('list'):
+                for item in data['data']['list'][:15]:
+                    trends.append({
+                        'title': item.get('title', ''),
+                        'url': f"https://www.bilibili.com/video/{item.get('bvid', '')}"
+                    })
+            return trends
+        except Exception as e:
+            print(f"Error fetching Bilibili: {e}")
+            return []
+
+    def fetch_tieba(self):
+        """Fetch Tieba Hot List"""
+        url = "https://tieba.baidu.com/hottopic/browse/topicList"
+        try:
+            response = requests.get(url, headers=self.headers, timeout=10)
+            data = response.json()
+            trends = []
+            if data.get('data') and data['data'].get('bang_topic'):
+                for item in data['data']['bang_topic']['topic_list'][:15]:
+                    trends.append({
+                        'title': item.get('topic_name', ''),
+                        'url': item.get('topic_url', 'https://tieba.baidu.com')
+                    })
+            return trends
+        except Exception as e:
+            print(f"Error fetching Tieba: {e}")
+            return []
+
+    def fetch_toutiao(self):
+        """Fetch Toutiao Hot List"""
+        # 今日头条热榜需要使用聚合API
+        url = "https://www.imsyy.top/api/hotlist/toutiao"
+        try:
+            response = requests.get(url, headers=self.headers, timeout=10)
+            data = response.json()
+            trends = []
+            if data.get('data'):
+                for item in data['data'][:15]:
+                    trends.append({
+                        'title': item.get('title', ''),
+                        'url': item.get('url', 'https://www.toutiao.com')
+                    })
+            return trends
+        except Exception as e:
+            print(f"Error fetching Toutiao: {e}")
+            return []
+
+    def fetch_thepaper(self):
+        """Fetch The Paper Hot List"""
+        url = "https://www.thepaper.cn/api/www/v1/channel/getChannelNews?channelId=25950"
+        try:
+            response = requests.get(url, headers=self.headers, timeout=10)
+            data = response.json()
+            trends = []
+            if data.get('data') and data['data'].get('list'):
+                for item in data['data']['list'][:15]:
+                    trends.append({
+                        'title': item.get('name', ''),
+                        'url': f"https://www.thepaper.cn/newsDetail_forward_{item.get('contId', '')}"
+                    })
+            return trends
+        except Exception as e:
+            print(f"Error fetching ThePaper: {e}")
+            return []
+
     def fetch_all(self):
-        return {
-            'Weibo': self.fetch_weibo(),
-            'Zhihu': self.fetch_zhihu(),
-            'Baidu': self.fetch_baidu(),
-            'GitHub': self.fetch_github(),
-            '36Kr': self.fetch_36kr()
+        """Fetch all trends from different platforms (Chinese only)"""
+        results = {}
+        
+        # 只抓取中文平台
+        platforms = {
+            '微博': self.fetch_weibo,
+            '知乎': self.fetch_zhihu,
+            '百度': self.fetch_baidu,
+            '36氪': self.fetch_36kr,
+            '抖音': self.fetch_douyin,
+            'B站': self.fetch_bilibili,
+            '贴吧': self.fetch_tieba,
+            '今日头条': self.fetch_toutiao,
+            '澎湃新闻': self.fetch_thepaper
         }
+        
+        for name, fetch_func in platforms.items():
+            try:
+                data = fetch_func()
+                if data:
+                    results[name] = data
+            except Exception as e:
+                print(f"Error fetching {name}: {e}")
+        
+        return results
