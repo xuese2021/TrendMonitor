@@ -74,22 +74,26 @@ class TelegramNotifier:
         import datetime
         date_str = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
         
-        message = f"*🔥 实时热点监控* \n_{date_str}_\n\n"
+        message = f"🔥 *实时热点监控*\n_{date_str}_\n\n"
         
         for platform, items in trends_data.items():
             if not items:
                 continue
             message += f"*{platform}*\n"
             for i, item in enumerate(items, 1):
-                # 更严格的 Markdown 转义
                 title = item['title']
-                # 转义所有 Markdown 特殊字符
-                for char in ['_', '*', '[', ']', '(', ')', '~', '`', '>', '#', '+', '-', '=', '|', '{', '}', '.', '!']:
-                    title = title.replace(char, '\\' + char)
-                
                 url = item['url']
+                
+                # 只转义会破坏 Markdown 链接的字符
+                # 在链接文本中，只需要转义 [ ] ( ) 和 \
+                title = title.replace('\\', '\\\\')  # 先转义反斜杠
+                title = title.replace('[', '\\[')
+                title = title.replace(']', '\\]')
+                title = title.replace('(', '\\(')
+                title = title.replace(')', '\\)')
+                
                 # Telegram Markdown link: [text](url)
-                message += f"{i}\\. [{title}]({url})\n"
+                message += f"{i}. [{title}]({url})\n"
             message += "\n"
         
         logger.debug(f"Formatted message length: {len(message)} characters")
