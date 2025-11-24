@@ -323,11 +323,49 @@ class TrendFetcher:
             print(f"Error fetching Ifeng: {e}")
             return []
 
+    def fetch_google_trends(self):
+        """Fetch Google Trends (China)"""
+        # 使用 Google Trends RSS
+        url = "https://trends.google.com/trends/trendingsearches/daily/rss?geo=CN"
+        try:
+            response = requests.get(url, headers=self.headers, timeout=10)
+            soup = BeautifulSoup(response.text, 'xml')
+            items = soup.find_all('item')
+            trends = []
+            for item in items[:15]:
+                title = item.find('title').get_text() if item.find('title') else ''
+                link = item.find('link').get_text() if item.find('link') else ''
+                if title:
+                    trends.append({'title': title, 'url': link})
+            return trends
+        except Exception as e:
+            print(f"Error fetching Google Trends: {e}")
+            return []
+
+    def fetch_reddit(self):
+        """Fetch Reddit Popular (English)"""
+        url = "https://www.reddit.com/r/popular.json?limit=15"
+        try:
+            response = requests.get(url, headers={**self.headers, 'User-Agent': 'TrendMonitor/1.0'}, timeout=10)
+            data = response.json()
+            trends = []
+            if data.get('data') and data['data'].get('children'):
+                for item in data['data']['children'][:15]:
+                    post = item.get('data', {})
+                    trends.append({
+                        'title': post.get('title', ''),
+                        'url': f"https://www.reddit.com{post.get('permalink', '')}"
+                    })
+            return trends
+        except Exception as e:
+            print(f"Error fetching Reddit: {e}")
+            return []
+
     def fetch_all(self):
-        """Fetch all trends from different platforms (Chinese only)"""
+        """Fetch all trends from different platforms"""
         results = {}
         
-        # 只抓取中文平台
+        # 中文 + 国际平台
         platforms = {
             '微博': self.fetch_weibo,
             '知乎': self.fetch_zhihu,
@@ -343,7 +381,9 @@ class TrendFetcher:
             'V2EX': self.fetch_v2ex,
             '豆瓣': self.fetch_douban,
             '网易新闻': self.fetch_netease,
-            '凤凰网': self.fetch_ifeng
+            '凤凰网': self.fetch_ifeng,
+            'Google趋势': self.fetch_google_trends,
+            'Reddit': self.fetch_reddit
         }
         
         for name, fetch_func in platforms.items():
