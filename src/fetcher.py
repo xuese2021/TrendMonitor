@@ -210,6 +210,119 @@ class TrendFetcher:
             print(f"Error fetching ThePaper: {e}")
             return []
 
+    def fetch_hupu(self):
+        """Fetch Hupu Hot List"""
+        url = "https://bbs.hupu.com/all-gambia"
+        try:
+            response = requests.get(url, headers=self.headers, timeout=10)
+            response.encoding = 'utf-8'
+            soup = BeautifulSoup(response.text, 'html.parser')
+            items = soup.select('.titlelink')
+            trends = []
+            for item in items[:15]:
+                title = item.get_text().strip()
+                link = "https://bbs.hupu.com" + item.get('href', '')
+                if title:
+                    trends.append({'title': title, 'url': link})
+            return trends
+        except Exception as e:
+            print(f"Error fetching Hupu: {e}")
+            return []
+
+    def fetch_ithome(self):
+        """Fetch IT Home Hot List"""
+        url = "https://www.ithome.com/"
+        try:
+            response = requests.get(url, headers=self.headers, timeout=10)
+            response.encoding = 'utf-8'
+            soup = BeautifulSoup(response.text, 'html.parser')
+            items = soup.select('.lst .title a')
+            trends = []
+            for item in items[:15]:
+                title = item.get_text().strip()
+                link = item.get('href', '')
+                if not link.startswith('http'):
+                    link = 'https://www.ithome.com' + link
+                if title:
+                    trends.append({'title': title, 'url': link})
+            return trends
+        except Exception as e:
+            print(f"Error fetching ITHome: {e}")
+            return []
+
+    def fetch_v2ex(self):
+        """Fetch V2EX Hot Topics"""
+        url = "https://www.v2ex.com/api/topics/hot.json"
+        try:
+            response = requests.get(url, headers=self.headers, timeout=10)
+            data = response.json()
+            trends = []
+            for item in data[:15]:
+                trends.append({
+                    'title': item.get('title', ''),
+                    'url': f"https://www.v2ex.com/t/{item.get('id', '')}"
+                })
+            return trends
+        except Exception as e:
+            print(f"Error fetching V2EX: {e}")
+            return []
+
+    def fetch_douban(self):
+        """Fetch Douban Hot Topics"""
+        url = "https://www.douban.com/group/explore"
+        try:
+            response = requests.get(url, headers=self.headers, timeout=10)
+            soup = BeautifulSoup(response.text, 'html.parser')
+            items = soup.select('.channel-item .title a')
+            trends = []
+            for item in items[:15]:
+                title = item.get_text().strip()
+                link = item.get('href', '')
+                if title:
+                    trends.append({'title': title, 'url': link})
+            return trends
+        except Exception as e:
+            print(f"Error fetching Douban: {e}")
+            return []
+
+    def fetch_netease(self):
+        """Fetch NetEase News Hot List"""
+        url = "https://news.163.com/special/0001386F/rank_whole.html"
+        try:
+            response = requests.get(url, headers=self.headers, timeout=10)
+            response.encoding = 'gbk'
+            soup = BeautifulSoup(response.text, 'html.parser')
+            items = soup.select('.tabContents tr td a')
+            trends = []
+            for item in items[:15]:
+                title = item.get_text().strip()
+                link = item.get('href', '')
+                if title and link:
+                    trends.append({'title': title, 'url': link})
+            return trends
+        except Exception as e:
+            print(f"Error fetching NetEase: {e}")
+            return []
+
+    def fetch_ifeng(self):
+        """Fetch Ifeng News Hot List"""
+        url = "https://news.ifeng.com/"
+        try:
+            response = requests.get(url, headers=self.headers, timeout=10)
+            response.encoding = 'utf-8'
+            soup = BeautifulSoup(response.text, 'html.parser')
+            items = soup.select('.box_01 a')
+            trends = []
+            for item in items[:15]:
+                title = item.get_text().strip()
+                link = item.get('href', '')
+                if title and link.startswith('http'):
+                    trends.append({'title': title, 'url': link})
+            return trends
+        except Exception as e:
+            print(f"Error fetching Ifeng: {e}")
+            return []
+
     def fetch_all(self):
         """Fetch all trends from different platforms (Chinese only)"""
         results = {}
@@ -224,7 +337,13 @@ class TrendFetcher:
             'B站': self.fetch_bilibili,
             '贴吧': self.fetch_tieba,
             '今日头条': self.fetch_toutiao,
-            '澎湃新闻': self.fetch_thepaper
+            '澎湃新闻': self.fetch_thepaper,
+            '虎扑': self.fetch_hupu,
+            'IT之家': self.fetch_ithome,
+            'V2EX': self.fetch_v2ex,
+            '豆瓣': self.fetch_douban,
+            '网易新闻': self.fetch_netease,
+            '凤凰网': self.fetch_ifeng
         }
         
         for name, fetch_func in platforms.items():
