@@ -11,10 +11,98 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# Keywords to filter trends.
-# If empty, all trends are reported.
-# If populated, only trends containing at least one keyword (case-insensitive) are reported.
-KEYWORDS = [] 
+def load_keywords():
+    """
+    从 config/frequency_words.txt 加载关键词
+    支持语法：
+    - 普通关键词：直接匹配
+    - 必须词 +词汇：必须同时包含
+    - 过滤词 !词汇：排除包含此词的结果
+    """
+    config_file = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'config', 'frequency_words.txt')
+    
+    if not os.path.exists(config_file):
+        logger.warning(f"配置文件不存在: {config_file}")
+        return []
+    
+    keyword_groups = []
+    
+    try:
+        with open(config_file, 'r', encoding='utf-8') as f:
+            for line in f:
+                line = line.strip()
+                # 跳过空行和注释
+                if not line or line.startswith('#'):
+                    continue
+                
+                # 解析关键词组
+                words = line.split()
+                normal_keywords = []
+                required_keywords = []
+                excluded_keywords = []
+                
+                for word in words:
+                    if word.startswith('+'):
+                        required_keywords.append(word[1:])
+                    elif word.startswith('!'):
+                        excluded_keywords.append(word[1:])
+                    else:
+                        normal_keywords.append(word)
+                
+                if normal_keywords or required_keywords:
+                    keyword_groups.append({
+                        'normal': normal_keywords,
+                        'required': required_keywords,
+                        'excluded': excluded_keywords
+                    })
+        
+        logger.info(f"已加载 {len(keyword_groups)} 个关键词组")
+        return keyword_groups
+    
+    except Exception as e:
+        logger.error(f"加载关键词配置失败: {e}")
+        return []
+
+def filter_by_keywords(trends, keyword_groups):
+    """
+    根据关键词组过滤热点
+    """
+    if not keyword_groups:
+        return trends
+    
+    filtered_trends = {}
+    
+    for platform, items in trends.items():
+        filtered_items = []
+        
+        for item in items:
+            title = item['title'].lower()
+            
+            # 检查每个关键词组
+            for group in keyword_groups:
+                # 检查是否包含排除词
+                if any(excluded.lower() in title for excluded in group['excluded']):
+                    continue
+                
+                # 检查是否包含必须词
+                if group['required']:
+                    if not all(required.lower() in title for required in group['required']):
+                        continue
+                
+                # 检查是否包含普通关键词（任意一个即可）
+                if group['normal']:
+                    if any(keyword.lower() in title for keyword in group['normal']):
+                        filtered_items.append(item)
+                        break
+                elif group['required']:
+                    # 如果只有必须词，没有普通关键词
+                    filtered_items.append(item)
+                    break
+        
+        if filtered_items:
+            filtered_trends[platform] = filtered_items
+    
+    return filtered_trends
 
 def main():
     # Get secrets from environment variables
@@ -30,20 +118,11 @@ def main():
         fetcher = TrendFetcher()
         trends = fetcher.fetch_all()
         
-        # Filter trends if keywords are set
-        if KEYWORDS:
-            logger.info(f"Filtering trends with keywords: {KEYWORDS}")
-            filtered_trends = {}
-            for platform, items in trends.items():
-                filtered_items = []
-                for item in items:
-                    # Check if any keyword is in the title (case-insensitive)
-                    if any(keyword.lower() in item['title'].lower() for keyword in KEYWORDS):
-                        filtered_items.append(item)
-                
-                if filtered_items:
-                    filtered_trends[platform] = filtered_items
-            trends = filtered_trends
+        # 加载并应用关键词过滤
+        keyword_groups = load_keywords()
+        if keyword_groups:
+            logger.info(f"应用关键词过滤...")
+            trends = filter_by_keywords(trends, keyword_groups)
         
         # Log stats
         total_items = 0
@@ -52,8 +131,8 @@ def main():
             total_items += count
             logger.info(f"Fetched {count} items from {platform}")
 
-        if total_items == 0 and KEYWORDS:
-             logger.info("No trends matched the keywords.")
+        if total_items == 0 and keyword_groups:
+             logger.info("没有匹配关键词的热点")
 
         if token and chat_id and trends:
             logger.info("Sending notification to Telegram...")
