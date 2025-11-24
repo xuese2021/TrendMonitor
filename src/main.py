@@ -19,10 +19,13 @@ def load_keywords():
     - 必须词 +词汇：必须同时包含
     - 过滤词 !词汇：排除包含此词的结果
     """
-    config_file = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'config', 'frequency_words.txt')
+    # 获取项目根目录（src 的父目录）
+    project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    config_file = os.path.join(project_root, 'config', 'frequency_words.txt')
     
     if not os.path.exists(config_file):
         logger.warning(f"配置文件不存在: {config_file}")
+        logger.info("未配置关键词，将显示所有热点")
         return []
     
     keyword_groups = []
