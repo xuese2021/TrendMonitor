@@ -361,6 +361,45 @@ class TrendFetcher:
             print(f"Error fetching Reddit: {e}")
             return []
 
+    def fetch_yahoo_news(self):
+        """Fetch Yahoo News Top Stories"""
+        url = "https://news.yahoo.com/rss/"
+        try:
+            response = requests.get(url, headers=self.headers, timeout=10)
+            soup = BeautifulSoup(response.text, 'xml')
+            items = soup.find_all('item')
+            trends = []
+            for item in items[:15]:
+                title = item.find('title').get_text() if item.find('title') else ''
+                link = item.find('link').get_text() if item.find('link') else ''
+                if title:
+                    trends.append({'title': title, 'url': link})
+            return trends
+        except Exception as e:
+            print(f"Error fetching Yahoo News: {e}")
+            return []
+
+    def fetch_hackernews(self):
+        """Fetch Hacker News Top Stories"""
+        url = "https://hacker-news.firebaseio.com/v0/topstories.json"
+        try:
+            response = requests.get(url, headers=self.headers, timeout=10)
+            story_ids = response.json()[:15]
+            trends = []
+            for story_id in story_ids:
+                story_url = f"https://hacker-news.firebaseio.com/v0/item/{story_id}.json"
+                story_response = requests.get(story_url, headers=self.headers, timeout=5)
+                story = story_response.json()
+                if story and story.get('title'):
+                    trends.append({
+                        'title': story.get('title', ''),
+                        'url': story.get('url', f"https://news.ycombinator.com/item?id={story_id}")
+                    })
+            return trends
+        except Exception as e:
+            print(f"Error fetching Hacker News: {e}")
+            return []
+
     def fetch_all(self):
         """Fetch all trends from different platforms"""
         results = {}
@@ -383,7 +422,9 @@ class TrendFetcher:
             '网易新闻': self.fetch_netease,
             '凤凰网': self.fetch_ifeng,
             'Google趋势': self.fetch_google_trends,
-            'Reddit': self.fetch_reddit
+            'Reddit': self.fetch_reddit,
+            'Yahoo新闻': self.fetch_yahoo_news,
+            'Hacker News': self.fetch_hackernews
         }
         
         for name, fetch_func in platforms.items():
