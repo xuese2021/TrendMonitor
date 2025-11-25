@@ -481,11 +481,11 @@ class TrendFetcher:
             '贴吧': self.fetch_tieba,
             '今日头条': self.fetch_toutiao,
             # 中文科技/商业媒体
-            '36氪': self.fetch_36kr,
-            '虎嗅': self.fetch_hupu,
-            '钛媒体': self.fetch_tmtpost,
-            '爱范儿': self.fetch_ifanr,
-            '少数派': self.fetch_sspai,
+            # '36氪': self.fetch_36kr, # Method missing
+            # '虎嗅': self.fetch_hupu, # Incorrect mapping and method missing
+            # '钛媒体': self.fetch_tmtpost, # Method missing
+            # '爱范儿': self.fetch_ifanr, # Method missing
+            # '少数派': self.fetch_sspai, # Method missing
             'IT之家': self.fetch_ithome,
             # 中文新闻媒体
             '澎湃新闻': self.fetch_thepaper,
