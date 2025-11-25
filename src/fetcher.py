@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
-import time
 import json
+import os
 
 class TrendFetcher:
     def __init__(self):
@@ -9,6 +9,7 @@ class TrendFetcher:
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
         }
 
+    # ------------------- Existing Chinese platforms -------------------
     def fetch_weibo(self):
         """Fetch Weibo Hot Search"""
         url = "https://s.weibo.com/top/summary"
@@ -20,14 +21,11 @@ class TrendFetcher:
             for item in items:
                 title = item.get_text().strip()
                 link = "https://s.weibo.com" + item.get('href')
-                # Filter out the "top" sticky item which often has no rank
-                if title and not link.startswith("https://s.weibo.com/weibo?q=%23"): 
-                     # Usually the top one is a promo, sometimes starts differently. 
-                     # Real items usually have &Refer=top...
-                     pass
+                if title and not link.startswith("https://s.weibo.com/weibo?q=%23"):
+                    pass
                 if title:
                     trends.append({'title': title, 'url': link})
-            return trends[:15] 
+            return trends[:15]
         except Exception as e:
             print(f"Error fetching Weibo: {e}")
             return []
@@ -59,15 +57,12 @@ class TrendFetcher:
         try:
             response = requests.get(url, headers=self.headers, timeout=10)
             soup = BeautifulSoup(response.text, 'html.parser')
-            # Baidu structure is complex, often class names change.
-            # Look for the main container
             items = soup.select('.category-wrap_iQLoo')
             trends = []
             for item in items:
                 title_div = item.select_one('.c-single-text-ellipsis')
                 if title_div:
                     title = title_div.get_text().strip()
-                    # Url is usually in a parent 'a' tag or similar
                     link_tag = item.select_one('a.img-wrapper_29V76')
                     link = link_tag['href'] if link_tag else url
                     trends.append({'title': title, 'url': link})
@@ -76,51 +71,8 @@ class TrendFetcher:
             print(f"Error fetching Baidu: {e}")
             return []
 
-    def fetch_github(self):
-        """Fetch GitHub Trending"""
-        url = "https://github.com/trending"
-        try:
-            response = requests.get(url, headers=self.headers, timeout=10)
-            soup = BeautifulSoup(response.text, 'html.parser')
-            items = soup.select('article.Box-row')
-            trends = []
-            for item in items:
-                h2 = item.select_one('h2 a')
-                if h2:
-                    title = h2.get_text().strip().replace('\n', '').replace(' ', '')
-                    link = "https://github.com" + h2['href']
-                    desc_tag = item.select_one('p.col-9')
-                    desc = desc_tag.get_text().strip() if desc_tag else ""
-                    full_title = f"{title} - {desc}" if desc else title
-                    trends.append({'title': full_title, 'url': link})
-            return trends[:15]
-        except Exception as e:
-            print(f"Error fetching GitHub: {e}")
-            return []
-
-
-    def fetch_36kr(self):
-        """Fetch 36Kr Hot List"""
-        url = "https://36kr.com/hot-list/catalog"
-        try:
-            response = requests.get(url, headers=self.headers, timeout=10)
-            soup = BeautifulSoup(response.text, 'html.parser')
-            items = soup.select('.article-item-info')
-            trends = []
-            for item in items:
-                a_tag = item.select_one('a.article-item-title')
-                if a_tag:
-                    title = a_tag.get_text().strip()
-                    link = "https://36kr.com" + a_tag['href']
-                    trends.append({'title': title, 'url': link})
-            return trends[:15]
-        except Exception as e:
-            print(f"Error fetching 36Kr: {e}")
-            return []
-
     def fetch_douyin(self):
         """Fetch Douyin Hot Search"""
-        # 抖音热搜需要API，这里使用一个公开的聚合API
         url = "https://www.imsyy.top/api/hotlist/douyin"
         try:
             response = requests.get(url, headers=self.headers, timeout=10)
@@ -175,7 +127,6 @@ class TrendFetcher:
 
     def fetch_toutiao(self):
         """Fetch Toutiao Hot List"""
-        # 今日头条热榜需要使用聚合API
         url = "https://www.imsyy.top/api/hotlist/toutiao"
         try:
             response = requests.get(url, headers=self.headers, timeout=10)
@@ -202,26 +153,26 @@ class TrendFetcher:
             if data.get('data') and data['data'].get('list'):
                 for item in data['data']['list'][:15]:
                     trends.append({
-                        'title': item.get('name', ''),
-                        'url': f"https://www.thepaper.cn/newsDetail_forward_{item.get('contId', '')}"
+                        'title': item.get('title', ''),
+                        'url': f"https://www.thepaper.cn{item.get('url', '')}"
                     })
             return trends
         except Exception as e:
-            print(f"Error fetching ThePaper: {e}")
+            print(f"Error fetching The Paper: {e}")
             return []
 
+    # ------------------- Additional Chinese platforms -------------------
     def fetch_hupu(self):
-        """Fetch Hupu Hot List"""
-        url = "https://bbs.hupu.com/all-gambia"
+        """Fetch Hupu Hot Topics"""
+        url = "https://rsshub.app/hupu/all"
         try:
             response = requests.get(url, headers=self.headers, timeout=10)
-            response.encoding = 'utf-8'
-            soup = BeautifulSoup(response.text, 'html.parser')
-            items = soup.select('.titlelink')
+            soup = BeautifulSoup(response.text, 'xml')
+            items = soup.find_all('item')
             trends = []
             for item in items[:15]:
-                title = item.get_text().strip()
-                link = "https://bbs.hupu.com" + item.get('href', '')
+                title = item.find('title').get_text() if item.find('title') else ''
+                link = item.find('link').get_text() if item.find('link') else ''
                 if title:
                     trends.append({'title': title, 'url': link})
             return trends
@@ -230,38 +181,36 @@ class TrendFetcher:
             return []
 
     def fetch_ithome(self):
-        """Fetch IT Home Hot List"""
-        url = "https://www.ithome.com/"
+        """Fetch IT之家 Hot News"""
+        url = "https://rsshub.app/ithome/news"
         try:
             response = requests.get(url, headers=self.headers, timeout=10)
-            response.encoding = 'utf-8'
-            soup = BeautifulSoup(response.text, 'html.parser')
-            items = soup.select('.lst .title a')
+            soup = BeautifulSoup(response.text, 'xml')
+            items = soup.find_all('item')
             trends = []
             for item in items[:15]:
-                title = item.get_text().strip()
-                link = item.get('href', '')
-                if not link.startswith('http'):
-                    link = 'https://www.ithome.com' + link
+                title = item.find('title').get_text() if item.find('title') else ''
+                link = item.find('link').get_text() if item.find('link') else ''
                 if title:
                     trends.append({'title': title, 'url': link})
             return trends
         except Exception as e:
-            print(f"Error fetching ITHome: {e}")
+            print(f"Error fetching IT之家: {e}")
             return []
 
     def fetch_v2ex(self):
         """Fetch V2EX Hot Topics"""
-        url = "https://www.v2ex.com/api/topics/hot.json"
+        url = "https://rsshub.app/v2ex/topics/hot"
         try:
             response = requests.get(url, headers=self.headers, timeout=10)
-            data = response.json()
+            soup = BeautifulSoup(response.text, 'xml')
+            items = soup.find_all('item')
             trends = []
-            for item in data[:15]:
-                trends.append({
-                    'title': item.get('title', ''),
-                    'url': f"https://www.v2ex.com/t/{item.get('id', '')}"
-                })
+            for item in items[:15]:
+                title = item.find('title').get_text() if item.find('title') else ''
+                link = item.find('link').get_text() if item.find('link') else ''
+                if title:
+                    trends.append({'title': title, 'url': link})
             return trends
         except Exception as e:
             print(f"Error fetching V2EX: {e}")
@@ -269,15 +218,15 @@ class TrendFetcher:
 
     def fetch_douban(self):
         """Fetch Douban Hot Topics"""
-        url = "https://www.douban.com/group/explore"
+        url = "https://rsshub.app/douban/group"
         try:
             response = requests.get(url, headers=self.headers, timeout=10)
-            soup = BeautifulSoup(response.text, 'html.parser')
-            items = soup.select('.channel-item .title a')
+            soup = BeautifulSoup(response.text, 'xml')
+            items = soup.find_all('item')
             trends = []
             for item in items[:15]:
-                title = item.get_text().strip()
-                link = item.get('href', '')
+                title = item.find('title').get_text() if item.find('title') else ''
+                link = item.find('link').get_text() if item.find('link') else ''
                 if title:
                     trends.append({'title': title, 'url': link})
             return trends
@@ -286,18 +235,17 @@ class TrendFetcher:
             return []
 
     def fetch_netease(self):
-        """Fetch NetEase News Hot List"""
-        url = "https://news.163.com/special/0001386F/rank_whole.html"
+        """Fetch NetEase News"""
+        url = "https://rsshub.app/netease/news"
         try:
             response = requests.get(url, headers=self.headers, timeout=10)
-            response.encoding = 'gbk'
-            soup = BeautifulSoup(response.text, 'html.parser')
-            items = soup.select('.tabContents tr td a')
+            soup = BeautifulSoup(response.text, 'xml')
+            items = soup.find_all('item')
             trends = []
             for item in items[:15]:
-                title = item.get_text().strip()
-                link = item.get('href', '')
-                if title and link:
+                title = item.find('title').get_text() if item.find('title') else ''
+                link = item.find('link').get_text() if item.find('link') else ''
+                if title:
                     trends.append({'title': title, 'url': link})
             return trends
         except Exception as e:
@@ -305,27 +253,26 @@ class TrendFetcher:
             return []
 
     def fetch_ifeng(self):
-        """Fetch Ifeng News Hot List"""
-        url = "https://news.ifeng.com/"
+        """Fetch Ifeng News"""
+        url = "https://rsshub.app/ifeng/news"
         try:
             response = requests.get(url, headers=self.headers, timeout=10)
-            response.encoding = 'utf-8'
-            soup = BeautifulSoup(response.text, 'html.parser')
-            items = soup.select('.box_01 a')
+            soup = BeautifulSoup(response.text, 'xml')
+            items = soup.find_all('item')
             trends = []
             for item in items[:15]:
-                title = item.get_text().strip()
-                link = item.get('href', '')
-                if title and link.startswith('http'):
+                title = item.find('title').get_text() if item.find('title') else ''
+                link = item.find('link').get_text() if item.find('link') else ''
+                if title:
                     trends.append({'title': title, 'url': link})
             return trends
         except Exception as e:
             print(f"Error fetching Ifeng: {e}")
             return []
 
+    # ------------------- International platforms -------------------
     def fetch_google_trends(self):
         """Fetch Google Trends (China)"""
-        # 使用 Google Trends RSS
         url = "https://trends.google.com/trends/trendingsearches/daily/rss?geo=CN"
         try:
             response = requests.get(url, headers=self.headers, timeout=10)
@@ -343,7 +290,7 @@ class TrendFetcher:
             return []
 
     def fetch_reddit(self):
-        """Fetch Reddit Popular (English)"""
+        """Fetch Reddit Popular"""
         url = "https://www.reddit.com/r/popular.json?limit=15"
         try:
             response = requests.get(url, headers={**self.headers, 'User-Agent': 'TrendMonitor/1.0'}, timeout=10)
@@ -436,82 +383,6 @@ class TrendFetcher:
             print(f"Error fetching TechCrunch: {e}")
             return []
 
-    def fetch_sspai(self):
-        """Fetch Sspai (少数派) Hot Articles"""
-        url = "https://sspai.com/api/v1/article/tag/page/get?limit=15&offset=0&sort=hot&tag=热门文章"
-        try:
-            response = requests.get(url, headers=self.headers, timeout=10)
-            data = response.json()
-            trends = []
-            if data.get('data'):
-                for item in data['data'][:15]:
-                    trends.append({
-                        'title': item.get('title', ''),
-                        'url': f"https://sspai.com/post/{item.get('id', '')}"
-                    })
-            return trends
-        except Exception as e:
-            print(f"Error fetching Sspai: {e}")
-            return []
-
-    def fetch_huxiu(self):
-        """Fetch Huxiu (虎嗅) Hot Articles"""
-        url = "https://www.huxiu.com/"
-        try:
-            response = requests.get(url, headers=self.headers, timeout=10)
-            response.encoding = 'utf-8'
-            soup = BeautifulSoup(response.text, 'html.parser')
-            items = soup.select('.article-item__title a')
-            trends = []
-            for item in items[:15]:
-                title = item.get_text().strip()
-                link = item.get('href', '')
-                if not link.startswith('http'):
-                    link = 'https://www.huxiu.com' + link
-                if title:
-                    trends.append({'title': title, 'url': link})
-            return trends
-        except Exception as e:
-            print(f"Error fetching Huxiu: {e}")
-            return []
-
-    def fetch_tmtpost(self):
-        """Fetch Tmtpost (钛媒体) Hot Articles"""
-        url = "https://www.tmtpost.com/api/v1/web/article/list?page=1&pageSize=15"
-        try:
-            response = requests.get(url, headers=self.headers, timeout=10)
-            data = response.json()
-            trends = []
-            if data.get('data') and data['data'].get('list'):
-                for item in data['data']['list'][:15]:
-                    trends.append({
-                        'title': item.get('title', ''),
-                        'url': f"https://www.tmtpost.com/{item.get('id', '')}.html"
-                    })
-            return trends
-        except Exception as e:
-            print(f"Error fetching Tmtpost: {e}")
-            return []
-
-    def fetch_ifanr(self):
-        """Fetch Ifanr (爱范儿) Hot Articles"""
-        url = "https://www.ifanr.com/"
-        try:
-            response = requests.get(url, headers=self.headers, timeout=10)
-            response.encoding = 'utf-8'
-            soup = BeautifulSoup(response.text, 'html.parser')
-            items = soup.select('.article-title a')
-            trends = []
-            for item in items[:15]:
-                title = item.get_text().strip()
-                link = item.get('href', '')
-                if title and link:
-                    trends.append({'title': title, 'url': link})
-            return trends
-        except Exception as e:
-            print(f"Error fetching Ifanr: {e}")
-            return []
-
     def fetch_bbc(self):
         """Fetch BBC News Top Stories"""
         url = "http://feeds.bbci.co.uk/news/rss.xml"
@@ -548,80 +419,58 @@ class TrendFetcher:
             print(f"Error fetching The Verge: {e}")
             return []
 
+    # ------------------- RSS Feed Support -------------------
     def fetch_rss_feeds(self):
         """Fetch RSS feeds from config file"""
-        import os
         config_file = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'config', 'rss_feeds.txt')
-        
         if not os.path.exists(config_file):
             print("RSS配置文件不存在，跳过RSS抓取")
             return {}
-        
         results = {}
-        
         try:
             with open(config_file, 'r', encoding='utf-8') as f:
                 for line in f:
                     line = line.strip()
-                    # 跳过注释和空行
                     if not line or line.startswith('#'):
                         continue
-                    
-                    # 解析配置：名称|URL|是否启用
                     parts = line.split('|')
                     if len(parts) < 3:
                         continue
-                    
                     name, url, enabled = parts[0].strip(), parts[1].strip(), parts[2].strip().lower()
-                    
-                    # 只抓取启用的源
                     if enabled != 'true':
                         continue
-                    
-                    # 抓取RSS
                     try:
                         response = requests.get(url, headers=self.headers, timeout=15)
                         soup = BeautifulSoup(response.text, 'xml')
                         items = soup.find_all('item')
-                        
-                        if not items:  # 尝试Atom格式
+                        if not items:
                             items = soup.find_all('entry')
-                        
                         trends = []
-                        for item in items[:10]:  # 每个RSS源取前10条
-                            # RSS格式
+                        for item in items[:10]:
                             title_tag = item.find('title')
                             link_tag = item.find('link')
-                            
                             if title_tag:
                                 title = title_tag.get_text().strip()
-                                # RSS link可能是标签内容或href属性
                                 if link_tag:
                                     link = link_tag.get_text().strip() if link_tag.string else link_tag.get('href', '')
                                 else:
                                     link = ''
-                                
                                 if title:
                                     trends.append({'title': title, 'url': link})
-                        
                         if trends:
                             results[name] = trends
                             print(f"成功抓取RSS: {name} ({len(trends)}条)")
-                    
                     except Exception as e:
                         print(f"抓取RSS失败 {name}: {e}")
                         continue
-        
         except Exception as e:
             print(f"读取RSS配置文件失败: {e}")
-        
         return results
 
+    # ------------------- Aggregator -------------------
     def fetch_all(self):
         """Fetch all trends from different platforms"""
         results = {}
-        
-        # 中文 + 国际平台
         platforms = {
             # 中文主流平台
             '微博': self.fetch_weibo,
@@ -631,25 +480,21 @@ class TrendFetcher:
             'B站': self.fetch_bilibili,
             '贴吧': self.fetch_tieba,
             '今日头条': self.fetch_toutiao,
-            
             # 中文科技/商业媒体
             '36氪': self.fetch_36kr,
-            '虎嗅': self.fetch_huxiu,
+            '虎嗅': self.fetch_hupu,
             '钛媒体': self.fetch_tmtpost,
             '爱范儿': self.fetch_ifanr,
             '少数派': self.fetch_sspai,
             'IT之家': self.fetch_ithome,
-            
             # 中文新闻媒体
             '澎湃新闻': self.fetch_thepaper,
             '网易新闻': self.fetch_netease,
             '凤凰网': self.fetch_ifeng,
-            
             # 中文社区
             '虎扑': self.fetch_hupu,
             'V2EX': self.fetch_v2ex,
             '豆瓣': self.fetch_douban,
-            
             # 国际平台
             'Google趋势': self.fetch_google_trends,
             'Reddit': self.fetch_reddit,
@@ -660,21 +505,18 @@ class TrendFetcher:
             'BBC News': self.fetch_bbc,
             'The Verge': self.fetch_theverge
         }
-        
-        for name, fetch_func in platforms.items():
+        for name, func in platforms.items():
             try:
-                data = fetch_func()
+                data = func()
                 if data:
                     results[name] = data
             except Exception as e:
                 print(f"Error fetching {name}: {e}")
-        
-        # 抓取RSS订阅源
+        # RSS feeds
         try:
-            rss_results = self.fetch_rss_feeds()
-            if rss_results:
-                results.update(rss_results)
+            rss = self.fetch_rss_feeds()
+            if rss:
+                results.update(rss)
         except Exception as e:
             print(f"Error fetching RSS feeds: {e}")
-        
         return results
