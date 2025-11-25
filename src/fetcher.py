@@ -422,6 +422,7 @@ class TrendFetcher:
     # ------------------- RSS Feed Support -------------------
     def fetch_rss_feeds(self):
         """Fetch RSS feeds from config file"""
+        import html
         config_file = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'config', 'rss_feeds.txt')
         if not os.path.exists(config_file):
             print("RSS配置文件不存在，跳过RSS抓取")
@@ -441,7 +442,8 @@ class TrendFetcher:
                         continue
                     try:
                         response = requests.get(url, headers=self.headers, timeout=15)
-                        soup = BeautifulSoup(response.text, 'xml')
+                        # Use content instead of text for better encoding handling
+                        soup = BeautifulSoup(response.content, 'xml')
                         items = soup.find_all('item')
                         if not items:
                             items = soup.find_all('entry')
@@ -450,7 +452,8 @@ class TrendFetcher:
                             title_tag = item.find('title')
                             link_tag = item.find('link')
                             if title_tag:
-                                title = title_tag.get_text().strip()
+                                # Decode HTML entities to fix garbled text
+                                title = html.unescape(title_tag.get_text().strip())
                                 if link_tag:
                                     link = link_tag.get_text().strip() if link_tag.string else link_tag.get('href', '')
                                 else:
@@ -466,6 +469,7 @@ class TrendFetcher:
         except Exception as e:
             print(f"读取RSS配置文件失败: {e}")
         return results
+
 
     # ------------------- Aggregator -------------------
     def fetch_all(self):
