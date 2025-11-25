@@ -6,6 +6,8 @@ import logging
 from fetcher import TrendFetcher
 from notifier import TelegramNotifier
 
+from history import HistoryManager
+
 # Configure logging
 logging.basicConfig(
     level=logging.INFO,
@@ -109,6 +111,22 @@ def filter_by_keywords(trends, keyword_groups):
     
     return filtered_trends
 
+def filter_new_items(trends, history_manager):
+    """
+    Filter out items that have already been sent
+    """
+    new_trends = {}
+    for platform, items in trends.items():
+        new_items = []
+        for item in items:
+            if not history_manager.is_sent(item['url']):
+                new_items.append(item)
+        
+        if new_items:
+            new_trends[platform] = new_items
+            
+    return new_trends
+
 def main():
     # Get secrets from environment variables
     token = os.environ.get('TELEGRAM_BOT_TOKEN')
@@ -120,6 +138,11 @@ def main():
     logger.info("Starting TrendMonitor...")
     
     try:
+        # Initialize HistoryManager
+        project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        history_file = os.path.join(project_root, 'data', 'history.json')
+        history_manager = HistoryManager(history_file)
+
         fetcher = TrendFetcher()
         trends = fetcher.fetch_all()
         
@@ -129,15 +152,19 @@ def main():
             logger.info(f"应用关键词过滤...")
             trends = filter_by_keywords(trends, keyword_groups)
         
+        # Filter out already sent items
+        logger.info("Filtering out already sent items...")
+        trends = filter_new_items(trends, history_manager)
+
         # Log stats
         total_items = 0
         for platform, items in trends.items():
             count = len(items)
             total_items += count
-            logger.info(f"Fetched {count} items from {platform}")
+            logger.info(f"Fetched {count} new items from {platform}")
 
-        if total_items == 0 and keyword_groups:
-             logger.info("没有匹配关键词的热点")
+        if total_items == 0:
+             logger.info("没有新的热点需要推送")
 
         if token and chat_id and trends:
             logger.info("Sending notification to Telegram...")
@@ -145,6 +172,11 @@ def main():
             message = notifier.format_trends(trends)
             if notifier.send_message(message):
                 logger.info("Notification sent successfully.")
+                # Update history
+                for platform, items in trends.items():
+                    for item in items:
+                        history_manager.add(item['url'])
+                history_manager.save_history()
             else:
                 logger.error("Failed to send notification.")
         else:
@@ -153,6 +185,8 @@ def main():
                 print(f"\n=== {platform} ===")
                 for item in items:
                     print(f"- {item['title']} ({item['url']})")
+                    # In dry-run, we might not want to update history, or maybe we do?
+                    # Let's assume dry-run doesn't update history to allow testing.
 
     except Exception as e:
         logger.error(f"An error occurred: {e}", exc_info=True)

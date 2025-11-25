@@ -496,14 +496,14 @@ class TrendFetcher:
             'V2EX': self.fetch_v2ex,
             '豆瓣': self.fetch_douban,
             # 国际平台
-            'Google趋势': self.fetch_google_trends,
-            'Reddit': self.fetch_reddit,
-            'Yahoo新闻': self.fetch_yahoo_news,
-            'Hacker News': self.fetch_hackernews,
-            'Product Hunt': self.fetch_producthunt,
-            'TechCrunch': self.fetch_techcrunch,
-            'BBC News': self.fetch_bbc,
-            'The Verge': self.fetch_theverge
+            # 'Google趋势': self.fetch_google_trends,
+            # 'Reddit': self.fetch_reddit,
+            # 'Yahoo新闻': self.fetch_yahoo_news,
+            # 'Hacker News': self.fetch_hackernews,
+            # 'Product Hunt': self.fetch_producthunt,
+            # 'TechCrunch': self.fetch_techcrunch,
+            # 'BBC News': self.fetch_bbc,
+            # 'The Verge': self.fetch_theverge
         }
         for name, func in platforms.items():
             try:
