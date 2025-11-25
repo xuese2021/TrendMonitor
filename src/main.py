@@ -177,7 +177,8 @@ def main():
                 history_manager.save_history()
             else:
                 logger.error("Failed to send notification.")
-        else:
+        elif trends:
+            # Dry-run mode with content
             logger.info("Printing trends to console:")
             for platform, items in trends.items():
                 print(f"\n=== {platform} ===")
