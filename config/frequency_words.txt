@@ -63,3 +63,4 @@ coze
 comfyui
 Antigravity
 苹果 !水果
+veo3.1
