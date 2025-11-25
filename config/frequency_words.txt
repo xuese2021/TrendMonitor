@@ -1,13 +1,14 @@
 OpenAI
-Google DeepMind
-Microsoft AI
-Anthropic
-NVIDIA AI
-IBM Watson
-Meta AI
-Amazon AWS AI
-Baidu AI
-Alibaba Cloud AI
+编程
+开源
+大模型
+GitHub
+机器人
+ChatGPT
+突发
+科技
+文言一心
+Cloudflare
 Tencent AI Lab
 Huawei Cloud AI
 iFlytek 科大讯飞
@@ -18,28 +19,46 @@ Horizon Robotics 地平线机器人
 Cambricon 寒武纪
 OpenCV AI
 Stability AI
-人工智能应用方案
-AI大模型企业服务
-AI自动化办公工具
-AI智能客服系统
-AI语音识别技术
-AI文案生成工具
-AI图片生成平台
-AI视频生成软件
-AI数据标注服务
-AI教育智能辅导系统
-AI医疗影像识别
-AI金融风控系统
-AI人脸识别解决方案
-AI机器人流程自动化RPA
-AI大数据分析平台
-多模态大模型应用
-企业级AI部署方案
-AI算力服务器
-AI芯片供应商
-AI行业解决方案供应商
-AI模型训练平台
-AI网络安全防护
-生成式AI营销工具
-AI算法外包服务
-AI人才培训课程
+人工智能
+ios
+智能
+千问
+阿里巴巴
+马斯克
+域名
+神级用法
+Nano Banana Pro
+MiniMax 
+月之暗面
+爆料
+AI大事件
+谷歌
+英伟达
+豆包
+可灵
+芯片
+识别
+ocr
+算力
+计算机
+小米  雷军  
+下一代
+开发
+追踪
+热点
+脚本
+Python
+机器学习 
+数字人
+AI Agent
+代码
+推理  多模态  
+发布
+新一代
+领投
+融资
+社区
+扣子
+coze
+comfyui
+Antigravity
