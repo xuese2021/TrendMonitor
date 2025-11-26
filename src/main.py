@@ -129,6 +129,7 @@ def main():
     # Get secrets from environment variables
     token = os.environ.get('TELEGRAM_BOT_TOKEN')
     chat_id = os.environ.get('TELEGRAM_CHAT_ID')
+    force_push = os.environ.get('FORCE_PUSH') == '1'
 
     if not token or not chat_id:
         logger.warning("TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID not set. Running in dry-run mode (console output only).")
@@ -150,9 +151,11 @@ def main():
             logger.info(f"应用关键词过滤...")
             trends = filter_by_keywords(trends, keyword_groups)
         
-        # Filter out already sent items
-        logger.info("Filtering out already sent items...")
-        trends = filter_new_items(trends, history_manager)
+        if not force_push:
+            logger.info("Filtering out already sent items...")
+            trends = filter_new_items(trends, history_manager)
+        else:
+            logger.info("Force push enabled, skipping de-duplication")
 
         # Log stats
         total_items = 0
