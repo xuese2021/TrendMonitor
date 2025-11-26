@@ -64,3 +64,198 @@ comfyui
 Antigravity
 苹果 !水果
 veo3.1
+人工智能
+
+大模型
+
+AI 推理
+
+AI 训练
+
+多模态模型
+
+通用人工智能 AGI
+
+LLM（Large Language Model）
+
+Transformer
+
+GPT
+
+Diffusion Model
+
+RAG（检索增强生成）
+
+Prompt Engineering（提示工程）
+
+AI Agents（智能体）
+
+自动化工作流
+
+生成式 AI
+
+AI 安全
+
+AI 对齐（AI Alignment）
+
+AI 监管
+
+自监督学习
+
+强化学习
+
+联邦学习
+
+AI 边缘计算
+
+模型量化
+
+模型蒸馏
+
+AIGC（AI 生成内容）
+
+数字人
+
+AI 视频生成
+
+文本生成
+
+推理加速
+Python
+
+JavaScript
+
+TypeScript
+
+Rust
+
+Go
+
+Java
+
+C++
+
+Swift
+
+Kotlin
+
+WebAssembly（WASM）
+
+React
+
+Vue
+
+Svelte
+
+Node.js
+
+PyTorch
+
+TensorFlow
+
+JAX
+
+LangChain
+
+FastAPI
+
+Spring
+量子计算
+
+机器人技术
+
+自动驾驶
+
+智慧城市
+
+数字孪生
+
+区块链
+
+Web3
+
+元宇宙
+
+IOT（物联网）
+
+AR/VR
+
+空间计算（Spatial Computing）
+
+GPU
+
+NPU
+
+AI 芯片
+
+RISC-V
+
+云计算
+
+微服务
+
+Serverless
+
+边缘计算
+
+5G/6G
+
+OpenAI
+
+Google DeepMind
+
+Meta AI
+
+Anthropic
+
+NVIDIA
+
+Microsoft AI
+
+Apple AI
+
+Amazon（AWS）
+
+Hugging Face
+
+Stability AI
+
+xAI
+
+腾讯 AI Lab
+
+阿里通义
+
+百度文心
+
+字节火山引擎
+
+小米澎湃大模型
+
+华为昇腾
+
+Cerebras
+
+Graphcore
+
+RunwayML
+
+AI 工具测评
+
+AI 效率提升
+
+AI 开发教程
+
+AI 视频剪辑
+
+AI 编程助手
+
+AI 产品发布
+
+模型更新日志
+
+AI 硬件评测
+
+AI 伦理讨论
+
+AI 行业报告
