@@ -2,7 +2,9 @@ name: Daily Summary
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Run daily at 8:00 AM Beijing time (00:00 UTC)
+    # 每天北京时间 8:00 发送每日摘要
+    # UTC 0:00 = UTC+8 8:00
+    - cron: '0 0 * * *'
   workflow_dispatch:      # Allow manual trigger
 
 permissions:

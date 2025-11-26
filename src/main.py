@@ -2,8 +2,11 @@ import os
 import sys
 import logging
 import time
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 from fetcher import TrendFetcher
+
+# 设置 UTC+8 时区
+UTC_PLUS_8 = timezone(timedelta(hours=8))
 from notifier import TelegramNotifier
 from history import HistoryManager
 from config_loader import ScrapingConfig
@@ -139,7 +142,9 @@ def main():
     if not token or not chat_id:
         logger.warning("TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID not set. Running in dry-run mode (console output only).")
 
-    logger.info("Starting TrendMonitor...")
+    # 获取 UTC+8 时间
+    now_utc8 = datetime.now(UTC_PLUS_8)
+    logger.info(f"Starting TrendMonitor... (北京时间: {now_utc8.strftime('%Y-%m-%d %H:%M:%S')})")
     start_time = datetime.now()
     
     try:
