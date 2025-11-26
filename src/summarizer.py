@@ -81,11 +81,9 @@ class DailySummarizer:
         from datetime import datetime
         
         if not summary:
-            return "📊 *每日热点总结*\n\n暂无热点信息"
+            return "暂无热点信息"
         
-        current_time = datetime.now().strftime('%Y-%m-%d %H:%M')
-        message = f"📊 *每日热点总结*\n_{current_time}_\n"
-        message += f"_过去{hours}小时的热门话题 Top {len(summary)}_\n\n"
+        message = f"_过去{hours}小时的热门话题 Top {len(summary)}_\n\n"
         
         for i, trend in enumerate(summary, 1):
             title = trend['title']
