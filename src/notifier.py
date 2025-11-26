@@ -40,7 +40,8 @@ class TelegramNotifier:
             logger.info(f"Sending message part {i}/{len(messages)}")
             if not self._send_single_message(msg):
                 success = False
-            time.sleep(1) # Rate limiting
+            # Telegram 限速：每条消息间隔 3 秒，避免被封
+            time.sleep(3)
         return success
 
     def _send_single_message(self, text):
