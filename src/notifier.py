@@ -128,7 +128,6 @@ class TelegramNotifier:
         for platform, items in trends_data.items():
             if not items:
                 continue
-            message += f"*{platform}*\n"
             for i, item in enumerate(items, 1):
                 title = item['title']
                 url = item['url']

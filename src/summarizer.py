@@ -89,7 +89,6 @@ class DailySummarizer:
             title = trend['title']
             url = trend['url']
             count = trend['count']
-            platform = trend['platform']
             
             # Escape special characters for Markdown
             title = title.replace('\\', '\\\\')
@@ -100,9 +99,8 @@ class DailySummarizer:
             
             # Add frequency indicator if appeared multiple times
             freq_indicator = f" 🔥×{count}" if count > 1 else ""
-            platform_tag = f" _{platform}_" if platform else ""
             
-            message += f"{i}. [{title}]({url}){freq_indicator}{platform_tag}\n"
+            message += f"{i}. [{title}]({url}){freq_indicator}\n"
         
         message += f"\n_数据来源: TrendMonitor 多平台聚合_"
         
