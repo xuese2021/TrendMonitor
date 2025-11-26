@@ -1,8 +1,6 @@
 """
 Enhanced fetcher wrapper with monitoring, caching, and retry logic
 """
-from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type
-import requests
 import logging
 
 logger = logging.getLogger(__name__)
