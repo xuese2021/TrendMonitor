@@ -217,11 +217,7 @@ def main():
             logger.info(f"Total items: {len(all_items)}. Created {len(batches)} batches.")
             
             for i, batch in enumerate(batches):
-                # Check if batch is full (10 items)
-                if len(batch) < batch_size:
-                    logger.info(f"Batch {i+1} has only {len(batch)} items. Ignoring (threshold is {batch_size}).")
-                    continue
-                
+                # 发送所有批次，不再跳过小批次
                 logger.info(f"Processing batch {i+1}/{len(batches)} with {len(batch)} items...")
                 
                 # Reconstruct trends dict for this batch
@@ -256,7 +252,10 @@ def main():
                     logger.error(f"Error processing batch {i+1}: {e}", exc_info=True)
         
         # Check success rate and send alert if needed
-        success_rate = metrics_tracker.current_run.get('success_rate', 0)
+        total_platforms = metrics_tracker.current_run.get('total_platforms', 0)
+        success_count = metrics_tracker.current_run.get('success_count', 0)
+        success_rate = (success_count / total_platforms) if total_platforms > 0 else 0
+        
         if config.should_send_alerts() and success_rate < config.get_min_success_rate():
             if token and chat_id:
                 alert_msg = f"⚠️ 警告：抓取成功率过低\n\n{metrics_tracker.get_summary()}"
