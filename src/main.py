@@ -165,6 +165,14 @@ def main():
         # Fetch all with monitoring
         trends = fetcher.fetch_all()
         
+        # 记录抓取结果到 metrics
+        for platform, items in trends.items():
+            metrics_tracker.record_platform_attempt(platform)
+            if items:
+                metrics_tracker.record_platform_success(platform, len(items))
+            else:
+                metrics_tracker.record_platform_failure(platform, 'No data')
+        
         # 加载并应用关键词过滤
         keyword_groups = load_keywords()
         if keyword_groups:
@@ -225,19 +233,27 @@ def main():
                 
                 # Send notification
                 logger.info("Sending notification to Telegram...")
-                notifier = TelegramNotifier(token, chat_id)
-                message = notifier.format_trends(batch_trends)
-                
-                if notifier.send_message(message):
-                    logger.info(f"Batch {i+1} sent successfully.")
-                    # Update history only for sent items
-                    for platform, items in batch_trends.items():
-                        for item in items:
-                            history_manager.add(item)
-                    history_manager.save_history()
-                else:
-                    logger.error(f"Failed to send batch {i+1}.")
-                    sys.exit(1)
+                try:
+                    notifier = TelegramNotifier(token, chat_id)
+                    message = notifier.format_trends(batch_trends)
+                    
+                    if not message:
+                        logger.warning(f"Batch {i+1} resulted in empty message, skipping.")
+                        continue
+
+                    if notifier.send_message(message):
+                        logger.info(f"Batch {i+1} sent successfully.")
+                        # Update history only for sent items
+                        for platform, items in batch_trends.items():
+                            for item in items:
+                                history_manager.add(item)
+                        history_manager.save_history()
+                    else:
+                        logger.error(f"Failed to send batch {i+1}.")
+                        # Don't exit immediately, try next batch but mark run as failed
+                        # sys.exit(1) 
+                except Exception as e:
+                    logger.error(f"Error processing batch {i+1}: {e}", exc_info=True)
         
         # Check success rate and send alert if needed
         success_rate = metrics_tracker.current_run.get('success_rate', 0)
