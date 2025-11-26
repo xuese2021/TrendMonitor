@@ -31,6 +31,8 @@ jobs:
         TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
         TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        RSSHUB_URL: ${{ secrets.RSSHUB_URL }}
+        API_WRAPPER_URL: ${{ secrets.API_WRAPPER_URL }}
       run: |
         python src/main.py
 

@@ -8,10 +8,40 @@ class TrendFetcher:
         self.headers = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
         }
+        # 自建 RSSHub 实例配置
+        self.rsshub_url = os.getenv('RSSHUB_URL', 'https://rsshub.app')
+        # API Wrapper 地址配置（可选）
+        self.api_wrapper_url = os.getenv('API_WRAPPER_URL', '')
+        self.use_api_wrapper = bool(self.api_wrapper_url)
+        
+        print(f"RSSHub URL: {self.rsshub_url}")
+        if self.use_api_wrapper:
+            print(f"API Wrapper URL: {self.api_wrapper_url}")
+    
+    def check_server_health(self, url):
+        """检查服务器健康状态"""
+        try:
+            response = requests.get(f"{url}/health", timeout=5)
+            return response.status_code == 200
+        except Exception as e:
+            print(f"Health check failed for {url}: {e}")
+            return False
 
     # ------------------- Existing Chinese platforms -------------------
     def fetch_weibo(self):
-        """Fetch Weibo Hot Search"""
+        """Fetch Weibo Hot Search - 优先使用 API Wrapper"""
+        # 尝试使用 API Wrapper
+        if self.use_api_wrapper and self.check_server_health(self.api_wrapper_url):
+            try:
+                response = requests.get(f"{self.api_wrapper_url}/api/weibo", timeout=15)
+                data = response.json()
+                if data.get('success') and data.get('data'):
+                    print(f"✓ Weibo: 使用 API Wrapper 成功 ({data.get('count')} 条)")
+                    return data.get('data', [])
+            except Exception as e:
+                print(f"API Wrapper 失败，回退到直接抓取: {e}")
+        
+        # 回退到直接抓取
         url = "https://s.weibo.com/top/summary"
         try:
             response = requests.get(url, headers=self.headers, timeout=10)
@@ -25,13 +55,26 @@ class TrendFetcher:
                     pass
                 if title:
                     trends.append({'title': title, 'url': link})
+            print(f"✓ Weibo: 直接抓取成功 ({len(trends[:15])} 条)")
             return trends[:15]
         except Exception as e:
             print(f"Error fetching Weibo: {e}")
             return []
 
     def fetch_zhihu(self):
-        """Fetch Zhihu Hot List"""
+        """Fetch Zhihu Hot List - 优先使用 API Wrapper"""
+        # 尝试使用 API Wrapper
+        if self.use_api_wrapper and self.check_server_health(self.api_wrapper_url):
+            try:
+                response = requests.get(f"{self.api_wrapper_url}/api/zhihu", timeout=15)
+                data = response.json()
+                if data.get('success') and data.get('data'):
+                    print(f"✓ Zhihu: 使用 API Wrapper 成功 ({data.get('count')} 条)")
+                    return data.get('data', [])
+            except Exception as e:
+                print(f"API Wrapper 失败，回退到直接抓取: {e}")
+        
+        # 回退到直接抓取
         url = "https://www.zhihu.com/billboard"
         try:
             response = requests.get(url, headers=self.headers, timeout=10)
@@ -45,6 +88,7 @@ class TrendFetcher:
                     title = item['target']['titleArea']['text']
                     link = item['target']['link']['url']
                     trends.append({'title': title, 'url': link})
+                print(f"✓ Zhihu: 直接抓取成功 ({len(trends[:15])} 条)")
                 return trends[:15]
             return []
         except Exception as e:
@@ -52,7 +96,19 @@ class TrendFetcher:
             return []
 
     def fetch_baidu(self):
-        """Fetch Baidu Hot Search"""
+        """Fetch Baidu Hot Search - 优先使用 API Wrapper"""
+        # 尝试使用 API Wrapper
+        if self.use_api_wrapper and self.check_server_health(self.api_wrapper_url):
+            try:
+                response = requests.get(f"{self.api_wrapper_url}/api/baidu", timeout=15)
+                data = response.json()
+                if data.get('success') and data.get('data'):
+                    print(f"✓ Baidu: 使用 API Wrapper 成功 ({data.get('count')} 条)")
+                    return data.get('data', [])
+            except Exception as e:
+                print(f"API Wrapper 失败，回退到直接抓取: {e}")
+        
+        # 回退到直接抓取
         url = "https://top.baidu.com/board?tab=realtime"
         try:
             response = requests.get(url, headers=self.headers, timeout=10)
@@ -66,6 +122,7 @@ class TrendFetcher:
                     link_tag = item.select_one('a.img-wrapper_29V76')
                     link = link_tag['href'] if link_tag else url
                     trends.append({'title': title, 'url': link})
+            print(f"✓ Baidu: 直接抓取成功 ({len(trends[:15])} 条)")
             return trends[:15]
         except Exception as e:
             print(f"Error fetching Baidu: {e}")
@@ -440,6 +497,12 @@ class TrendFetcher:
                     name, url, enabled = parts[0].strip(), parts[1].strip(), parts[2].strip().lower()
                     if enabled != 'true':
                         continue
+                    
+                    # 替换 rsshub.app 为自建实例
+                    if 'rsshub.app' in url:
+                        url = url.replace('https://rsshub.app', self.rsshub_url)
+                        print(f"✓ {name}: 使用自建 RSSHub 实例")
+                    
                     try:
                         response = requests.get(url, headers=self.headers, timeout=15)
                         # Use content instead of text for better encoding handling
