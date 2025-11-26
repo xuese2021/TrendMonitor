@@ -1,0 +1,57 @@
+version: '3'
+
+services:
+  # === 1. TrendMonitor (您的主程序) ===
+  trend-monitor:
+    build: .
+    image: trend-monitor:latest
+    restart: always
+    environment:
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
+      - TELEGRAM_CHAT_ID=${TELEGRAM_CHAT_ID}
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - TZ=Asia/Shanghai
+    volumes:
+      - ./data:/app/data
+      - ./config:/app/config
+    depends_on:
+      - rsshub
+
+  # === 2. RSSHub (RSS 生成服务) ===
+  rsshub:
+    image: diygod/rsshub
+    restart: always
+    ports:
+      - '1200:1200'
+    environment:
+      NODE_ENV: production
+      CACHE_TYPE: redis
+      REDIS_URL: 'redis://redis:6379/'
+      PUPPETEER_WS_ENDPOINT: 'ws://browserless:3000'
+      # 开启严格反爬模式支持
+      # ALLOW_USER_HOTLINK: 'true'
+    depends_on:
+      - redis
+      - browserless
+
+  # === 3. Browserless (Chrome 浏览器服务) ===
+  browserless:
+    image: browserless/chrome
+    restart: always
+    environment:
+      - MAX_CONCURRENT_SESSIONS=2
+      - MAX_QUEUE_LENGTH=5
+    ulimits:
+      core:
+        hard: 0
+        soft: 0
+
+  # === 4. Redis (缓存服务) ===
+  redis:
+    image: redis:alpine
+    restart: always
+    volumes:
+      - redis-data:/data
+
+volumes:
+  redis-data:

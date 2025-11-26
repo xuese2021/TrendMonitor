@@ -1,3 +1,5 @@
 requests
 beautifulsoup4
+DrissionPage>=4.0.0
 lxml
+tenacity

@@ -1,15 +1,15 @@
-name: Trend Monitor (Every 3 Hours)
+name: Daily Summary
 
 on:
   schedule:
-    - cron: '0 */3 * * *'  # Run every 3 hours (UTC time)
+    - cron: '0 0 * * *'  # Run daily at 8:00 AM Beijing time (00:00 UTC)
   workflow_dispatch:      # Allow manual trigger
 
 permissions:
   contents: write  # Allow pushing commits
 
 jobs:
-  build:
+  daily-summary:
     runs-on: ubuntu-latest
 
     steps:
@@ -26,20 +26,17 @@ jobs:
         python -m pip install --upgrade pip
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-    - name: Run Monitor
+    - name: Generate and Send Daily Summary
       env:
         TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
         TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        RSSHUB_URL: ${{ secrets.RSSHUB_URL }}
-        API_WRAPPER_URL: ${{ secrets.API_WRAPPER_URL }}
       run: |
-        python src/main.py
+        python src/daily_summary.py
 
     - name: Commit history updates
       run: |
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
         git add data/history.json
-        git diff --quiet && git diff --staged --quiet || git commit -m "Update history [skip ci]"
+        git diff --quiet && git diff --staged --quiet || git commit -m "Clean old history [skip ci]"
         git push

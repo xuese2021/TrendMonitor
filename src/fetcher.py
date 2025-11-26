@@ -29,8 +29,8 @@ class TrendFetcher:
 
     # ------------------- Existing Chinese platforms -------------------
     def fetch_weibo(self):
-        """Fetch Weibo Hot Search - 优先使用 API Wrapper"""
-        # 尝试使用 API Wrapper
+        """Fetch Weibo Hot Search - 三层降级：API Wrapper → HTTP → Browser"""
+        # Tier 1: 尝试使用 API Wrapper
         if self.use_api_wrapper and self.check_server_health(self.api_wrapper_url):
             try:
                 response = requests.get(f"{self.api_wrapper_url}/api/weibo", timeout=15)
@@ -41,7 +41,7 @@ class TrendFetcher:
             except Exception as e:
                 print(f"API Wrapper 失败，回退到直接抓取: {e}")
         
-        # 回退到直接抓取
+        # Tier 2: 回退到直接 HTTP 抓取
         url = "https://s.weibo.com/top/summary"
         try:
             response = requests.get(url, headers=self.headers, timeout=10)
@@ -55,15 +55,24 @@ class TrendFetcher:
                     pass
                 if title:
                     trends.append({'title': title, 'url': link})
-            print(f"✓ Weibo: 直接抓取成功 ({len(trends[:15])} 条)")
-            return trends[:15]
+            if trends:
+                print(f"✓ Weibo: 直接抓取成功 ({len(trends[:15])} 条)")
+                return trends[:15]
         except Exception as e:
-            print(f"Error fetching Weibo: {e}")
+            print(f"直接抓取失败: {e}")
+        
+        # Tier 3: 最后使用浏览器
+        try:
+            from fetcher_browser import get_browser_fetcher
+            browser = get_browser_fetcher()
+            return browser.fetch_weibo_browser()
+        except Exception as e:
+            print(f"浏览器抓取也失败: {e}")
             return []
 
     def fetch_zhihu(self):
-        """Fetch Zhihu Hot List - 优先使用 API Wrapper"""
-        # 尝试使用 API Wrapper
+        """Fetch Zhihu Hot List - 三层降级：API Wrapper → HTTP → Browser"""
+        # Tier 1: 尝试使用 API Wrapper
         if self.use_api_wrapper and self.check_server_health(self.api_wrapper_url):
             try:
                 response = requests.get(f"{self.api_wrapper_url}/api/zhihu", timeout=15)
@@ -74,7 +83,7 @@ class TrendFetcher:
             except Exception as e:
                 print(f"API Wrapper 失败，回退到直接抓取: {e}")
         
-        # 回退到直接抓取
+        # Tier 2: 回退到直接 HTTP 抓取
         url = "https://www.zhihu.com/billboard"
         try:
             response = requests.get(url, headers=self.headers, timeout=10)
@@ -90,14 +99,21 @@ class TrendFetcher:
                     trends.append({'title': title, 'url': link})
                 print(f"✓ Zhihu: 直接抓取成功 ({len(trends[:15])} 条)")
                 return trends[:15]
-            return []
         except Exception as e:
-            print(f"Error fetching Zhihu: {e}")
+            print(f"直接抓取失败: {e}")
+        
+        # Tier 3: 最后使用浏览器
+        try:
+            from fetcher_browser import get_browser_fetcher
+            browser = get_browser_fetcher()
+            return browser.fetch_zhihu_browser()
+        except Exception as e:
+            print(f"浏览器抓取也失败: {e}")
             return []
 
     def fetch_baidu(self):
-        """Fetch Baidu Hot Search - 优先使用 API Wrapper"""
-        # 尝试使用 API Wrapper
+        """Fetch Baidu Hot Search - 三层降级：API Wrapper → HTTP → Browser"""
+        # Tier 1: 尝试使用 API Wrapper
         if self.use_api_wrapper and self.check_server_health(self.api_wrapper_url):
             try:
                 response = requests.get(f"{self.api_wrapper_url}/api/baidu", timeout=15)
@@ -108,7 +124,7 @@ class TrendFetcher:
             except Exception as e:
                 print(f"API Wrapper 失败，回退到直接抓取: {e}")
         
-        # 回退到直接抓取
+        # Tier 2: 回退到直接 HTTP 抓取
         url = "https://top.baidu.com/board?tab=realtime"
         try:
             response = requests.get(url, headers=self.headers, timeout=10)
@@ -122,10 +138,19 @@ class TrendFetcher:
                     link_tag = item.select_one('a.img-wrapper_29V76')
                     link = link_tag['href'] if link_tag else url
                     trends.append({'title': title, 'url': link})
-            print(f"✓ Baidu: 直接抓取成功 ({len(trends[:15])} 条)")
-            return trends[:15]
+            if trends:
+                print(f"✓ Baidu: 直接抓取成功 ({len(trends[:15])} 条)")
+                return trends[:15]
         except Exception as e:
-            print(f"Error fetching Baidu: {e}")
+            print(f"直接抓取失败: {e}")
+        
+        # Tier 3: 最后使用浏览器
+        try:
+            from fetcher_browser import get_browser_fetcher
+            browser = get_browser_fetcher()
+            return browser.fetch_baidu_browser()
+        except Exception as e:
+            print(f"浏览器抓取也失败: {e}")
             return []
 
     def fetch_douyin(self):

@@ -1,10 +1,15 @@
 import os
 import sys
 import logging
+import time
+from datetime import datetime
 from fetcher import TrendFetcher
 from notifier import TelegramNotifier
-
 from history import HistoryManager
+from config_loader import ScrapingConfig
+from cache_manager import CacheManager
+from metrics_tracker import MetricsTracker
+from fetcher_wrapper import get_fetcher_wrapper
 
 # Configure logging
 logging.basicConfig(
@@ -135,14 +140,29 @@ def main():
         logger.warning("TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID not set. Running in dry-run mode (console output only).")
 
     logger.info("Starting TrendMonitor...")
+    start_time = datetime.now()
     
     try:
-        # Initialize HistoryManager
+        # Initialize systems
         project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
         history_file = os.path.join(project_root, 'data', 'history.json')
+        cache_file = os.path.join(project_root, 'data', 'cache.json')
+        metrics_file = os.path.join(project_root, 'data', 'metrics.json')
+        
+        config = ScrapingConfig()
         history_manager = HistoryManager(history_file)
-
+        cache_manager = CacheManager(cache_file)
+        metrics_tracker = MetricsTracker(metrics_file)
+        
+        logger.info("Initialized monitoring and caching systems")
+        
+        # Cleanup old cache
+        cache_manager.cleanup_old()
+        
         fetcher = TrendFetcher()
+        wrapper = get_fetcher_wrapper(fetcher, config, cache_manager, metrics_tracker)
+        
+        # Fetch all with monitoring
         trends = fetcher.fetch_all()
         
         # 加载并应用关键词过滤
@@ -163,23 +183,71 @@ def main():
             count = len(items)
             total_items += count
             logger.info(f"Fetched {count} new items from {platform}")
-
+        
+        # Save metrics
+        metrics_tracker.save_metrics()
+        elapsed_time = (datetime.now() - start_time).total_seconds()
+        logger.info(f"Execution time: {elapsed_time:.2f}s")
+        
+        # Log summary
+        logger.info(metrics_tracker.get_summary())
+        
         if total_items == 0:
              logger.info("没有新的热点需要推送")
 
         if token and chat_id and trends:
-            logger.info("Sending notification to Telegram...")
-            notifier = TelegramNotifier(token, chat_id)
-            message = notifier.format_trends(trends)
-            if notifier.send_message(message):
-                logger.info("Notification sent successfully.")
-                # Update history
-                for platform, items in trends.items():
-                    for item in items:
-                        history_manager.add(item['url'])
-                history_manager.save_history()
-            else:
-                logger.error("Failed to send notification.")
+            # Flatten trends into a list of (platform, item) tuples
+            all_items = []
+            for platform, items in trends.items():
+                for item in items:
+                    all_items.append((platform, item))
+            
+            # Batch items in groups of 10
+            batch_size = 10
+            batches = [all_items[i:i + batch_size] for i in range(0, len(all_items), batch_size)]
+            
+            logger.info(f"Total items: {len(all_items)}. Created {len(batches)} batches.")
+            
+            for i, batch in enumerate(batches):
+                # Check if batch is full (10 items)
+                if len(batch) < batch_size:
+                    logger.info(f"Batch {i+1} has only {len(batch)} items. Ignoring (threshold is {batch_size}).")
+                    continue
+                
+                logger.info(f"Processing batch {i+1}/{len(batches)} with {len(batch)} items...")
+                
+                # Reconstruct trends dict for this batch
+                batch_trends = {}
+                for platform, item in batch:
+                    if platform not in batch_trends:
+                        batch_trends[platform] = []
+                    batch_trends[platform].append(item)
+                
+                # Send notification
+                logger.info("Sending notification to Telegram...")
+                notifier = TelegramNotifier(token, chat_id)
+                message = notifier.format_trends(batch_trends)
+                
+                if notifier.send_message(message):
+                    logger.info(f"Batch {i+1} sent successfully.")
+                    # Update history only for sent items
+                    for platform, items in batch_trends.items():
+                        for item in items:
+                            history_manager.add(item)
+                    history_manager.save_history()
+                else:
+                    logger.error(f"Failed to send batch {i+1}.")
+                    sys.exit(1)
+        
+        # Check success rate and send alert if needed
+        success_rate = metrics_tracker.current_run.get('success_rate', 0)
+        if config.should_send_alerts() and success_rate < config.get_min_success_rate():
+            if token and chat_id:
+                alert_msg = f"⚠️ 警告：抓取成功率过低\n\n{metrics_tracker.get_summary()}"
+                notifier = TelegramNotifier(token, chat_id)
+                notifier.send_message(alert_msg)
+                logger.warning(f"Low success rate alert sent: {success_rate:.1%}")
+        
         elif trends:
             # Dry-run mode with content
             logger.info("Printing trends to console:")
@@ -187,12 +255,23 @@ def main():
                 print(f"\n=== {platform} ===")
                 for item in items:
                     print(f"- {item['title']} ({item['url']})")
-                    # In dry-run, we might not want to update history, or maybe we do?
-                    # Let's assume dry-run doesn't update history to allow testing.
 
     except Exception as e:
         logger.error(f"An error occurred: {e}", exc_info=True)
+        # Cleanup browser if it was initialized
+        try:
+            from fetcher_browser import cleanup_browser
+            cleanup_browser()
+        except Exception:
+            pass
         sys.exit(1)
+    finally:
+        # Always cleanup browser on exit
+        try:
+            from fetcher_browser import cleanup_browser
+            cleanup_browser()
+        except Exception:
+            pass
 
 if __name__ == "__main__":
     main()
