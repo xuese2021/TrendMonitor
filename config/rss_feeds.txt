@@ -2,41 +2,56 @@
 # 格式：名称|RSS链接|是否启用(true/false)
 # 注释行以 # 开头
 
-# ===== 新闻类 =====
-晚点长报道|https://rsshub.app/latepost/4|true
-彭博社最新报道|https://bloombergnew.buzzing.cc/feed.json|true
+# ===== 🚀 科技与创新 (Tech & Innovation) =====
+Hacker News|https://rsshub.app/hackernews/news|true
+Product Hunt|https://rsshub.app/producthunt/today|true
+36氪|https://rsshub.app/36kr/news/latest|true
+InfoQ推荐|https://rsshub.app/infoq/recommend|true
+Solidot|https://rsshub.app/solidot/www|true
+少数派|https://rsshub.app/sspai/index|true
+
+# ===== 📰 全球新闻 (Global News) =====
+联合早报(中国)|https://rsshub.app/zaobao/realtime/china|true
+华尔街见闻|https://rsshub.app/wallstreetcn/news/global|true
+财新网|https://rsshub.app/caixin/news/home|true
 BBC中文|https://rsshub.app/telegram/channel/bbczhongwen_rss|true
-澎湃新闻首页|https://rsshub.app/thepaper/featured|true
-靠谱新闻|https://rsshub.app/kaopu/news|true
+彭博社|https://bloombergnew.buzzing.cc/feed.json|true
+澎湃新闻|https://rsshub.app/thepaper/featured|true
+
+# ===== 🔥 社交热榜 (Social Trending - RSSHub) =====
+# 作为 API 抓取的补充
+微博热搜RSS|https://rsshub.app/weibo/search/hot|true
+知乎热榜RSS|https://rsshub.app/zhihu/hotlist|true
+B站热门RSS|https://rsshub.app/bilibili/popular/all|true
+抖音热榜RSS|https://rsshub.app/douyin/hotlist|true
 今日热榜|https://morss.it/:proxy:items=%7C%7C*[class=kt-t__item-text]/https://tophub.today/daily|true
 抽屉新热榜|https://dig.ichouti.cn/feed.xml|true
 
-# ===== 科技/编程类 =====
+# ===== 🎮 娱乐与生活 (Entertainment & Life) =====
+豆瓣电影口碑榜|https://rsshub.app/douban/movie/weekly|true
+Steam热销榜|https://rsshub.app/steam/top100|true
+机核网|https://rsshub.app/gcores/category/1|true
+
+# ===== 💻 编程与开发 (Dev) =====
+HelloGithub精选|https://rsshub.app/hellogithub/home|true
+GitHub周榜|https://rsshub.app/github/trending/weekly/any|true
 V2EX最热|https://rsshub.app/v2ex/topics/hot|true
 掘金前端|https://rsshub.app/juejin/trending/frontend/weekly|true
-我爱白嫖|https://rsshub.app/telegram/channel/anranbp|false
-News Hacker|https://api.newshacker.me/rss|true
 机器之心|https://wechat2rss.bestblogs.dev/feed/8d97af31b0de9e48da74558af128a4673d78c9a3.xml|true
 
-# ===== GitHub =====
-HelloGithub精选|https://rsshub.app/hellogithub/home|true
-HelloGithub月刊|https://hellogithub.com/rss|true
-逛逛GitHub|https://wechat2rss.bestblogs.dev/feed/38be32e5376d852c13d3383e4d7a757fd9a55ff6.xml|true
-GitHub周榜|https://rsshub.app/github/trending/weekly/any|true
-
-# ===== AI =====
-AI洞察日报|https://justlovemaki.github.io/CloudFlare-AI-Insight-Daily/rss.xml|true
-
-# ===== 金融/商业 =====
+# ===== 💰 金融与商业 (Finance) =====
 金十数据|https://rsshub.app/jin10|true
 格隆汇热文|https://rsshub.app/gelonghui/hot-article/day|true
-老虎社区|https://rsshub.app/laohu8/personal/3527667596890271|false
 深潮TechFlow|https://rsshub.app/techflowpost/express|true
 TheBlockBeats|https://rsshub.app/theblockbeats/newsflash/0|true
 雪球热帖|https://rsshub.app/xueqiu/hots|true
 
-# ===== 社区/搞笑 =====
-知乎热榜|https://rsshub.app/zhihu/hot|true
+# ===== 🤖 AI 专区 =====
+AI洞察日报|https://justlovemaki.github.io/CloudFlare-AI-Insight-Daily/rss.xml|true
+
+# ===== 备用/未启用 =====
+我爱白嫖|https://rsshub.app/telegram/channel/anranbp|false
+老虎社区|https://rsshub.app/laohu8/personal/3527667596890271|false
 NGA网事杂谈|https://rsshub.app/nga/forum/-7|false
 百度贴吧热议|https://rsshub.app/tophub/Om4ejxvxEN|true
 B站热搜|https://rsshub.app/bilibili/hot-search|true
@@ -44,16 +59,9 @@ B站热搜|https://rsshub.app/bilibili/hot-search|true
 过早客|https://rsshub.app/guozaoke/default|false
 吃瓜群众|https://rsshub.app/telegram/channel/chiguadog|false
 网易轻松一刻|https://data.getpodcast.xyz/data/163/1008.xml|false
-
-# ===== 软件/工具 =====
-少数派|https://rsshub.app/sspai/index|true
-
-# ===== 医学类 =====
 丁香医生|https://plink.anyfeeder.com/weixin/DingXiangYiSheng|false
 医学界|https://plink.anyfeeder.com/weixin/yixuejiezazhi|false
 MedSci推荐|https://rsshub.app/medsci|false
-
-# ===== 其他 =====
 半拿铁商业|https://rsshub.app/xiaoyuzhou/podcast/62382c1103bea1ebfffa1c00|false
 macOS猿料|https://rsshub.app/yuanliao/macos|false
 K哥爬虫|https://feed.cnblogs.com/blog/u/699324/rss/|false
