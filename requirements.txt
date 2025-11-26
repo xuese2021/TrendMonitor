@@ -1,5 +1,32 @@
-requests
-beautifulsoup4
-DrissionPage>=4.0.0
-lxml
-tenacity
+# Web 请求
+requests==2.31.0
+httpx==0.25.0
+
+# RSS 解析
+feedparser==6.0.10
+
+# Telegram 机器人
+python-telegram-bot==20.0
+
+# 环境变量管理
+python-dotenv==1.0.0
+
+# 数据处理
+lxml==4.9.3
+beautifulsoup4==4.12.2
+
+# 并发处理
+aiohttp==3.9.1
+
+# 缓存
+requests-cache==1.1.8
+
+# 日志和监控
+loguru==0.7.2
+
+# 可选：数据库
+# sqlite3（Python 内置）
+
+# 开发依赖
+pytest==7.4.3
+black==23.12.0
