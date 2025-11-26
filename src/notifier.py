@@ -116,29 +116,42 @@ class TelegramNotifier:
             u = m.group(2)
             return f"{t}\n{u}"
 
-        text = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", repl, text)
-        # 去除粗体/斜体等标记
-        text = text.replace('*', '')
-        text = text.replace('_', '')
-        return text
+        try:
+            text = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", repl, text)
+            # 去除粗体/斜体等标记
+            text = text.replace('*', '')
+            text = text.replace('_', '')
+            text = text.replace('`', '')
+            return text
+        except Exception as e:
+            logger.error(f"Error converting to plain text: {e}")
+            return text
 
     def format_trends(self, trends_data):
         message = ""
+        # Note: Header removed as per user request
         
         for platform, items in trends_data.items():
             if not items:
                 continue
+            
+            # Platform header
+            message += f"*{platform}*\n"
+            
             for i, item in enumerate(items, 1):
                 title = item['title']
                 url = item['url']
                 
-                # 只转义会破坏 Markdown 链接的字符
-                # 在链接文本中，只需要转义 [ ] ( ) 和 \
-                title = title.replace('\\', '\\\\')  # 先转义反斜杠
+                # Escape special Markdown characters in title
+                # Telegram MarkdownV2 requires escaping: _ * [ ] ( ) ~ ` > # + - = | { } . !
+                # But we are using 'Markdown' (V1) which is less strict but still needs care
+                # Specifically [ ] and \ need escaping
+                
+                title = title.replace('\\', '\\\\')  # Escape backslash first
                 title = title.replace('[', '\\[')
                 title = title.replace(']', '\\]')
-                title = title.replace('(', '\\(')
-                title = title.replace(')', '\\)')
+                # title = title.replace('_', '\\_') # Optional for V1
+                # title = title.replace('*', '\\*') # Optional for V1
                 
                 # Telegram Markdown link: [text](url)
                 message += f"{i}. [{title}]({url})\n"

@@ -101,10 +101,13 @@ class MetricsTracker:
         failed = self.current_run['failure_count']
         items = self.current_run['total_items']
         
+        # 避免除以零
+        success_rate = (success / total * 100) if total > 0 else 0
+        
         summary = f"""
 📊 运行统计:
 - 总平台数: {total}
-- 成功: {success} ({success/total*100:.1f}%)
+- 成功: {success} ({success_rate:.1f}%)
 - 失败: {failed}
 - 总条目: {items}
 """
