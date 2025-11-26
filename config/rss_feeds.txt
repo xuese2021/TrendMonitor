@@ -257,10 +257,157 @@ Cell期刊|https://rsshub.app/cell/cell/current|true
 淘宝热卖|https://rsshub.app/taobao/weekly-ranking|true
 
 # ============================================================
+# 🌐 全球公开新闻源（官方RSS）
+# ============================================================
+
+# --- Google News 谷歌新闻（多地区）---
+Google News世界|https://news.google.com/rss?hl=en-US&gl=US&ceid=US:en|true
+Google News中国|https://news.google.com/rss/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNREpxYW5RU0FucG9MaG9DUTA0b0FBUAE?hl=zh-CN&gl=CN&ceid=CN:zh-Hans|true
+Google News科技|https://news.google.com/rss/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGRqTVhZU0FtVnVHZ0pWVXlnQVAB?hl=en-US&gl=US&ceid=US:en|true
+Google News商业|https://news.google.com/rss/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGx6TVdZU0FtVnVHZ0pWVXlnQVAB?hl=en-US&gl=US&ceid=US:en|true
+Google News娱乐|https://news.google.com/rss/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNREpxYW5RU0FtVnVHZ0pWVXlnQVAB?hl=en-US&gl=US&ceid=US:en|true
+
+# --- Yahoo News 雅虎新闻 ---
+Yahoo News美国|https://news.yahoo.com/rss/|true
+Yahoo Finance财经|https://finance.yahoo.com/news/rssindex|true
+Yahoo Tech科技|https://news.yahoo.com/rss/tech|true
+
+# --- 美联社/路透社（英文原版）---
+AP News美联社|https://rsshub.app/apnews/topics/apf-topnews|true
+Reuters路透社|https://rsshub.app/reuters/world|true
+Reuters科技|https://rsshub.app/reuters/technology|true
+Reuters商业|https://rsshub.app/reuters/business|true
+
+# --- 美国主流媒体 ---
+CNN头条|https://rss.cnn.com/rss/edition.rss|true
+CNN世界|https://rss.cnn.com/rss/edition_world.rss|true
+CNN科技|https://rss.cnn.com/rss/edition_technology.rss|true
+Fox News|https://moxie.foxnews.com/google-publisher/latest.xml|true
+NBC News|https://feeds.nbcnews.com/nbcnews/public/news|true
+ABC News|https://abcnews.go.com/abcnews/topstories|true
+CBS News|https://www.cbsnews.com/latest/rss/main|true
+NPR头条|https://feeds.npr.org/1001/rss.xml|true
+NPR世界|https://feeds.npr.org/1004/rss.xml|true
+PBS NewsHour|https://www.pbs.org/newshour/feeds/rss/headlines|true
+
+# --- 财经商业媒体 ---
+Bloomberg彭博|https://feeds.bloomberg.com/markets/news.rss|true
+CNBC财经|https://www.cnbc.com/id/100003114/device/rss/rss.html|true
+CNBC科技|https://www.cnbc.com/id/19854910/device/rss/rss.html|true
+Forbes福布斯|https://www.forbes.com/real-time/feed2/|true
+Business Insider|https://feeds.businessinsider.com/custom/all|true
+MarketWatch|https://feeds.marketwatch.com/marketwatch/topstories/|true
+Financial Times|https://www.ft.com/rss/home|true
+The Economist|https://www.economist.com/rss/the-world-this-week/index.xml|true
+Barrons巴伦周刊|https://www.barrons.com/feed/rss/home-page|true
+
+# --- 欧洲媒体 ---
+The Guardian卫报|https://www.theguardian.com/world/rss|true
+Guardian科技|https://www.theguardian.com/uk/technology/rss|true
+BBC World|http://feeds.bbci.co.uk/news/world/rss.xml|true
+BBC科技|http://feeds.bbci.co.uk/news/technology/rss.xml|true
+BBC商业|http://feeds.bbci.co.uk/news/business/rss.xml|true
+Sky News|https://feeds.skynews.com/feeds/rss/world.xml|true
+The Telegraph|https://www.telegraph.co.uk/rss.xml|true
+France24法国|https://www.france24.com/en/rss|true
+DW德国|https://rss.dw.com/xml/rss-en-all|true
+EuroNews欧洲|https://www.euronews.com/rss?level=theme&name=news|true
+
+# --- 美国政治/评论 ---
+Washington Post|https://feeds.washingtonpost.com/rss/world|true
+New York Times|https://rss.nytimes.com/services/xml/rss/nyt/World.xml|true
+NYT科技|https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml|true
+Los Angeles Times|https://www.latimes.com/world-nation/rss2.0.xml|true
+Politico政治|https://www.politico.com/rss/politicopicks.xml|true
+The Hill国会山|https://thehill.com/feed/|true
+Axios|https://api.axios.com/feed/|true
+Vox|https://www.vox.com/rss/index.xml|true
+
+# --- 科技/创投媒体 ---
+Wired连线|https://www.wired.com/feed/rss|true
+MIT Tech Review|https://www.technologyreview.com/feed/|true
+ZDNet|https://www.zdnet.com/news/rss.xml|true
+VentureBeat|https://venturebeat.com/feed/|true
+The Information|https://www.theinformation.com/feed|true
+9to5Mac|https://9to5mac.com/feed/|true
+9to5Google|https://9to5google.com/feed/|true
+Android Central|https://www.androidcentral.com/feed|true
+MacRumors|https://feeds.macrumors.com/MacRumors-All|true
+Tom's Hardware|https://www.tomshardware.com/feeds/all|true
+
+# --- 深度/分析媒体 ---
+Quartz|https://qz.com/feed|true
+The Atlantic|https://www.theatlantic.com/feed/all/|true
+New Yorker|https://www.newyorker.com/feed/everything|true
+Foreign Affairs外交|https://www.foreignaffairs.com/rss.xml|true
+Foreign Policy外交政策|https://foreignpolicy.com/feed/|true
+The Diplomat外交家|https://thediplomat.com/feed/|true
+
+# ============================================================
+# 🗣️ Reddit 热门版块
+# ============================================================
+Reddit全站热门|https://www.reddit.com/.rss|true
+Reddit世界新闻|https://www.reddit.com/r/worldnews/.rss|true
+Reddit新闻|https://www.reddit.com/r/news/.rss|true
+Reddit科技|https://www.reddit.com/r/technology/.rss|true
+Reddit编程|https://www.reddit.com/r/programming/.rss|true
+Reddit科学|https://www.reddit.com/r/science/.rss|true
+Reddit商业|https://www.reddit.com/r/business/.rss|true
+Reddit股票|https://www.reddit.com/r/stocks/.rss|true
+Reddit加密货币|https://www.reddit.com/r/CryptoCurrency/.rss|true
+Reddit人工智能|https://www.reddit.com/r/artificial/.rss|true
+Reddit机器学习|https://www.reddit.com/r/MachineLearning/.rss|true
+Reddit数据科学|https://www.reddit.com/r/datascience/.rss|true
+
+# ============================================================
+# 📝 Medium/Substack 优质内容
+# ============================================================
+Medium热门|https://medium.com/feed/top-stories|true
+Medium科技|https://medium.com/feed/tag/technology|true
+Medium创业|https://medium.com/feed/tag/startup|true
+Medium AI|https://medium.com/feed/tag/artificial-intelligence|true
+Medium编程|https://medium.com/feed/tag/programming|true
+Substack热门|https://rsshub.app/substack/top|true
+
+# ============================================================
+# 🎬 YouTube 频道（科技/新闻）
+# ============================================================
+YouTube趋势中国|https://rsshub.app/youtube/trending/CN|true
+YouTube趋势美国|https://rsshub.app/youtube/trending/US|true
+MKBHD科技|https://rsshub.app/youtube/user/marquaborownlee|true
+Linus Tech Tips|https://rsshub.app/youtube/user/LinusTechTips|true
+
+# ============================================================
+# 🐦 Twitter/X 热门（需要配置）
+# ============================================================
+Twitter趋势美国|https://rsshub.app/twitter/trends/23424977|true
+Twitter趋势全球|https://rsshub.app/twitter/trends/1|true
+
+# ============================================================
+# 📱 科技公司官方博客
+# ============================================================
+Google官方博客|https://blog.google/rss/|true
+Microsoft官方博客|https://blogs.microsoft.com/feed/|true
+Apple Newsroom|https://www.apple.com/newsroom/rss-feed.rss|true
+Meta官方博客|https://about.fb.com/news/feed/|true
+Amazon官方博客|https://www.aboutamazon.com/rss/news|true
+Tesla官方博客|https://www.tesla.com/blog/feed|true
+OpenAI官方博客|https://openai.com/blog/rss/|true
+Anthropic博客|https://www.anthropic.com/news/rss.xml|true
+DeepMind博客|https://deepmind.com/blog/feed/basic/|true
+
+# ============================================================
+# 🔒 网络安全
+# ============================================================
+Krebs on Security|https://krebsonsecurity.com/feed/|true
+The Hacker News|https://feeds.feedburner.com/TheHackersNews|true
+BleepingComputer|https://www.bleepingcomputer.com/feed/|true
+Dark Reading|https://www.darkreading.com/rss.xml|true
+SecurityWeek|https://www.securityweek.com/feed|true
+
+# ============================================================
 # 备用源（可按需开启）
 # ============================================================
-Reddit热门|https://rsshub.app/reddit/top|false
-Twitter趋势|https://rsshub.app/twitter/trends|false
 Instagram热门|https://rsshub.app/instagram/explore|false
-YouTube趋势|https://rsshub.app/youtube/trending/CN|false
 TikTok热门|https://rsshub.app/tiktok/trending|false
+Snapchat热门|https://rsshub.app/snapchat/spotlight|false
