@@ -129,33 +129,24 @@ class TelegramNotifier:
 
     def format_trends(self, trends_data):
         message = ""
-        # Note: Header removed as per user request
         
+        # 收集所有条目，不按平台分组
+        all_items = []
         for platform, items in trends_data.items():
-            if not items:
-                continue
+            if items:
+                all_items.extend(items)
+        
+        for i, item in enumerate(all_items, 1):
+            title = item['title']
+            url = item['url']
             
-            # Platform header
-            message += f"*{platform}*\n"
+            # Escape special Markdown characters in title
+            title = title.replace('\\', '\\\\')
+            title = title.replace('[', '\\[')
+            title = title.replace(']', '\\]')
             
-            for i, item in enumerate(items, 1):
-                title = item['title']
-                url = item['url']
-                
-                # Escape special Markdown characters in title
-                # Telegram MarkdownV2 requires escaping: _ * [ ] ( ) ~ ` > # + - = | { } . !
-                # But we are using 'Markdown' (V1) which is less strict but still needs care
-                # Specifically [ ] and \ need escaping
-                
-                title = title.replace('\\', '\\\\')  # Escape backslash first
-                title = title.replace('[', '\\[')
-                title = title.replace(']', '\\]')
-                # title = title.replace('_', '\\_') # Optional for V1
-                # title = title.replace('*', '\\*') # Optional for V1
-                
-                # Telegram Markdown link: [text](url)
-                message += f"{i}. [{title}]({url})\n"
-            message += "\n"
+            # Telegram Markdown link: [text](url)
+            message += f"{i}. [{title}]({url})\n"
         
         logger.debug(f"Formatted message length: {len(message)} characters")
         return message
