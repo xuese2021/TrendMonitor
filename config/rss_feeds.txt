@@ -22,6 +22,119 @@ B站热门|https://rsshub.app/bilibili/popular/all|true
 抽屉新热榜|https://dig.ichouti.cn/feed.xml|true
 
 # ============================================================
+# 📱 社交媒体深度监控（参考 MediaCrawler 项目）
+# ============================================================
+
+# --- 🔴 小红书 (Xiaohongshu/RED) ---
+小红书发现|https://rsshub.app/xiaohongshu/explore|true
+小红书热门话题|https://rsshub.app/xiaohongshu/board/5e44dd1b0000000001003a21|true
+小红书美食|https://rsshub.app/xiaohongshu/board/5d35c83500000000190132e0|true
+小红书时尚|https://rsshub.app/xiaohongshu/board/5d35c83400000000190132dd|true
+小红书科技数码|https://rsshub.app/xiaohongshu/board/5d35c85700000000010031a4|true
+小红书家居|https://rsshub.app/xiaohongshu/board/5d35c85300000000100318f2|true
+小红书旅行|https://rsshub.app/xiaohongshu/board/5d35c84600000000010031a0|true
+
+# --- 🎵 抖音 (Douyin/TikTok China) ---
+抖音热点榜|https://rsshub.app/douyin/hotlist|true
+抖音娱乐榜|https://rsshub.app/douyin/hotlist/entertainment|true
+抖音社会榜|https://rsshub.app/douyin/hotlist/society|true
+抖音挑战榜|https://rsshub.app/douyin/hotlist/challenge|true
+抖音音乐榜|https://rsshub.app/douyin/music/hot|true
+抖音直播榜|https://rsshub.app/douyin/live/hot|true
+
+# --- ⚡ 快手 (Kuaishou) ---
+快手热门|https://rsshub.app/kuaishou/hot|true
+快手发现|https://rsshub.app/kuaishou/discover|true
+快手游戏|https://rsshub.app/kuaishou/tag/游戏|true
+快手搞笑|https://rsshub.app/kuaishou/tag/搞笑|true
+
+# --- 📺 B站 (Bilibili) 深度监控 ---
+B站全站日榜|https://rsshub.app/bilibili/ranking/0/0/1|true
+B站全站周榜|https://rsshub.app/bilibili/ranking/0/0/7|true
+B站动画区|https://rsshub.app/bilibili/ranking/1|true
+B站音乐区|https://rsshub.app/bilibili/ranking/3|true
+B站游戏区|https://rsshub.app/bilibili/ranking/4|true
+B站娱乐区|https://rsshub.app/bilibili/ranking/5|true
+B站科技区|https://rsshub.app/bilibili/ranking/36|true
+B站生活区|https://rsshub.app/bilibili/ranking/160|true
+B站美食区|https://rsshub.app/bilibili/ranking/211|true
+B站动态热门|https://rsshub.app/bilibili/popular/precious|true
+B站入站必刷|https://rsshub.app/bilibili/popular/history|true
+B站每周必看|https://rsshub.app/bilibili/weekly|true
+
+# --- 🐦 微博 (Weibo) 深度监控 ---
+微博热搜榜|https://rsshub.app/weibo/search/hot|true
+微博热门话题|https://rsshub.app/weibo/super_index|true
+微博实时热点|https://rsshub.app/weibo/search/realtime|true
+微博娱乐榜|https://rsshub.app/weibo/search/entertainment|true
+微博要闻榜|https://rsshub.app/weibo/search/socialevent|true
+微博财经榜|https://rsshub.app/weibo/search/finance|true
+微博科技榜|https://rsshub.app/weibo/search/tech|true
+微博同城热搜北京|https://rsshub.app/weibo/search/hot/beijing|true
+微博同城热搜上海|https://rsshub.app/weibo/search/hot/shanghai|true
+微博同城热搜广州|https://rsshub.app/weibo/search/hot/guangzhou|true
+微博同城热搜深圳|https://rsshub.app/weibo/search/hot/shenzhen|true
+
+# --- 📖 知乎 (Zhihu) 深度监控 ---
+知乎热榜|https://rsshub.app/zhihu/hotlist|true
+知乎每日精选|https://rsshub.app/zhihu/daily|true
+知乎热门视频|https://rsshub.app/zhihu/hot/video|true
+知乎科技话题|https://rsshub.app/zhihu/topic/19551432|true
+知乎互联网话题|https://rsshub.app/zhihu/topic/19550517|true
+知乎商业话题|https://rsshub.app/zhihu/topic/19551424|true
+知乎金融话题|https://rsshub.app/zhihu/topic/19559424|true
+知乎创业话题|https://rsshub.app/zhihu/topic/19551718|true
+知乎人工智能话题|https://rsshub.app/zhihu/topic/19551275|true
+知乎职场话题|https://rsshub.app/zhihu/topic/19558505|true
+知乎想法热榜|https://rsshub.app/zhihu/pin/hot|true
+
+# --- 💬 百度贴吧 (Tieba) ---
+贴吧热议|https://rsshub.app/tieba/forum/hot|true
+贴吧李毅吧|https://rsshub.app/tieba/forum/李毅|true
+贴吧虎扑步行街|https://rsshub.app/tieba/forum/虎扑|true
+贴吧数码区|https://rsshub.app/tieba/forum/数码|true
+贴吧股票吧|https://rsshub.app/tieba/forum/股票|true
+贴吧lol吧|https://rsshub.app/tieba/forum/lol|true
+贴吧王者荣耀|https://rsshub.app/tieba/forum/王者荣耀|true
+贴吧原神|https://rsshub.app/tieba/forum/原神|true
+
+# --- 📱 今日头条 (Toutiao) ---
+头条热榜|https://rsshub.app/toutiao/hot|true
+头条科技|https://rsshub.app/toutiao/channel/news_tech|true
+头条财经|https://rsshub.app/toutiao/channel/news_finance|true
+头条娱乐|https://rsshub.app/toutiao/channel/news_entertainment|true
+头条体育|https://rsshub.app/toutiao/channel/news_sports|true
+头条军事|https://rsshub.app/toutiao/channel/news_military|true
+头条汽车|https://rsshub.app/toutiao/channel/news_car|true
+头条房产|https://rsshub.app/toutiao/channel/news_house|true
+
+# --- 🏀 虎扑 (Hupu) ---
+虎扑步行街|https://rsshub.app/hupu/all|true
+虎扑热帖|https://rsshub.app/hupu/hot|true
+虎扑NBA|https://rsshub.app/hupu/bbs/nba|true
+虎扑足球|https://rsshub.app/hupu/bbs/soccer|true
+虎扑电竞|https://rsshub.app/hupu/bbs/esports|true
+虎扑数码|https://rsshub.app/hupu/bbs/digital|true
+
+# --- 💼 脉脉 (Maimai) 职场 ---
+脉脉热榜|https://rsshub.app/maimai/hot|true
+
+# --- 🎮 NGA玩家社区 ---
+NGA综合讨论|https://rsshub.app/nga/forum/-7|true
+NGA艾泽拉斯|https://rsshub.app/nga/forum/200|true
+NGA原神|https://rsshub.app/nga/forum/650|true
+NGA崩坏星穹铁道|https://rsshub.app/nga/forum/787|true
+
+# --- 🛍️ 闲鱼热门 ---
+闲鱼热门|https://rsshub.app/xianyu/hot|true
+
+# --- 🌍 微信公众号（通过 RSSHub）---
+# 注：微信公众号RSS较难获取，以下是一些聚合方式
+微信热文|https://rsshub.app/wechat/mp/homepage/MzIxNTQ5NDM0OA==|true
+瞭望智库|https://rsshub.app/wechat/mp/homepage/MzIxNjc3NzA1MQ==|true
+虎嗅APP|https://rsshub.app/wechat/mp/homepage/MzI5ODA3NjEzOA==|true
+
+# ============================================================
 # 📰 国内主流新闻媒体
 # ============================================================
 # --- 官方/央媒 ---
