@@ -2,6 +2,14 @@
 # 格式：名称|RSS链接|是否启用(true/false)
 # 注释行以 # 开头
 
+# ===== 🌟 Top RSS List 精选 (Top Quality) =====
+阮一峰的网络日志|https://www.ruanyifeng.com/blog/atom.xml|true
+爱范儿|https://www.ifanr.com/feed|true
+酷壳|http://coolshell.cn/feed|true
+构建我的被动收入|https://www.bmpi.dev/index.xml|true
+美团技术团队|https://rsshub.app/meituan/tech/home|true
+南方周末|https://rsshub.app/infzm/2|true
+
 # ===== 🚀 科技与创新 (Tech & Innovation) =====
 Hacker News|https://rsshub.app/hackernews/news|true
 Product Hunt|https://rsshub.app/producthunt/today|true
