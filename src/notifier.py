@@ -1,6 +1,7 @@
 import requests
 import time
 import logging
+import re
 
 logger = logging.getLogger(__name__)
 
@@ -54,11 +55,49 @@ class TelegramNotifier:
             response = requests.post(self.api_url, json=payload, timeout=10)
             
             if response.status_code != 200:
-                logger.error(f"Telegram API error: {response.status_code}")
+                logger.error(f"Telegram HTTP error: {response.status_code}")
                 logger.error(f"Response: {response.text}")
                 return False
-            
-            response.raise_for_status()
+
+            data = {}
+            try:
+                data = response.json()
+            except Exception:
+                logger.error("Telegram response is not JSON")
+                return False
+
+            if not data.get('ok', False):
+                err_code = data.get('error_code')
+                desc = data.get('description', '')
+                logger.error(f"Telegram API error: {err_code} - {desc}")
+
+                # 回退：如果是解析错误，改用纯文本发送
+                if 'parse' in desc.lower() or 'entities' in desc.lower():
+                    plain = self._to_plain_text(text)
+                    logger.info("Retrying with plain text (no parse_mode)")
+                    payload = {
+                        'chat_id': self.chat_id,
+                        'text': plain,
+                        'disable_web_page_preview': True
+                    }
+                    retry_resp = requests.post(self.api_url, json=payload, timeout=10)
+                    if retry_resp.status_code != 200:
+                        logger.error(f"Telegram HTTP error on retry: {retry_resp.status_code}")
+                        logger.error(f"Response: {retry_resp.text}")
+                        return False
+                    retry_data = {}
+                    try:
+                        retry_data = retry_resp.json()
+                    except Exception:
+                        logger.error("Telegram retry response is not JSON")
+                        return False
+                    if not retry_data.get('ok', False):
+                        logger.error(f"Telegram API retry error: {retry_data.get('error_code')} - {retry_data.get('description')}")
+                        return False
+                    logger.info("Message sent successfully (plain text fallback)")
+                    return True
+                return False
+
             logger.info("Message sent successfully")
             return True
         except requests.exceptions.RequestException as e:
@@ -70,11 +109,21 @@ class TelegramNotifier:
             logger.error(f"Unexpected error sending message: {e}")
             return False
 
+    def _to_plain_text(self, text):
+        # 将 Markdown 链接 [text](url) 转为两行：text\nurl
+        def repl(m):
+            t = m.group(1)
+            u = m.group(2)
+            return f"{t}\n{u}"
+
+        text = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", repl, text)
+        # 去除粗体/斜体等标记
+        text = text.replace('*', '')
+        text = text.replace('_', '')
+        return text
+
     def format_trends(self, trends_data):
-        import datetime
-        date_str = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
-        
-        message = f"🔥 *实时热点监控*\n_{date_str}_\n\n"
+        message = ""
         
         for platform, items in trends_data.items():
             if not items:
