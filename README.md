@@ -1,4 +1,4 @@
-# TrendMonitor - Hybrid Architecture Deployment
+# TrendMonitor - Hybrid Architecture Deploymentza
 
 A real-time trend monitoring application using hybrid architecture: server-side data sources + GitHub Actions scheduling.
 
