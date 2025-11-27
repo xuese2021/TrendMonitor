@@ -1,6 +1,6 @@
 # ============================================================
-# TrendMonitor RSS 配置 - 精简稳定版
-# 只保留确定可用的源，移除需要特殊配置的源
+# TrendMonitor RSS 配置 - 完整版
+# 自动发现的全量源库
 # ============================================================
 
 # ============================================================
@@ -11,7 +11,8 @@
 阮一峰博客|https://www.ruanyifeng.com/blog/atom.xml|true
 
 # ============================================================
-# 🔥 今日热榜（tophub.today）- 无需 Cookie，非常稳定
+# 🔥 今日热榜 - 全量节点（tophub.today）
+# 无需 Cookie，非常稳定，覆盖 50+ 平台
 # ============================================================
 
 # --- 综合热榜 ---
@@ -20,40 +21,95 @@
 # --- 社交媒体 ---
 今日热榜-微博|https://rsshub.app/tophub/Jb0vmloB1G|true
 今日热榜-知乎|https://rsshub.app/tophub/mproPpoq6O|true
+今日热榜-知乎日报|https://rsshub.app/tophub/wn3JKwdVj1|true
+今日热榜-豆瓣|https://rsshub.app/tophub/Y2KeDGQdNP|true
+今日热榜-贴吧|https://rsshub.app/tophub/Om4ejxvxEN|true
+今日热榜-天涯|https://rsshub.app/tophub/20MdKjvYqb|true
+
+# --- 视频平台 ---
+今日热榜-B站|https://rsshub.app/tophub/74Kvx59dkx|true
 今日热榜-抖音|https://rsshub.app/tophub/DpQvNABoNE|true
 今日热榜-快手|https://rsshub.app/tophub/qLeAjobV8G|true
 今日热榜-小红书|https://rsshub.app/tophub/xlPvp9jVKO|true
-今日热榜-百度|https://rsshub.app/tophub/Pbyvme0e5Y|true
-今日热榜-头条|https://rsshub.app/tophub/K2AJPe6Yl0|true
+今日热榜-西瓜视频|https://rsshub.app/tophub/wn3X8mvwdq|true
+今日热榜-AcFun|https://rsshub.app/tophub/Wb3oJb7NKo|true
 
-# --- 科技 ---
+# --- 搜索引擎 ---
+今日热榜-百度|https://rsshub.app/tophub/Pbyvme0e5Y|true
+今日热榜-搜狗|https://rsshub.app/tophub/e4voB0wVlO|true
+今日热榜-神马|https://rsshub.app/tophub/YqaX3X6dlb|true
+今日热榜-360|https://rsshub.app/tophub/NKwloXklEl|true
+
+# --- 新闻资讯 ---
+今日热榜-头条|https://rsshub.app/tophub/K2AJPe6Yl0|true
+今日热榜-腾讯新闻|https://rsshub.app/tophub/VaobmmoV9z|true
+今日热榜-网易新闻|https://rsshub.app/tophub/74KrX0a0JD|true
+今日热榜-新浪新闻|https://rsshub.app/tophub/wn3JBoQXKo|true
+今日热榜-凤凰新闻|https://rsshub.app/tophub/YqaEMlQGKl|true
+今日热榜-澎湃新闻|https://rsshub.app/tophub/xl5oP0LQKD|true
+今日热榜-界面新闻|https://rsshub.app/tophub/dxqyWx7VKz|true
+
+# --- 科技媒体 ---
 今日热榜-36氪|https://rsshub.app/tophub/Q1Vd5Kodeq|true
 今日热榜-虎嗅|https://rsshub.app/tophub/5VaobgvAj1|true
 今日热榜-IT之家|https://rsshub.app/tophub/74KjdYJM6q|true
-
-# --- 财经 ---
-今日热榜-雪球|https://rsshub.app/tophub/Lg3W7VJ0Pd|true
+今日热榜-钛媒体|https://rsshub.app/tophub/L4Yo7m9jRv|true
+今日热榜-极客公园|https://rsshub.app/tophub/NKLaKe5wj1|true
+今日热榜-CSDN|https://rsshub.app/tophub/n4NQvo3AEm|true
+今日热榜-开源中国|https://rsshub.app/tophub/xl5oJKYeKD|true
+今日热榜-少数派|https://rsshub.app/tophub/Y2NwLoVaGN|true
+今日热榜-威锋|https://rsshub.app/tophub/dxqmKe4bKz|true
 
 # --- 开发者 ---
 今日热榜-掘金|https://rsshub.app/tophub/QaqeEaVe9R|true
 今日热榜-V2EX|https://rsshub.app/tophub/DlPMv0wN3e|true
 今日热榜-GitHub|https://rsshub.app/tophub/rYqoXQ8oWE|true
+今日热榜-SegmentFault|https://rsshub.app/tophub/G4no7bl6Ne|true
+今日热榜-博客园|https://rsshub.app/tophub/oM0Xw0aGPg|true
+今日热榜-吾爱破解|https://rsshub.app/tophub/NKwlo0orEl|true
 
-# --- 娱乐 ---
-今日热榜-豆瓣|https://rsshub.app/tophub/Y2KeDGQdNP|true
-今日热榜-B站|https://rsshub.app/tophub/74Kvx59dkx|true
+# --- 财经 ---
+今日热榜-雪球|https://rsshub.app/tophub/Lg3W7VJ0Pd|true
+今日热榜-东方财富|https://rsshub.app/tophub/O4x9nbLdkE|true
+今日热榜-富途牛牛|https://rsshub.app/tophub/wn3XNmXPdq|true
+今日热榜-同花顺|https://rsshub.app/tophub/O4xdn3OYkE|true
+
+# --- 购物电商 ---
+今日热榜-什么值得买|https://rsshub.app/tophub/5VlPEA96jb|true
+今日热榜-淘宝|https://rsshub.app/tophub/ql5oJLaeKD|true
+今日热榜-京东|https://rsshub.app/tophub/3QLRKmO0Pd|true
+
+# --- 游戏 ---
+今日热榜-游民星空|https://rsshub.app/tophub/EKLea0X0jb|true
+今日热榜-NGA|https://rsshub.app/tophub/ql5oJ9PeKD|true
+今日热榜-机核|https://rsshub.app/tophub/Y2N6LoVaGN|true
+今日热榜-3DM|https://rsshub.app/tophub/rYqoXM6oWE|true
+今日热榜-TapTap|https://rsshub.app/tophub/xl5oJm3eKD|true
+
+# --- 影视娱乐 ---
+今日热榜-豆瓣电影|https://rsshub.app/tophub/oM4ejmJGPg|true
+今日热榜-猫眼|https://rsshub.app/tophub/EKLea3POjb|true
+今日热榜-虎扑|https://rsshub.app/tophub/G4noJBmdNe|true
+
+# --- 汽车 ---
+今日热榜-汽车之家|https://rsshub.app/tophub/dxqmKnDbKz|true
+今日热榜-懂车帝|https://rsshub.app/tophub/rYqoJGboWE|true
 
 # ============================================================
-# ✅ 稳定的 RSSHub 路由（补充）
+# 📰 RSSHub 热门路由（无需配置）
 # ============================================================
 
-# --- B站（官方 API，稳定）---
+# --- B站 ---
 B站热门|https://rsshub.app/bilibili/popular/all|true
 B站全站日榜|https://rsshub.app/bilibili/ranking/0/0/1|true
 B站科技区|https://rsshub.app/bilibili/ranking/36|true
+B站知识区|https://rsshub.app/bilibili/ranking/188|true
+B站游戏区|https://rsshub.app/bilibili/ranking/4|true
+B站娱乐区|https://rsshub.app/bilibili/ranking/5|true
 B站每周必看|https://rsshub.app/bilibili/weekly|true
+B站热搜|https://rsshub.app/bilibili/hot-search|true
 
-# --- 科技媒体（通常稳定）---
+# --- 科技媒体 ---
 36氪快讯|https://rsshub.app/36kr/newsflashes|true
 36氪热门|https://rsshub.app/36kr/news/latest|true
 虎嗅网|https://rsshub.app/huxiu/article|true
@@ -62,36 +118,83 @@ B站每周必看|https://rsshub.app/bilibili/weekly|true
 IT之家|https://rsshub.app/ithome/it|true
 极客公园|https://rsshub.app/geekpark/breakingnews|true
 cnBeta|https://rsshub.app/cnbeta|true
+快科技|https://rsshub.app/mydrivers/news|true
+品玩|https://rsshub.app/pingwest/status|true
+
+# --- AI/人工智能 ---
+机器之心|https://rsshub.app/jiqizhixin/daily|true
+量子位|https://rsshub.app/qbitai/category/资讯|true
 
 # --- 开发者 ---
 掘金热门|https://rsshub.app/juejin/trending/all/daily|true
+掘金前端|https://rsshub.app/juejin/category/frontend|true
+掘金后端|https://rsshub.app/juejin/category/backend|true
 开源中国|https://rsshub.app/oschina/news|true
 V2EX最热|https://rsshub.app/v2ex/topics/hot|true
+V2EX最新|https://rsshub.app/v2ex/topics/latest|true
+GitHub Trending|https://rsshub.app/github/trending/daily/all|true
+Hacker News|https://rsshub.app/hackernews|true
+Product Hunt|https://rsshub.app/producthunt/today|true
 
 # --- 财经 ---
 华尔街见闻快讯|https://rsshub.app/wallstreetcn/live/global|true
+华尔街见闻要闻|https://rsshub.app/wallstreetcn/news/global|true
 金十数据快讯|https://rsshub.app/jin10|true
 雪球热帖|https://rsshub.app/xueqiu/hots|true
+格隆汇|https://rsshub.app/gelonghui/hot-article/day|true
+同花顺|https://rsshub.app/10jqka/realtimenews|true
 
 # --- 加密货币 ---
 深潮TechFlow|https://rsshub.app/techflowpost/express|true
 金色财经|https://rsshub.app/jinse/lives|true
+币世界|https://rsshub.app/bishijie/kuaixun|true
+链闻|https://rsshub.app/chainnews/news|true
+巴比特|https://rsshub.app/8btc/news/flash|true
+CoinDesk|https://rsshub.app/coindesk/consensus-magazine|true
 
 # --- 新闻媒体 ---
 环球时报|https://rsshub.app/huanqiu/news|true
 澎湃新闻热门|https://rsshub.app/thepaper/featured|true
+新华网|https://rsshub.app/xinhuanet/news|true
+央视新闻|https://rsshub.app/cctv/news|true
+人民日报|https://rsshub.app/people/xw/gn|true
+南方周末|https://rsshub.app/infzm/2|true
+财新网|https://rsshub.app/caixin/scroll|true
 
 # --- 游戏 ---
 游民星空|https://rsshub.app/gamersky/news|true
 机核网|https://rsshub.app/gcores/category/1|true
+游研社|https://rsshub.app/yystv/category/recommend|true
+3DM新闻|https://rsshub.app/3dm/news|true
+
+# --- 影视娱乐 ---
+豆瓣正在热映|https://rsshub.app/douban/movie/playing|true
+豆瓣即将上映|https://rsshub.app/douban/movie/later|true
+豆瓣北美票房|https://rsshub.app/douban/movie/ustop|true
+
+# --- 汽车 ---
+汽车之家|https://rsshub.app/autohome/news/1|true
+36氪汽车|https://rsshub.app/36kr/news/ccs/23|true
+
+# --- 设计 ---
+Dribbble|https://rsshub.app/dribbble/popular|true
+站酷推荐|https://rsshub.app/zcool/recommend/all|true
+UI中国|https://rsshub.app/ui-cn/recommend|true
+
+# --- 国际媒体 ---
+TechCrunch|https://rsshub.app/techcrunch|true
+The Verge|https://rsshub.app/theverge|true
+Ars Technica|https://rsshub.app/arstechnica/index|true
+BBC News|https://rsshub.app/bbc/world|true
+Reuters|https://rsshub.app/reuters/world|true
+
+# --- Telegram 频道 ---
+竹新社|https://rsshub.app/telegram/channel/tnews365|true
 
 # ============================================================
-# ⚠️ 以下源需要特殊配置，默认禁用
-# 如果你在 Railway 配置了相应的 Cookie/Token，可以启用
+# ⚠️ 需要 Cookie 的源（默认禁用）
 # ============================================================
-
 # 微博热搜|https://rsshub.app/weibo/search/hot|false
 # 知乎热榜|https://rsshub.app/zhihu/hotlist|false
 # 抖音热榜|https://rsshub.app/douyin/hotlist|false
 # 小红书热门|https://rsshub.app/xiaohongshu/explore|false
-# 快手热榜|https://rsshub.app/kuaishou/hot|false
