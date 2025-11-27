@@ -1,203 +1,203 @@
-# TrendMonitor - 混合架构部署完成
+# TrendMonitor - Hybrid Architecture Deployment
 
-一个实时热点监控应用，采用混合架构：服务器端数据源 + GitHub Actions 调度。
+A real-time trend monitoring application using hybrid architecture: server-side data sources + GitHub Actions scheduling.
 
-## ✨ 新特性（混合架构）
+## ✨ Key Features (Hybrid Architecture)
 
-- 🚀 **自建 RSSHub 实例**：避免公共实例限流，50+ RSS 源稳定获取
-- 🔄 **API Wrapper 代理**：微博、知乎、百度等平台通过服务器抓取，减少 IP 封锁
-- 💪 **自动回退机制**：服务器不可用时自动切换到直接抓取
-- 📊 **健康检查**：实时监控服务器状态
-
----
-
-## 🎯 当前部署进度
-
-### ✅ 已完成
-- [x] API Wrapper 服务代码（Flask + 缓存）
-- [x] fetcher.py 增强（服务器集成 + 健康检查）
-- [x] RSS 源自动切换到自建 RSSHub
-- [x] GitHub Actions 工作流更新
-- [x] 部署指南文档
-
-### ⏳ 待完成（需要你手动操作）
-- [ ] 部署 RSSHub 到 Vercel
-- [ ] 部署 API Wrapper 到 Railway
-- [ ] 配置 GitHub Secrets
+- 🚀 **Self-hosted RSSHub Instance**: Avoid public instance rate limiting, stable access to 50+ RSS feeds
+- 🔄 **API Wrapper Proxy**: Weibo, Zhihu, Baidu and other platforms fetched via server, reducing IP blocks
+- 💪 **Auto Fallback Mechanism**: Automatically switches to direct fetching when server is unavailable
+- 📊 **Health Check**: Real-time server status monitoring
 
 ---
 
-## 📖 快速开始
+## 🎯 Current Deployment Progress
 
-### 第一步：部署服务器组件
+### ✅ Completed
+- [x] API Wrapper service code (Flask + caching)
+- [x] Enhanced fetcher.py (server integration + health check)
+- [x] RSS feeds auto-switch to self-hosted RSSHub
+- [x] GitHub Actions workflow update
+- [x] Deployment guide documentation
 
-请按照 **[deployment/DEPLOYMENT_GUIDE.md](./deployment/DEPLOYMENT_GUIDE.md)** 中的详细步骤操作：
+### ⏳ Pending (Manual Setup Required)
+- [ ] Deploy RSSHub to Vercel
+- [ ] Deploy API Wrapper to Railway
+- [ ] Configure GitHub Secrets
 
-1. **部署 RSSHub 到 Vercel**（约 5 分钟）
-   - Fork RSSHub 仓库
-   - 在 Vercel 导入并部署
-   - 获取 URL（例如：`https://rsshub-yourname.vercel.app`）
+---
 
-2. **部署 API Wrapper 到 Railway**（约 3 分钟）
-   - 连接 GitHub 仓库
-   - 设置 Root Directory 为 `deployment/api_wrapper`
-   - 获取 URL（例如：`https://your-api.railway.app`）
+## 📖 Quick Start
 
-3. **配置 GitHub Secrets**
-   - 在 TrendMonitor 仓库设置中添加：
-     - `RSSHUB_URL`: 你的 RSSHub URL
-     - `API_WRAPPER_URL`: 你的 API Wrapper URL
+### Step 1: Deploy Server Components
 
-### 第二步：测试部署
+Follow the detailed steps in **[deployment/DEPLOYMENT_GUIDE.md](./deployment/DEPLOYMENT_GUIDE.md)**:
+
+1. **Deploy RSSHub to Vercel** (~5 minutes)
+   - Fork RSSHub repository
+   - Import and deploy on Vercel
+   - Get URL (e.g., `https://rsshub-yourname.vercel.app`)
+
+2. **Deploy API Wrapper to Railway** (~3 minutes)
+   - Connect GitHub repository
+   - Set Root Directory to `deployment/api_wrapper`
+   - Get URL (e.g., `https://your-api.railway.app`)
+
+3. **Configure GitHub Secrets**
+   - Add in TrendMonitor repository settings:
+     - `RSSHUB_URL`: Your RSSHub URL
+     - `API_WRAPPER_URL`: Your API Wrapper URL
+
+### Step 2: Test Deployment
 
 ```bash
-# 本地测试（可选）
+# Local test (optional)
 $env:RSSHUB_URL="https://rsshub-yourname.vercel.app"
 $env:API_WRAPPER_URL="https://your-api.railway.app"
 python src/main.py
 
-# 或直接在 GitHub Actions 中测试
-# 进入 Actions → Hourly Trend Monitor → Run workflow
+# Or test directly in GitHub Actions
+# Go to Actions → Hourly Trend Monitor → Run workflow
 ```
 
 ---
 
-## 🏗️ 架构说明
+## 🏗️ Architecture
 
 ```
 ┌─────────────────────────────────────┐
-│     GitHub Actions (每小时触发)      │
-│  - 获取热点数据                       │
-│  - 关键词过滤                         │
-│  - 去重 (history.json)                │
-│  - 推送到 Telegram                    │
+│   GitHub Actions (Triggered Hourly) │
+│  - Fetch trending data              │
+│  - Keyword filtering                │
+│  - Deduplication (history.json)     │
+│  - Push to Telegram                 │
 └─────────┬───────────────────────────┘
           │
           ▼
 ┌─────────────────────────────────────┐
-│      服务器层 (Vercel + Railway)     │
+│     Server Layer (Vercel + Railway) │
 │  ┌─────────────────────────────┐    │
 │  │   RSSHub (Vercel)           │    │
-│  │   - 50+ RSS 源              │    │
-│  │   - 全球 CDN                │    │
+│  │   - 50+ RSS feeds           │    │
+│  │   - Global CDN              │    │
 │  └─────────────────────────────┘    │
 │  ┌─────────────────────────────┐    │
 │  │   API Wrapper (Railway)     │    │
-│  │   - 微博/知乎/百度代理      │    │
-│  │   - 5分钟缓存               │    │
-│  │   - 健康检查                │    │
+│  │   - Weibo/Zhihu/Baidu proxy │    │
+│  │   - 5-minute cache          │    │
+│  │   - Health check            │    │
 │  └─────────────────────────────┘    │
 └─────────────────────────────────────┘
 ```
 
-### 优势对比
+### Comparison
 
-| 指标 | 之前（全 GitHub Actions） | 现在（混合架构） |
-|------|--------------------------|-----------------|
-| **稳定性** | ~70% | **~95%** ✅ |
-| **RSS 限流** | 经常遇到 | **几乎没有** ✅ |
-| **IP 封锁** | 频繁 | **显著减少** ✅ |
-| **响应速度** | 慢 | **快 30-50%** ✅ |
-| **维护成本** | 低 | **低（都是免费服务）** ✅ |
+| Metric | Before (GitHub Actions Only) | Now (Hybrid Architecture) |
+|--------|------------------------------|---------------------------|
+| **Stability** | ~70% | **~95%** ✅ |
+| **RSS Rate Limiting** | Frequent | **Almost None** ✅ |
+| **IP Blocking** | Frequent | **Significantly Reduced** ✅ |
+| **Response Speed** | Slow | **30-50% Faster** ✅ |
+| **Maintenance Cost** | Low | **Low (Free Services)** ✅ |
 
 ---
 
-## 📁 项目结构
+## 📁 Project Structure
 
 ```
 TrendMonitor/
 ├── deployment/
-│   ├── api_wrapper/          # API Wrapper 服务
-│   │   ├── api_wrapper.py    # Flask 应用
-│   │   ├── requirements.txt  # Python 依赖
-│   │   ├── Procfile          # 部署配置
-│   │   └── README.md         # API 文档
-│   └── DEPLOYMENT_GUIDE.md   # 部署指南 ⭐
+│   ├── api_wrapper/          # API Wrapper Service
+│   │   ├── api_wrapper.py    # Flask Application
+│   │   ├── requirements.txt  # Python Dependencies
+│   │   ├── Procfile          # Deployment Config
+│   │   └── README.md         # API Documentation
+│   └── DEPLOYMENT_GUIDE.md   # Deployment Guide ⭐
 ├── src/
-│   ├── fetcher.py            # 数据抓取（已增强）
-│   ├── main.py               # 主程序
-│   └── notifier.py           # Telegram 推送
+│   ├── fetcher.py            # Data Fetching (Enhanced)
+│   ├── main.py               # Main Program
+│   └── notifier.py           # Telegram Push
 ├── config/
-│   ├── frequency_words.txt   # 关键词过滤
-│   └── rss_feeds.txt         # RSS 订阅源（自动切换到自建实例）
+│   ├── frequency_words.txt   # Keyword Filtering
+│   └── rss_feeds.txt         # RSS Subscriptions (Auto-switches to self-hosted)
 └── .github/workflows/
-    └── daily_monitor.yml     # GitHub Actions（已更新）
+    └── daily_monitor.yml     # GitHub Actions (Updated)
 ```
 
 ---
 
-## 🔧 配置说明
+## 🔧 Configuration
 
-### 关键词过滤
+### Keyword Filtering
 
-编辑 `config/frequency_words.txt`：
+Edit `config/frequency_words.txt`:
 ```
-# 普通关键词
-人工智能 AI ChatGPT
+# Regular keywords
+AI ChatGPT OpenAI
 
-# 必须词：+词汇
-华为 OPPO 小米 +发布
+# Required words: +word
+Apple Google +release
 
-# 过滤词：!词汇
-苹果 华为 !水果 !价格
+# Excluded words: !word
+Apple Google !fruit !price
 ```
 
-### RSS 订阅源
+### RSS Subscriptions
 
-编辑 `config/rss_feeds.txt`（已有 50+ 源）：
+Edit `config/rss_feeds.txt` (50+ feeds included):
 ```
-# 格式：名称|RSS链接|是否启用
-阮一峰的网络日志|https://www.ruanyifeng.com/blog/atom.xml|true
-36氪|https://rsshub.app/36kr/news/latest|true  # 自动切换到自建实例
+# Format: Name|RSS URL|Enabled
+TechCrunch|https://techcrunch.com/feed/|true
+36Kr|https://rsshub.app/36kr/news/latest|true  # Auto-switches to self-hosted
 ```
 
 ---
 
-## 🔍 监控与维护
+## 🔍 Monitoring & Maintenance
 
-### 健康检查
+### Health Check
 
 ```bash
-# 检查 RSSHub
+# Check RSSHub
 curl https://rsshub-yourname.vercel.app/
 
-# 检查 API Wrapper
+# Check API Wrapper
 curl https://your-api.railway.app/health
 ```
 
-### 查看日志
+### View Logs
 
-- **GitHub Actions**：仓库 → Actions → 选择运行记录
-- **Railway**：Dashboard → 你的服务 → Logs
-- **Vercel**：Dashboard → 你的项目 → Logs
-
----
-
-## ❓ 常见问题
-
-### Q: 不部署 API Wrapper 可以吗？
-A: 可以！系统会自动回退到直接抓取。但建议部署以提高稳定性。
-
-### Q: 免费额度够用吗？
-A: 够用！
-- **Vercel**: 无限制（个人使用足够）
-- **Railway**: 500 小时/月（每小时运行一次，远远够用）
-
-### Q: RSSHub 被墙怎么办？
-A: Vercel 部署的应用在国内可访问。如遇问题，可使用 Cloudflare Workers 作为代理。
-
-### Q: 如何添加新的数据源？
-A: 编辑 `config/rss_feeds.txt` 或修改 `src/fetcher.py` 添加新平台。
+- **GitHub Actions**: Repository → Actions → Select run record
+- **Railway**: Dashboard → Your service → Logs
+- **Vercel**: Dashboard → Your project → Logs
 
 ---
 
-## 📚 相关链接
+## ❓ FAQ
 
-- **部署指南**: [deployment/DEPLOYMENT_GUIDE.md](./deployment/DEPLOYMENT_GUIDE.md)
-- **API Wrapper 文档**: [deployment/api_wrapper/README.md](./deployment/api_wrapper/README.md)
-- **RSSHub 官方文档**: https://docs.rsshub.app
-- **Railway 文档**: https://docs.railway.app
-- **Vercel 文档**: https://vercel.com/docs
+### Q: Can I skip deploying API Wrapper?
+A: Yes! The system will automatically fall back to direct fetching. However, deploying it is recommended for better stability.
+
+### Q: Is the free tier enough?
+A: Yes!
+- **Vercel**: Unlimited (sufficient for personal use)
+- **Railway**: 500 hours/month (runs hourly, more than enough)
+
+### Q: What if RSSHub is blocked?
+A: Vercel-deployed apps are accessible in most regions. If issues occur, you can use Cloudflare Workers as a proxy.
+
+### Q: How to add new data sources?
+A: Edit `config/rss_feeds.txt` or modify `src/fetcher.py` to add new platforms.
+
+---
+
+## 📚 Related Links
+
+- **Deployment Guide**: [deployment/DEPLOYMENT_GUIDE.md](./deployment/DEPLOYMENT_GUIDE.md)
+- **API Wrapper Documentation**: [deployment/api_wrapper/README.md](./deployment/api_wrapper/README.md)
+- **RSSHub Official Docs**: https://docs.rsshub.app
+- **Railway Docs**: https://docs.railway.app
+- **Vercel Docs**: https://vercel.com/docs
 
 ---
 
@@ -207,14 +207,14 @@ MIT
 
 ---
 
-## 🌟 后续优化建议
+## 🌟 Future Improvements
 
-- [ ] 添加 UptimeRobot 监控（宕机告警）
-- [ ] 多 RSSHub 实例（高可用）
-- [ ] Redis 缓存集成（Railway）
-- [ ] 数据可视化面板
-- [ ] AI 智能摘要（基于 Gemini）
+- [ ] Add UptimeRobot monitoring (downtime alerts)
+- [ ] Multiple RSSHub instances (high availability)
+- [ ] Redis cache integration (Railway)
+- [ ] Data visualization dashboard
+- [ ] AI-powered summaries (via Gemini)
 
 ---
 
-**现在，请按照 [deployment/DEPLOYMENT_GUIDE.md](./deployment/DEPLOYMENT_GUIDE.md) 开始部署！** 🚀
+**Now, follow [deployment/DEPLOYMENT_GUIDE.md](./deployment/DEPLOYMENT_GUIDE.md) to start deployment!** 🚀
