@@ -11,11 +11,41 @@
 阮一峰博客|https://www.ruanyifeng.com/blog/atom.xml|true
 
 # ============================================================
-# ✅ 稳定的 RSSHub 路由
+# 🔥 今日热榜（tophub.today）- 无需 Cookie，非常稳定
 # ============================================================
 
-# --- 热榜聚合 ---
-今日热榜聚合|https://rsshub.app/tophub/Om4ejxvxEN|true
+# --- 综合热榜 ---
+今日热榜-综合|https://rsshub.app/tophub/Om4ejxvxEN|true
+
+# --- 社交媒体 ---
+今日热榜-微博|https://rsshub.app/tophub/Jb0vmloB1G|true
+今日热榜-知乎|https://rsshub.app/tophub/mproPpoq6O|true
+今日热榜-抖音|https://rsshub.app/tophub/DpQvNABoNE|true
+今日热榜-快手|https://rsshub.app/tophub/qLeAjobV8G|true
+今日热榜-小红书|https://rsshub.app/tophub/xlPvp9jVKO|true
+今日热榜-百度|https://rsshub.app/tophub/Pbyvme0e5Y|true
+今日热榜-头条|https://rsshub.app/tophub/K2AJPe6Yl0|true
+
+# --- 科技 ---
+今日热榜-36氪|https://rsshub.app/tophub/Q1Vd5Kodeq|true
+今日热榜-虎嗅|https://rsshub.app/tophub/5VaobgvAj1|true
+今日热榜-IT之家|https://rsshub.app/tophub/74KjdYJM6q|true
+
+# --- 财经 ---
+今日热榜-雪球|https://rsshub.app/tophub/Lg3W7VJ0Pd|true
+
+# --- 开发者 ---
+今日热榜-掘金|https://rsshub.app/tophub/QaqeEaVe9R|true
+今日热榜-V2EX|https://rsshub.app/tophub/DlPMv0wN3e|true
+今日热榜-GitHub|https://rsshub.app/tophub/rYqoXQ8oWE|true
+
+# --- 娱乐 ---
+今日热榜-豆瓣|https://rsshub.app/tophub/Y2KeDGQdNP|true
+今日热榜-B站|https://rsshub.app/tophub/74Kvx59dkx|true
+
+# ============================================================
+# ✅ 稳定的 RSSHub 路由（补充）
+# ============================================================
 
 # --- B站（官方 API，稳定）---
 B站热门|https://rsshub.app/bilibili/popular/all|true
