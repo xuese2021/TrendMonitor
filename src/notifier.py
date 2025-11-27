@@ -147,7 +147,7 @@ class TelegramNotifier:
             title = title.replace(']', '\\]')
             
             # Telegram Markdown link: [text](url)
-            message += f"{i}. [{title}]({url})\n"
+            message += f"{i}. [{title}]({url})\n\n"
         
         logger.debug(f"Formatted message length: {len(message)} characters")
         return message
