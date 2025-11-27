@@ -64,11 +64,8 @@ var userAgents = []string{
 	"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
 }
 
-// 备用 RSSHub 镜像
+// 备用 RSSHub 镜像（按稳定性排序）
 var backupMirrors = []string{
-	"https://rsshub.rssforever.com",
-	"https://rsshub.feedly.com",
-	"https://hub.slarker.me",
 	"https://rsshub.app",
 }
 
@@ -115,9 +112,15 @@ func getCurrentRSSHub() string {
 func switchToBackup() {
 	currentMirrorIdx++
 	if currentMirrorIdx > len(backupMirrors) {
-		currentMirrorIdx = 1
+		currentMirrorIdx = 0 // 回到主实例重试
 	}
-	log.Printf("🔄 Switching to backup mirror: %s", getCurrentRSSHub())
+	log.Printf("🔄 Switching to mirror: %s", getCurrentRSSHub())
+}
+
+// 重置回主 RSSHub
+func resetToPrimary() {
+	currentMirrorIdx = 0
+	log.Printf("🔄 Reset to primary RSSHub: %s", primaryRSSHub)
 }
 
 // 带重试的 HTTP 请求
@@ -430,22 +433,56 @@ func formatMessage(items []TrendItem) string {
 	return sb.String()
 }
 
-// 预热 RSSHub
+// 预热 RSSHub（等待冷启动）
 func warmupRSSHub() {
-	log.Println("🔥 Warming up RSSHub...")
+	log.Printf("🔥 Warming up RSSHub: %s", primaryRSSHub)
 	
-	_, err := fetchWithRetry(primaryRSSHub, 1)
-	if err != nil {
-		log.Printf("⚠️ Primary RSSHub warmup failed: %v", err)
-		switchToBackup()
-	} else {
-		log.Println("✅ RSSHub warmup successful")
+	// Railway 免费版冷启动可能需要 60 秒
+	// 创建一个专门用于预热的客户端，超时更长
+	warmupClient := &http.Client{
+		Timeout: 90 * time.Second,
 	}
+	
+	// 尝试 3 次预热
+	for attempt := 1; attempt <= 3; attempt++ {
+		log.Printf("🔄 Warmup attempt %d/3...", attempt)
+		
+		req, _ := http.NewRequest("GET", primaryRSSHub, nil)
+		req.Header.Set("User-Agent", getRandomUA())
+		
+		resp, err := warmupClient.Do(req)
+		if err != nil {
+			log.Printf("⚠️ Warmup attempt %d failed: %v", attempt, err)
+			if attempt < 3 {
+				time.Sleep(10 * time.Second)
+			}
+			continue
+		}
+		resp.Body.Close()
+		
+		if resp.StatusCode == 200 {
+			log.Println("✅ RSSHub warmup successful!")
+			return
+		}
+		
+		log.Printf("⚠️ Warmup returned %d", resp.StatusCode)
+		if attempt < 3 {
+			time.Sleep(10 * time.Second)
+		}
+	}
+	
+	log.Printf("⚠️ Primary RSSHub warmup failed after 3 attempts, will try backup if needed")
 }
 
 func main() {
 	startTime := time.Now()
 	log.Println("🚀 Go TrendMonitor Starting...")
+	log.Println("=" + strings.Repeat("=", 50))
+	
+	// 显示配置
+	log.Printf("📡 Primary RSSHub: %s", primaryRSSHub)
+	log.Printf("📡 Backup mirrors: %v", backupMirrors)
+	log.Println("=" + strings.Repeat("=", 50))
 	
 	// 获取项目根目录
 	execPath, _ := os.Executable()
@@ -455,6 +492,11 @@ func main() {
 	if strings.Contains(execPath, "go-build") {
 		projectRoot, _ = os.Getwd()
 		projectRoot = filepath.Dir(projectRoot)
+	}
+	
+	// GitHub Actions 环境
+	if os.Getenv("GITHUB_WORKSPACE") != "" {
+		projectRoot = os.Getenv("GITHUB_WORKSPACE")
 	}
 	
 	// 配置文件路径
