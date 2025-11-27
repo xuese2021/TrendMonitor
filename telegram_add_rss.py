@@ -1,11 +1,13 @@
 """
-Telegram Bot - 一键添加 RSS 源到 TrendMonitor
+Telegram Bot - 一键添加 RSS 源到 TrendMonitor（全自动版）
 
 使用方法：
 1. 在 Telegram 找 @BotFather 创建新 Bot，获取 Token
-2. 设置环境变量 ADD_RSS_BOT_TOKEN
+2. 设置环境变量：
+   - ADD_RSS_BOT_TOKEN: Telegram Bot Token
+   - AUTO_GIT_PUSH: 设为 1 启用自动提交
 3. 运行此脚本
-4. 发送 RSS 链接给 Bot，自动添加到配置文件
+4. 发送 RSS 链接给 Bot，自动添加并提交到 GitHub
 
 消息格式：
 - 直接发送 RSS 链接
@@ -17,6 +19,7 @@ import re
 import requests
 import time
 import logging
+import subprocess
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(message)s')
 logger = logging.getLogger(__name__)
@@ -24,7 +27,9 @@ logger = logging.getLogger(__name__)
 # 配置
 BOT_TOKEN = os.getenv('ADD_RSS_BOT_TOKEN', '')
 CONFIG_FILE = os.path.join(os.path.dirname(__file__), 'config', 'rss_feeds.txt')
+PROJECT_DIR = os.path.dirname(__file__)
 ALLOWED_USERS = os.getenv('ALLOWED_USERS', '').split(',')  # 允许的用户ID，逗号分隔
+AUTO_GIT_PUSH = os.getenv('AUTO_GIT_PUSH', '1') == '1'  # 默认启用自动提交
 
 def get_updates(offset=None):
     """获取 Telegram 更新"""
@@ -104,6 +109,54 @@ def add_to_config(name, url):
     except Exception as e:
         return False, f"添加失败: {e}"
 
+def git_commit_and_push(name):
+    """自动 git commit 和 push"""
+    if not AUTO_GIT_PUSH:
+        return False, "自动提交未启用"
+    
+    try:
+        # 切换到项目目录
+        os.chdir(PROJECT_DIR)
+        
+        # git add
+        result = subprocess.run(
+            ['git', 'add', 'config/rss_feeds.txt'],
+            capture_output=True, text=True, timeout=30
+        )
+        if result.returncode != 0:
+            return False, f"git add 失败: {result.stderr}"
+        
+        # git commit
+        commit_msg = f"Add RSS: {name}"
+        result = subprocess.run(
+            ['git', 'commit', '-m', commit_msg],
+            capture_output=True, text=True, timeout=30
+        )
+        if result.returncode != 0:
+            if 'nothing to commit' in result.stdout:
+                return True, "无需提交（没有更改）"
+            return False, f"git commit 失败: {result.stderr}"
+        
+        # git pull (避免冲突)
+        subprocess.run(
+            ['git', 'pull', '--rebase'],
+            capture_output=True, text=True, timeout=60
+        )
+        
+        # git push
+        result = subprocess.run(
+            ['git', 'push'],
+            capture_output=True, text=True, timeout=60
+        )
+        if result.returncode != 0:
+            return False, f"git push 失败: {result.stderr}"
+        
+        return True, "已自动提交到 GitHub"
+    except subprocess.TimeoutExpired:
+        return False, "Git 操作超时"
+    except Exception as e:
+        return False, f"Git 操作失败: {e}"
+
 def validate_rss(url):
     """验证 RSS 是否可用"""
     try:
@@ -131,19 +184,27 @@ def handle_message(message):
     
     # 处理命令
     if text.startswith('/start'):
-        send_message(chat_id, """🤖 *RSS 添加 Bot*
+        auto_status = "✅ 已启用" if AUTO_GIT_PUSH else "❌ 未启用"
+        send_message(chat_id, f"""🤖 *RSS 添加 Bot（全自动版）*
 
-发送 RSS 链接，我会自动添加到 TrendMonitor 配置。
+发送 RSS 链接，我会自动：
+1. 验证 RSS 是否有效
+2. 添加到配置文件
+3. 自动提交到 GitHub
+
+*自动提交状态：* {auto_status}
 
 *支持格式：*
-1. 直接发送 RSS 链接
-2. `名称|链接` 格式
+• 直接发送 RSS 链接
+• `名称|链接` 格式
 
 *示例：*
 `https://rsshub.app/bilibili/popular/all`
 `B站热门|https://rsshub.app/bilibili/popular/all`
 
-发送 /list 查看当前配置的源数量""")
+*命令：*
+/list - 查看当前源数量
+/id - 查看你的用户ID""")
         return
     
     if text.startswith('/list'):
@@ -179,11 +240,21 @@ def handle_message(message):
     success, result = add_to_config(name, url)
     
     if success:
-        send_message(chat_id, f"""✅ *添加成功！*
+        msg = f"""✅ *添加成功！*
 
 📰 名称: {name}
 🔗 链接: `{url}`
-
+"""
+        # 自动提交到 GitHub
+        if AUTO_GIT_PUSH:
+            send_message(chat_id, msg + "\n🔄 正在自动提交到 GitHub...")
+            git_success, git_msg = git_commit_and_push(name)
+            if git_success:
+                send_message(chat_id, f"✅ {git_msg}\n\n🎉 下次运行时将自动抓取此源！")
+            else:
+                send_message(chat_id, f"⚠️ {git_msg}\n\n请手动提交")
+        else:
+            send_message(chat_id, msg + """
 ⚠️ 请手动提交到 GitHub:
 ```
 git add config/rss_feeds.txt
