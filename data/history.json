@@ -1,70 +1,5 @@
 [
   {
-    "title": "Feat V1.4.0 发布：让 AI Agent 开发如呼吸般简单",
-    "url": "https://www.oschina.net/news/386796",
-    "timestamp": "2025-12-01T02:40:14Z"
-  },
-  {
-    "title": "谁能听懂马斯克的冷笑话",
-    "url": "https://wallstreetcn.com/charts/41958139",
-    "timestamp": "2025-12-01T02:40:14Z"
-  },
-  {
-    "title": "市场存在误解？大摩：以往内存涨价周期，小米利润率“实际上有所改善”",
-    "url": "https://wallstreetcn.com/articles/3760424",
-    "timestamp": "2025-12-01T02:40:14Z"
-  },
-  {
-    "title": "马斯克的“野心”：特斯拉+Space X+xAI=太空AI颠覆一切",
-    "url": "https://wallstreetcn.com/charts/41958137",
-    "timestamp": "2025-12-01T02:40:14Z"
-  },
-  {
-    "title": "流式数据湖Paimon探秘之旅 (十五) 文件清理与维护",
-    "url": "https://juejin.cn/post/7578366810530037795",
-    "timestamp": "2025-12-01T02:40:14Z"
-  },
-  {
-    "title": "流式数据湖Paimon探秘之旅 (十四) Tag与分支管理",
-    "url": "https://juejin.cn/post/7577795545441599522",
-    "timestamp": "2025-12-01T02:40:14Z"
-  },
-  {
-    "title": "流式数据湖Paimon探秘之旅 (十三) 分区与过期管理",
-    "url": "https://juejin.cn/post/7577957806211497999",
-    "timestamp": "2025-12-01T02:40:14Z"
-  },
-  {
-    "title": "流式数据湖Paimon探秘之旅 (十二) 索引与加速",
-    "url": "https://juejin.cn/post/7578063389609082915",
-    "timestamp": "2025-12-01T02:40:14Z"
-  },
-  {
-    "title": "流式数据湖Paimon探秘之旅 (十) Merge Engine合并引擎",
-    "url": "https://juejin.cn/post/7578029371007631400",
-    "timestamp": "2025-12-01T02:40:14Z"
-  },
-  {
-    "title": "流式数据湖Paimon探秘之旅 (九) Compaction压缩机制",
-    "url": "https://juejin.cn/post/7578063389609000995",
-    "timestamp": "2025-12-01T02:40:14Z"
-  },
-  {
-    "title": "流式数据湖Paimon探秘之旅 (八) LSM Tree核心原理",
-    "url": "https://juejin.cn/post/7578003302488915968",
-    "timestamp": "2025-12-01T02:40:14Z"
-  },
-  {
-    "title": "Java实现接口幂等性：程序员的“后悔药”",
-    "url": "https://juejin.cn/post/7578063389608935459",
-    "timestamp": "2025-12-01T02:40:14Z"
-  },
-  {
-    "title": "流式数据湖Paimon探秘之旅 (五) 写入流程全解析",
-    "url": "https://juejin.cn/post/7577957806211350543",
-    "timestamp": "2025-12-01T02:40:14Z"
-  },
-  {
     "title": "David Sacks称《纽约时报》为“造假工厂”，曾试图发布不实内容",
     "url": "https://jinse.cn/lives/489416.html",
     "timestamp": "2025-12-01T02:40:14Z"
@@ -4998,5 +4933,70 @@
     "title": "用了几天华为Mate80 Pro Max 我感觉它堆料有点过猛了",
     "url": "https://m.mydrivers.com/newsview/1090647.html",
     "timestamp": "2025-12-04T18:54:59Z"
+  },
+  {
+    "title": "美股盘前要点 | 美国国会据报阻止对华销售芯片禁令通过，苹果10月全球份额达24.2%",
+    "url": "https://www.gelonghui.com/p/3324540",
+    "timestamp": "2025-12-04T20:44:31Z"
+  },
+  {
+    "title": "US approves potential $2.68 billion sale of air strike weapons to Canada",
+    "url": "https://www.reuters.com/business/aerospace-defense/us-approves-potential-268-billion-sale-air-strike-weapons-canada-2025-12-04/",
+    "timestamp": "2025-12-04T20:44:31Z"
+  },
+  {
+    "title": "谷歌称在Gemini应用程序中向谷歌AI超强版订阅用户推出Gemini 3深度思考模式",
+    "url": "https://news.10jqka.com.cn/20251205/c672976635.shtml",
+    "timestamp": "2025-12-04T20:44:31Z"
+  },
+  {
+    "title": "俄罗斯全面封禁苹果FaceTime 进一步打压加密通信应用",
+    "url": "https://www.cnbeta.com.tw/articles/tech/1539540.htm",
+    "timestamp": "2025-12-04T20:44:31Z"
+  },
+  {
+    "title": "Meta公司大幅削减预算 放弃其元宇宙梦想",
+    "url": "https://www.cnbeta.com.tw/articles/tech/1539538.htm",
+    "timestamp": "2025-12-04T20:44:31Z"
+  },
+  {
+    "title": "iPhone Air成苹果最不保值的手机 贬值率破纪录",
+    "url": "https://www.cnbeta.com.tw/articles/tech/1539532.htm",
+    "timestamp": "2025-12-04T20:44:31Z"
+  },
+  {
+    "title": "英伟达有个 “幸福的烦恼”：现金太多了",
+    "url": "https://www.cnbeta.com.tw/articles/tech/1539528.htm",
+    "timestamp": "2025-12-04T20:44:31Z"
+  },
+  {
+    "title": "PyTogether: Collaborative lightweight real-time Python IDE for teachers/learners",
+    "url": "https://github.com/SJRiz/pytogether",
+    "timestamp": "2025-12-04T20:44:31Z"
+  },
+  {
+    "title": "How elites could shape mass preferences as AI reduces persuasion costs",
+    "url": "https://arxiv.org/abs/2512.04047",
+    "timestamp": "2025-12-04T20:44:31Z"
+  },
+  {
+    "title": "《全面战争：中世纪3》公布！已进入早期开发阶段",
+    "url": "https://www.gamersky.com/news/202512/2054341.shtml",
+    "timestamp": "2025-12-04T20:44:31Z"
+  },
+  {
+    "title": "索尼官宣PS5全新大作！《求生之路》创始人领导开发",
+    "url": "https://www.gamersky.com/news/202512/2054337.shtml",
+    "timestamp": "2025-12-04T20:44:31Z"
+  },
+  {
+    "title": "《AC黑旗RE》或是育碧TGA最大惊喜！爆料明年发售",
+    "url": "https://www.gamersky.com/news/202512/2054336.shtml",
+    "timestamp": "2025-12-04T20:44:31Z"
+  },
+  {
+    "title": "Cloudflare DNS 解析策略",
+    "url": "https://www.v2ex.com/t/1177013",
+    "timestamp": "2025-12-04T20:44:31Z"
   }
 ]
