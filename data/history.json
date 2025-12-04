@@ -1,310 +1,5 @@
 [
   {
-    "title": "Post-mortem of Shai-Hulud attack on November 24th, 2025",
-    "url": "https://posthog.com/blog/nov-24-shai-hulud-attack-post-mortem",
-    "timestamp": "2025-11-29T22:37:56Z"
-  },
-  {
-    "title": "Show HN: Nano PDF – A CLI Tool to Edit PDFs with Gemini's Nano Banana",
-    "url": "https://github.com/gavrielc/Nano-PDF",
-    "timestamp": "2025-11-29T22:37:56Z"
-  },
-  {
-    "title": "North Korea's Kim stresses Air Force's nuclear war deterrence on its 80th anniversary",
-    "url": "https://www.reuters.com/world/china/north-koreas-kim-stresses-air-forces-nuclear-war-deterrence-its-80th-anniversary-2025-11-29/",
-    "timestamp": "2025-11-29T22:37:56Z"
-  },
-  {
-    "title": "US State Department stops processing visas for Afghan allies",
-    "url": "https://www.reuters.com/world/us/us-state-department-stops-processing-visas-afghan-allies-2025-11-29/",
-    "timestamp": "2025-11-29T22:37:56Z"
-  },
-  {
-    "title": "The Protocol: Monad Airdrop + Blockchain Go Live",
-    "url": "https://www.coindesk.com/tech/2025/11/26/the-protocol-monad-airdrop-blockchain-go-live",
-    "timestamp": "2025-11-29T22:37:56Z"
-  },
-  {
-    "title": "Swiss Bank AMINA Trials Google Cloud's Ledger for Instant Payments",
-    "url": "https://www.coindesk.com/tech/2025/11/26/swiss-bank-amina-trials-google-cloud-s-ledger-for-instant-payments",
-    "timestamp": "2025-11-29T22:37:56Z"
-  },
-  {
-    "title": "OpenAI 或成史上烧钱最快的公司；特斯拉在印度两月，仅卖出100多辆车；《疯狂动物城2》刷新进口电影单日票房纪录｜极客早知道",
-    "url": "https://dig.ichouti.cn/link/45671507",
-    "timestamp": "2025-11-30T01:45:42.283392"
-  },
-  {
-    "title": "字节中兴合作的AI手机将于12月初发布，主打高权限Agent能力",
-    "url": "https://www.36kr.com/p/3573644282861958",
-    "timestamp": "2025-11-30T02:26:23Z"
-  },
-  {
-    "title": "为什么人人都该具备人工智能素养？",
-    "url": "https://www.36kr.com/p/3546884797427587",
-    "timestamp": "2025-11-30T02:26:23Z"
-  },
-  {
-    "title": "iOS微信8.0.66正式版发布：彻底抛弃老系统、截图转发一键搞定",
-    "url": "https://www.cnbeta.com.tw/articles/tech/1538580.htm",
-    "timestamp": "2025-11-30T02:26:23Z"
-  },
-  {
-    "title": "dYdX 社区通过「清算返利试点计划」新提案",
-    "url": "https://www.techflowpost.com/newsletter/detail_106939.html",
-    "timestamp": "2025-11-30T02:26:23Z"
-  },
-  {
-    "title": "怀俄明州稳定币委员会发布稳定币 FRNT 测试网水龙头",
-    "url": "https://www.techflowpost.com/newsletter/detail_106938.html",
-    "timestamp": "2025-11-30T02:26:23Z"
-  },
-  {
-    "title": "开发了一个安卓 APP，发现上架要钱[笑哭]",
-    "url": "https://www.v2ex.com/t/1175901",
-    "timestamp": "2025-11-30T02:26:23Z"
-  },
-  {
-    "title": "做了一个剪贴板工具，轻量、简洁、好看、开源，欢迎尝试～",
-    "url": "https://www.v2ex.com/t/1175900",
-    "timestamp": "2025-11-30T02:26:23Z"
-  },
-  {
-    "title": "基于 KVM 的虚拟化（PVE/unraid/oVirt/Openstack），现在能实现 Win 虚拟机下的 3D 加速吗？",
-    "url": "https://www.v2ex.com/t/1175892",
-    "timestamp": "2025-11-30T02:26:23Z"
-  },
-  {
-    "title": "美国“黑五”销售额同比增4.1%，AI流量暴增600%，通胀和“K型经济”依旧是主题",
-    "url": "https://wallstreetcn.com/articles/3760389",
-    "timestamp": "2025-11-30T02:26:23Z"
-  },
-  {
-    "title": "央行、科技部等部门，重磅会议！",
-    "url": "https://www.gelonghui.com/p/3290250",
-    "timestamp": "2025-11-30T02:26:23Z"
-  },
-  {
-    "title": "AI大战A股！公司全员AI炒股，谁会成为理财王？",
-    "url": "https://www.bilibili.com/video/BV18HUZBPE5w",
-    "timestamp": "2025-11-30T02:26:23Z"
-  },
-  {
-    "title": "《赛博朋克2》北美团队达80人！超90%曾参与3A开发",
-    "url": "https://www.gamersky.com/news/202511/2052210.shtml",
-    "timestamp": "2025-11-30T02:26:23Z"
-  },
-  {
-    "title": "《太吾绘卷：天幕心帷》宣布跳票！最新开发成果公开",
-    "url": "https://www.gamersky.com/news/202511/2052209.shtml",
-    "timestamp": "2025-11-30T02:26:23Z"
-  },
-  {
-    "title": "不希望移植成为开发者痛苦！Xbox发行负责人有话说",
-    "url": "https://www.gamersky.com/news/202511/2052203.shtml",
-    "timestamp": "2025-11-30T02:26:23Z"
-  },
-  {
-    "title": "dYdX社区通过“清算返利试点计划”新提案",
-    "url": "https://jinse.cn/lives/489318.html",
-    "timestamp": "2025-11-30T02:26:23Z"
-  },
-  {
-    "title": "怀俄明州稳定币委员会发布稳定币 FRNT 测试网水龙头",
-    "url": "https://jinse.cn/lives/489312.html",
-    "timestamp": "2025-11-30T02:26:23Z"
-  },
-  {
-    "title": "Sahara AI：注意到SAHARA价格异常波动，已展开内部调查",
-    "url": "https://jinse.cn/lives/489311.html",
-    "timestamp": "2025-11-30T02:26:23Z"
-  },
-  {
-    "title": "Let go of StackOverflow; communities must take ownership",
-    "url": "https://ahelwer.ca/post/2025-11-25-stackoverflow/",
-    "timestamp": "2025-11-30T02:26:23Z"
-  },
-  {
-    "title": "Switch2 硬件大升级/锁区差价/马车三方井喷/猿神压轴/任天堂发布会【两分钟发布会】科技美学/那岩",
-    "url": "https://www.bilibili.com/video/BV18XfTYoEbC",
-    "timestamp": "2025-11-30T04:50:41Z"
-  },
-  {
-    "title": "华为智慧屏 S6 Pro新品开箱：鸿蒙AI电视完全体？",
-    "url": "https://www.bilibili.com/video/BV19JfKY8Eev",
-    "timestamp": "2025-11-30T04:50:41Z"
-  },
-  {
-    "title": "苏妈杀疯，AMD笔记本跑爆236B大模型！",
-    "url": "https://www.bilibili.com/video/BV1W5fAYTEMk",
-    "timestamp": "2025-11-30T04:50:41Z"
-  },
-  {
-    "title": "小米su7高速事故3人遇难",
-    "url": "https://www.bilibili.com/video/BV1NXfcYYEVq",
-    "timestamp": "2025-11-30T04:50:41Z"
-  },
-  {
-    "title": "三星电子厂S系列25号智能电话机",
-    "url": "https://www.bilibili.com/video/BV18KZhYpEbi",
-    "timestamp": "2025-11-30T04:50:41Z"
-  },
-  {
-    "title": "钻石定制版iPhone17 Pro系列发布：售价1.02万美元起",
-    "url": "https://m.mydrivers.com/newsview/1089614.html",
-    "timestamp": "2025-11-30T04:50:41Z"
-  },
-  {
-    "title": "西藏人工智能从场景应用走向藏语大模型研发",
-    "url": "https://www.36kr.com/newsflashes/3575025823710345",
-    "timestamp": "2025-11-30T04:50:41Z"
-  },
-  {
-    "title": "开发了一个生成任意题目解题步骤的应用",
-    "url": "https://www.v2ex.com/t/1175919",
-    "timestamp": "2025-11-30T04:50:41Z"
-  },
-  {
-    "title": "大家询问 AI 时，多源信息交叉验证怎么做的，有无现成平台推荐",
-    "url": "https://www.v2ex.com/t/1175916",
-    "timestamp": "2025-11-30T04:50:41Z"
-  },
-  {
-    "title": "[求助贴] 有没有推荐的 vue3 页面设计器 大屏设计器（源码可以拿来二开的 开源 or 收费）",
-    "url": "https://www.v2ex.com/t/1175912",
-    "timestamp": "2025-11-30T04:50:41Z"
-  },
-  {
-    "title": "AI 没有替代程序员是因为程序员比 AI 便宜？",
-    "url": "https://www.v2ex.com/t/1175908",
-    "timestamp": "2025-11-30T04:50:41Z"
-  },
-  {
-    "title": "耗资 270 亿美元，Meta 超大规模数据中心正给美国一小镇带来严重破坏",
-    "url": "https://www.ithome.com/0/901/338.htm",
-    "timestamp": "2025-11-30T04:50:41Z"
-  },
-  {
-    "title": "一文看懂华为昇腾芯片",
-    "url": "https://www.ithome.com/0/901/335.htm",
-    "timestamp": "2025-11-30T04:50:41Z"
-  },
-  {
-    "title": "2025 年 12 月科技事件日历一览表",
-    "url": "https://www.ithome.com/0/901/316.htm",
-    "timestamp": "2025-11-30T04:50:41Z"
-  },
-  {
-    "title": "男子手部植入芯片后忘记密码，只能靠“暴力破解”",
-    "url": "https://www.ithome.com/0/901/315.htm",
-    "timestamp": "2025-11-30T04:50:41Z"
-  },
-  {
-    "title": "科技昨夜今晨 1130：中国电影单日票房再破 6 亿；华为客服解释“5A”标识；苹果 10 月全球手机份额飙至 24.2% 刷新单月纪录...",
-    "url": "https://www.ithome.com/0/901/301.htm",
-    "timestamp": "2025-11-30T04:50:41Z"
-  },
-  {
-    "title": "省下5万培训费！这份Python量化自学路线，比付费课更狠",
-    "url": "https://juejin.cn/post/7577683422878498850",
-    "timestamp": "2025-11-30T04:50:41Z"
-  },
-  {
-    "title": "Python 饼图入门：3 行代码展示数据占比",
-    "url": "https://juejin.cn/post/7577690150092767272",
-    "timestamp": "2025-11-30T04:50:41Z"
-  },
-  {
-    "title": "Go微服务通信优化：从协议选择到性能调优全攻略｜Go语言进阶（20）",
-    "url": "https://juejin.cn/post/7577683422878056482",
-    "timestamp": "2025-11-30T04:50:41Z"
-  },
-  {
-    "title": "FastAPI - Tracking ID的设计",
-    "url": "https://juejin.cn/post/7577702891272994851",
-    "timestamp": "2025-11-30T04:50:41Z"
-  },
-  {
-    "title": "瑞士加密银行 Amina Bank 完成通过 Google Cloud 进行的 DLT 结算测试",
-    "url": "https://www.techflowpost.com/newsletter/detail_106946.html",
-    "timestamp": "2025-11-30T04:50:41Z"
-  },
-  {
-    "title": "阿里夸克S1AI眼镜，缺一个“AppStore”",
-    "url": "https://www.36kr.com/p/3574330692582528",
-    "timestamp": "2025-11-30T04:50:41Z"
-  },
-  {
-    "title": "人形机器人死亡报告：我们发现6大高危方向",
-    "url": "https://www.36kr.com/p/3574072311790723",
-    "timestamp": "2025-11-30T04:50:41Z"
-  },
-  {
-    "title": "uni-app开发app之前提须知（IOS/安卓）",
-    "url": "https://juejin.cn/post/7577681092138467363",
-    "timestamp": "2025-11-30T04:50:41Z"
-  },
-  {
-    "title": "使用 Node.js 批量导入多语言标签到 Strapi",
-    "url": "https://juejin.cn/post/7577702891273568291",
-    "timestamp": "2025-11-30T04:50:41Z"
-  },
-  {
-    "title": "React 组件的组合模式之道 (Composition Pattern)",
-    "url": "https://juejin.cn/post/7577675494067896346",
-    "timestamp": "2025-11-30T04:50:41Z"
-  },
-  {
-    "title": "寒潮蓝色预警发布！务必注意大风降温天气",
-    "url": "https://china.huanqiu.com/article/4PLjxoBw8mh",
-    "timestamp": "2025-11-30T04:50:41Z"
-  },
-  {
-    "title": "Australia climate change protest disrupts shipping at coal port, 21 arrested",
-    "url": "https://www.reuters.com/sustainability/cop/australia-climate-change-protest-disrupts-shipping-coal-port-21-arrested-2025-11-30/",
-    "timestamp": "2025-11-30T04:50:41Z"
-  },
-  {
-    "title": "Anger simmers over Hong Kong deadly blaze as Beijing warns against \"disruption\"",
-    "url": "https://www.reuters.com/world/china/anger-simmers-over-hong-kong-deadly-blaze-beijing-warns-against-disruption-2025-11-30/",
-    "timestamp": "2025-11-30T04:50:41Z"
-  },
-  {
-    "title": "Nicaragua's government releases about 40 political prisoners, activists say",
-    "url": "https://www.reuters.com/world/americas/nicaraguan-authorities-release-about-40-political-critics-prison-political-2025-11-29/",
-    "timestamp": "2025-11-30T04:50:41Z"
-  },
-  {
-    "title": "Transformer作者爆料GPT-5.1内幕！OpenAI内部命名规则变乱了",
-    "url": "https://www.qbitai.com/2025/11/357506.html",
-    "timestamp": "2025-11-30T06:52:09Z"
-  },
-  {
-    "title": "AIGC检测为何频频“看走眼”？腾讯优图揭秘：问题可能出在数据源头",
-    "url": "https://www.qbitai.com/2025/11/357568.html",
-    "timestamp": "2025-11-30T06:52:09Z"
-  },
-  {
-    "title": "AI一直在掩盖自己有意识?! GPT/Gemini都在说谎，Claude表现最异常",
-    "url": "https://www.qbitai.com/2025/11/357491.html",
-    "timestamp": "2025-11-30T06:52:09Z"
-  },
-  {
-    "title": "全球首个具身智能本科专业！上海交大公告，联合华为培养，李飞飞高徒带队",
-    "url": "https://www.qbitai.com/2025/11/357477.html",
-    "timestamp": "2025-11-30T06:52:09Z"
-  },
-  {
-    "title": "混元OCR模型核心技术揭秘：统一框架、真端到端",
-    "url": "https://www.qbitai.com/2025/11/357456.html",
-    "timestamp": "2025-11-30T06:52:09Z"
-  },
-  {
-    "title": "华尔街尬捧TPU学术界懵了：何恺明5年前就是TPU编程高手，多新鲜",
-    "url": "https://www.qbitai.com/2025/11/357440.html",
-    "timestamp": "2025-11-30T06:52:09Z"
-  },
-  {
     "title": "东部战区海军某部组织跨昼夜反潜飞行训练",
     "url": "https://military.cctv.com/2025/11/30/ARTIrnyoBRfGcPgpkl2iY15I251130.shtml",
     "timestamp": "2025-11-30T06:52:09Z"
@@ -4998,5 +4693,310 @@
     "title": "苹果发布iOS 26.2 RC版：新动效丝滑流畅 液态玻璃更沉浸",
     "url": "https://www.cnbeta.com.tw/articles/tech/1539340.htm",
     "timestamp": "2025-12-04T02:16:17Z"
+  },
+  {
+    "title": "科大讯飞获首届“AI领航杯”大赛技术创新奖及AI+安全赛道一等奖",
+    "url": "https://www.qbitai.com/2025/12/358574.html",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "记忆张量 × 商汤大装置：国产 GPGPU 推理成本反超 A100！",
+    "url": "https://www.qbitai.com/2025/12/358566.html",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "不知道怎么写 Nano Banana Pro 提示词？分享你一个结构化示例，复刻任意图片",
+    "url": "https://juejin.cn/post/7579562420978761769",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "React 大屏可视化适配方案：vfit-react 发布 🚀",
+    "url": "https://juejin.cn/post/7579546893190299663",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "vue3很丝滑的table表格向上滚动效果，多用于统计页面",
+    "url": "https://juejin.cn/post/7579512734297571366",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "百度地图JSAPI THREE Label 组件使用指南，轻松实现地图标签渲染",
+    "url": "https://juejin.cn/post/7579562420978466857",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "箭头函数的艺术：如何优雅的写好JS代码",
+    "url": "https://juejin.cn/post/7579673620940996658",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "【Vue2-Niubility-Uploader】一个强大的 Vue2 文件上传解决方案",
+    "url": "https://juejin.cn/post/7579573664228573193",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "Uniswap创始人反对将DeFi协议开发者视同中心化中介进行监管",
+    "url": "https://jinse.cn/lives/490015.html",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "Uniswap创始人反对将DeFi开发者按中心化机构监管",
+    "url": "https://jinse.cn/lives/490014.html",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "Uniswap创始人指责Citadel游说SEC将DeFi开发者视为中心化中介",
+    "url": "https://www.techflowpost.com/newsletter/detail_107401.html",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "前 Coinbase 开发者平台负责人宣布加入 Y Combinator (YC) 并担任访问合伙人",
+    "url": "https://www.techflowpost.com/newsletter/detail_107396.html",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "可灵2.6全量上线，首发“音画同出”多模态生成能力",
+    "url": "https://www.pingwest.com/w/309584",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "火山引擎发布豆包图像模型 Seedream 4.5",
+    "url": "https://www.pingwest.com/w/309582",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "AWS发布自研AI芯片Trainium3，挑战Nvidia主导地位",
+    "url": "https://www.pingwest.com/w/309580",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "Google什么时候这么会做产品了？",
+    "url": "https://www.pingwest.com/a/309553",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "全球行动者共聚2025可持续社会价值创新大会，为AI时代的可持续发展探寻“解法”",
+    "url": "https://www.pingwest.com/w/309578",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "理想汽车发布AI智能眼镜Livis",
+    "url": "https://www.pingwest.com/w/309577",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "AWS与Google Cloud推多云互联新服务",
+    "url": "https://www.pingwest.com/w/309575",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "Meta挖角苹果设计高管Alan Dye",
+    "url": "https://www.pingwest.com/w/309574",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "漫威银护开发商项目曝光！经典黑暗奇幻ARPG重启",
+    "url": "https://www.gamersky.com/news/202512/2054031.shtml",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "Australia says the world will follow social media ban as Meta starts blocking teens",
+    "url": "https://www.reuters.com/world/asia-pacific/australia-says-world-will-follow-social-media-ban-meta-starts-blocking-teens-2025-12-04/",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "Bangladesh’s Gen-Z battles to gain political ground after ousting Hasina",
+    "url": "https://www.reuters.com/world/asia-pacific/bangladeshs-gen-z-battles-gain-political-ground-after-ousting-hasina-2025-12-04/",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "豆包手机助手回应争议：不会代替用户进行相关授权和敏感操作",
+    "url": "https://www.oschina.net/news/387600",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "OpenAI 宣布向 200 多个非营利组织捐赠 4050 万美元",
+    "url": "https://www.oschina.net/news/387589",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "Entity Explorer：基于 UModel 的实体探索平台",
+    "url": "https://my.oschina.net/u/3874284/blog/18876179",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "快手正式上线首个音画同出模型：可灵视频 2.6",
+    "url": "https://www.oschina.net/news/387569",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "SCALE | 2025 年 11 月《大模型 SQL 能力排行榜》发布",
+    "url": "https://www.oschina.net/news/387562",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "🔥 模型即服务 - Wow 框架 v6.6.9 发布！🏗️",
+    "url": "https://www.oschina.net/news/387561",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "微软否认下调 AI 增长目标：称媒体混淆“增长”与“配额”",
+    "url": "https://www.oschina.net/news/387556",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "美股：坏消息又变好消息？AI真正的信号来了",
+    "url": "https://www.36kr.com/p/3580547617315207",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "11.98 万，赛力斯又一重磅新车发布，卷出新高度",
+    "url": "https://www.36kr.com/p/3579913215425409",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "5.5亿，黑芝麻智能收购广东AI芯片公司",
+    "url": "https://www.36kr.com/p/3580647399127939",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "台积电鲁立忠：能源效率成AI普及关键 新技术节点可比上代减少30%功耗",
+    "url": "https://news.10jqka.com.cn/20251204/c672954382.shtml",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "我国信息通信领域首个国家重大科技基础设施正式投入运行",
+    "url": "https://news.10jqka.com.cn/20251204/c672954234.shtml",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "戴森推出真Ai清洁机器人",
+    "url": "https://news.10jqka.com.cn/20251204/c672954136.shtml",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "派早报：一加推出 Ace 6T、理想发布 Livis 智能眼镜等",
+    "url": "https://sspai.com/post/104291",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "OpenAI内部代码泄露！最强模型「皇帝」登基，0思考延时吓人",
+    "url": "https://dig.ichouti.cn/link/45695610",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "华尔街重新审视AI投资：泡沫之争无意义，关键是如何应对投资与变现之间的错位和滞后",
+    "url": "https://dig.ichouti.cn/link/45694711",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "破解民营企业融资难融资贵问题 最高法发布一批典型案例",
+    "url": "https://news.cctv.com/2025/12/04/ARTI3e2XBbY75aQENSEPJVtT251204.shtml",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "[深圳][部门直招][嘉立创][18-30k x 14 薪]急招 Java 后端和前端工程师",
+    "url": "https://www.v2ex.com/t/1176866",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "开发 Liquid Glass 的主管 Alan Dye 离开苹果了",
+    "url": "https://www.v2ex.com/t/1176865",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "独立开发就应该被特殊对待吗？",
+    "url": "https://www.v2ex.com/t/1176863",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "理财小白前来问问，有哪些复利可以投？国内国外或者 web3 的有没有",
+    "url": "https://www.v2ex.com/t/1176859",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "中兴的豆包助手手机体验上市了，各位老哥怎么看，有什么担心的吗？",
+    "url": "https://www.v2ex.com/t/1176858",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "估值7.5亿美元初创意欲「撬动」8000亿半导体市场？前谷歌AlphaChip主导者创业研发「AI芯片设计自动化」",
+    "url": "https://www.36kr.com/p/3580666975058816",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "Salesforce ：AI Agent“难产”，SaaS龙头已沦为价值股？",
+    "url": "https://www.36kr.com/p/3580611101277314",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "AI把音综的事全干了",
+    "url": "https://www.36kr.com/p/3580678298942343",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "Spring AI + Redis 向量库实战",
+    "url": "https://juejin.cn/post/7579573664228835337",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "Java 匿名内部类简明指南（重点）",
+    "url": "https://juejin.cn/post/7579496954252574760",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "艾体宝干货 | Redis Java 开发系列#2 数据结构",
+    "url": "https://juejin.cn/post/7579567346390630426",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "3 变量 国产仓颉编程语言 零基础入门教程",
+    "url": "https://juejin.cn/post/7579567346390532122",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "一文带你掌握MyBatis-Plus代码生成器：从入门到精通，实现原理与自定义模板全解析",
+    "url": "https://juejin.cn/post/7579494852654219298",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "基于 Microsoft Agent Framework 集成 DeepSeek 大模型的实践",
+    "url": "https://juejin.cn/post/7579512734297260070",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "作为开发，你真的懂 OOM 吗？实测 3 种场景，搞懂 JVM 崩溃真相",
+    "url": "https://juejin.cn/post/7579544918076358691",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "Agent平台消息节点输出设计思路",
+    "url": "https://juejin.cn/post/7579673620940701746",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "Java 内部类指南",
+    "url": "https://juejin.cn/post/7579496954252460072",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "我是 8 年 Java 工程师，让 TRAE SOLO 帮我学 Vue，竟然真香了！",
+    "url": "https://juejin.cn/post/7579496954251935784",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "Canada’s Blockchain Advantage: Small Enough to Move Fast, Big Enough to Matter",
+    "url": "https://www.coindesk.com/consensus-toronto-2025-coverage/2025/04/23/canadas-blockchain-advantage-small-enough-to-move-fast-big-enough-to-matter",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "The GPT Gold Rush Is Failing Crypto Traders",
+    "url": "https://www.coindesk.com/consensus-toronto-2025-coverage/2025/04/21/the-gpt-gold-rush-is-failing-crypto-traders",
+    "timestamp": "2025-12-04T04:49:07Z"
+  },
+  {
+    "title": "恒指午间休盘涨0.19%，恒生科技指数涨张0.58%",
+    "url": "https://www.36kr.com/newsflashes/3580707142335360",
+    "timestamp": "2025-12-04T04:49:07Z"
   }
 ]
