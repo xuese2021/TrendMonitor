@@ -1,65 +1,5 @@
 [
   {
-    "title": "NVIDIA独占台积电尖端A16制程！用于下一代GPU",
-    "url": "https://m.mydrivers.com/newsview/1090025.html",
-    "timestamp": "2025-12-02T04:50:38Z"
-  },
-  {
-    "title": "马斯克官宣漂亮高管女友：已连生4个娃",
-    "url": "https://m.mydrivers.com/newsview/1090023.html",
-    "timestamp": "2025-12-02T04:50:38Z"
-  },
-  {
-    "title": "“AI宠儿”秒成“败家子”，Meta还能杀回来吗？",
-    "url": "https://www.huxiu.com/article/4812303.html",
-    "timestamp": "2025-12-02T04:50:38Z"
-  },
-  {
-    "title": "全球顶级AI杀向美股，这次AI还能赚到钱吗？",
-    "url": "https://www.huxiu.com/article/4812325.html",
-    "timestamp": "2025-12-02T04:50:38Z"
-  },
-  {
-    "title": "​Nvidia 发布新 AI 模型 Alpamayo-R1",
-    "url": "https://www.oschina.net/news/387092",
-    "timestamp": "2025-12-02T04:50:38Z"
-  },
-  {
-    "title": "快手正式全量上线可灵 AI 视频 O1 模型，全球首个统一多模态视频模型",
-    "url": "https://www.oschina.net/news/387077",
-    "timestamp": "2025-12-02T04:50:38Z"
-  },
-  {
-    "title": "ip2region 3.10.0 发布 - C++ IPv6 \u0026 Java 并发安全支持",
-    "url": "https://www.oschina.net/news/387076/ip2region-3-10-0-released",
-    "timestamp": "2025-12-02T04:50:38Z"
-  },
-  {
-    "title": "谷歌 Antigravity 意外清空用户 D 盘",
-    "url": "https://www.oschina.net/news/387073",
-    "timestamp": "2025-12-02T04:50:38Z"
-  },
-  {
-    "title": "Ant Design X 2.0 正式发布，面向 AI 应用的 React UI 库",
-    "url": "https://www.oschina.net/news/387069",
-    "timestamp": "2025-12-02T04:50:38Z"
-  },
-  {
-    "title": "开源、免费、轻量级 Gin 多租户基础框架 ginGfast V1.1 更新代码生成功能",
-    "url": "https://www.oschina.net/news/387067",
-    "timestamp": "2025-12-02T04:50:38Z"
-  },
-  {
-    "title": "网警破获“AI 换脸”侵入计算机案",
-    "url": "https://www.oschina.net/news/387064",
-    "timestamp": "2025-12-02T04:50:38Z"
-  },
-  {
-    "title": "Cherry Studio v1.7.1 正式发布，Agent 功能重磅上线",
-    "url": "https://www.oschina.net/news/387062",
-    "timestamp": "2025-12-02T04:50:38Z"
-  },
-  {
     "title": "马斯克：AI 或成解决美国国债问题的关键",
     "url": "https://www.oschina.net/news/387061",
     "timestamp": "2025-12-02T04:50:38Z"
@@ -4998,5 +4938,65 @@
     "title": "软银洽谈收购数据中心私募DigitalBridge，希望借机把握AI基础设施热潮",
     "url": "https://wallstreetcn.com/livenews/3016035",
     "timestamp": "2025-12-05T18:49:19Z"
+  },
+  {
+    "title": "Gemini 3 Pro: the frontier of vision AI",
+    "url": "https://blog.google/technology/developers/gemini-3-pro-vision/",
+    "timestamp": "2025-12-05T20:44:55Z"
+  },
+  {
+    "title": "Show HN: HCB Mobile – financial app built by 17 y/o, processing $6M/month",
+    "url": "https://hackclub.com/fiscal-sponsorship/mobile/",
+    "timestamp": "2025-12-05T20:44:55Z"
+  },
+  {
+    "title": "美国国土安全委员会：要求谷歌尽快但不迟于12月12日提供简报。",
+    "url": "",
+    "timestamp": "2025-12-05T20:44:55Z"
+  },
+  {
+    "title": "美国国土安全委员会：正在调查谷歌可能托管的部分应用程序，这些程序可让用户匿名举报并追踪联邦执法部门的动向。担忧部分由谷歌托管的应用程序危及国土安全部人...",
+    "url": "",
+    "timestamp": "2025-12-05T20:44:55Z"
+  },
+  {
+    "title": "Cloudflare 发表 12/5 的故障报告",
+    "url": "https://www.v2ex.com/t/1177239",
+    "timestamp": "2025-12-05T20:44:55Z"
+  },
+  {
+    "title": "中国电信网络访问 CloudFlare 的 DNS 服务疑似指向就近区域",
+    "url": "https://www.v2ex.com/t/1177238",
+    "timestamp": "2025-12-05T20:44:55Z"
+  },
+  {
+    "title": "美国众议院共和党人就追踪类应用程序问题对苹果、谷歌展开质询",
+    "url": "https://news.10jqka.com.cn/20251206/c673010169.shtml",
+    "timestamp": "2025-12-05T20:44:55Z"
+  },
+  {
+    "title": "SpaceX估值超越OpenAI，成为美国第一大非上市公司",
+    "url": "https://wallstreetcn.com/articles/3760830",
+    "timestamp": "2025-12-05T20:44:55Z"
+  },
+  {
+    "title": "Bulgaria rescuing sanctioned tanker that was hit by Ukrainian drone",
+    "url": "https://www.reuters.com/world/europe/bulgaria-rescuing-sanctioned-tanker-that-was-hit-by-ukrainian-drone-2025-12-05/",
+    "timestamp": "2025-12-05T20:44:55Z"
+  },
+  {
+    "title": "Colombia, Clan del Golfo crime gang agree three concentration areas for combatants",
+    "url": "https://www.reuters.com/world/americas/colombia-clan-del-golfo-crime-gang-agree-three-concentration-areas-combatants-2025-12-05/",
+    "timestamp": "2025-12-05T20:44:55Z"
+  },
+  {
+    "title": "马斯克旗下SpaceX告诉投资者，该公司考虑2026年后期/年底IPO。（The Information）",
+    "url": "https://wallstreetcn.com/livenews/3016108",
+    "timestamp": "2025-12-05T20:44:55Z"
+  },
+  {
+    "title": "人工智能可穿戴设备初创公司Limitless表示，Meta Platforms已收购该公司。",
+    "url": "https://wallstreetcn.com/livenews/3016105",
+    "timestamp": "2025-12-05T20:44:55Z"
   }
 ]
