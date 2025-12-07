@@ -1,145 +1,5 @@
 [
   {
-    "title": "小鹏X9超级增程携手华为打造下一代增程发电机",
-    "url": "https://wallstreetcn.com/livenews/3014167",
-    "timestamp": "2025-12-03T04:47:54Z"
-  },
-  {
-    "title": "阿里千问App位列全球AI应用增速榜第一",
-    "url": "https://wallstreetcn.com/livenews/3014157",
-    "timestamp": "2025-12-03T04:47:54Z"
-  },
-  {
-    "title": "South Korea's Lee says on martial law anniversary perpetrators must face justice",
-    "url": "https://www.reuters.com/world/asia-pacific/south-koreas-lee-says-clean-up-after-martial-law-not-yet-complete-one-year-2025-12-03/",
-    "timestamp": "2025-12-03T04:47:54Z"
-  },
-  {
-    "title": "英伟达CFO：5000亿美元芯片预订不含OpenAI合作，千亿美元协议仍未敲定",
-    "url": "https://dig.ichouti.cn/link/45687688",
-    "timestamp": "2025-12-03T04:47:54Z"
-  },
-  {
-    "title": "3499 元「豆包助手」手机售罄，二手平台最高加价 1500 元",
-    "url": "https://www.oschina.net/news/387331",
-    "timestamp": "2025-12-03T04:47:54Z"
-  },
-  {
-    "title": "明显 Bug 拖三年不修，Zig 宣布从 GitHub 迁移至 Codeberg",
-    "url": "https://www.oschina.net/news/387325",
-    "timestamp": "2025-12-03T04:47:54Z"
-  },
-  {
-    "title": "阿里通义开源 Z-Image-Turbo-Fun-Controlnet-Union",
-    "url": "https://www.oschina.net/news/387318",
-    "timestamp": "2025-12-03T04:47:54Z"
-  },
-  {
-    "title": "OpenAI 探索将 ChatGPT 整合至 Apple Health",
-    "url": "https://www.oschina.net/news/387315/chatgpt-apple-health-connector",
-    "timestamp": "2025-12-03T04:47:54Z"
-  },
-  {
-    "title": "苹果发布开源视频生成模型 STARFlow-V",
-    "url": "https://www.oschina.net/news/387309",
-    "timestamp": "2025-12-03T04:47:54Z"
-  },
-  {
-    "title": "Anthropic 宣布收购开源 JavaScript 运行时 Bun",
-    "url": "https://www.oschina.net/news/387305/bun-joins-anthropic",
-    "timestamp": "2025-12-03T04:47:54Z"
-  },
-  {
-    "title": "商汤联合南洋理工开源多模态模型架构 NEO",
-    "url": "https://www.oschina.net/news/387304",
-    "timestamp": "2025-12-03T04:47:54Z"
-  },
-  {
-    "title": "Runway 发布 Gen-4.5 视频生成模型，登顶 Video Arena 榜单",
-    "url": "https://www.oschina.net/news/387295",
-    "timestamp": "2025-12-03T04:47:54Z"
-  },
-  {
-    "title": "米哈游蔡浩宇推出“说话带喵”的 AI 聊天大模型",
-    "url": "https://www.oschina.net/news/387293",
-    "timestamp": "2025-12-03T04:47:54Z"
-  },
-  {
-    "title": "联合国报告：人工智能管理差异或加剧国家间不平等",
-    "url": "https://news.cctv.com/2025/12/03/ARTIHRM19kVh7RJxxuuRT4wy251203.shtml",
-    "timestamp": "2025-12-03T04:47:54Z"
-  },
-  {
-    "title": "DeepSeek的一次小更新：暴打OpenAI 追上Gemini",
-    "url": "https://www.cnbeta.com.tw/articles/tech/1539178.htm",
-    "timestamp": "2025-12-03T04:47:54Z"
-  },
-  {
-    "title": "图说AI竞争：为什么OpenAI要启动“红色警报”？英伟达是否也要亮红灯？",
-    "url": "https://www.cnbeta.com.tw/articles/tech/1539172.htm",
-    "timestamp": "2025-12-03T04:47:54Z"
-  },
-  {
-    "title": "马斯克称中国人几乎离不开微信， X 目标打造成微信升级版",
-    "url": "https://www.v2ex.com/t/1176515",
-    "timestamp": "2025-12-03T04:47:54Z"
-  },
-  {
-    "title": "性感翘臀！《尼尔》凯妮手办开发中：姿势妩媚迷人",
-    "url": "https://www.gamersky.com/news/202512/2053496.shtml",
-    "timestamp": "2025-12-03T04:47:54Z"
-  },
-  {
-    "title": "脉泽科技：指纹与人脸之后第三大生物识别技术，如何突围巨头垄断的海外市场？",
-    "url": "https://www.36kr.com/p/3579313733663625",
-    "timestamp": "2025-12-03T04:47:54Z"
-  },
-  {
-    "title": "230亿，AI芯片龙头宣布收购",
-    "url": "https://www.36kr.com/p/3579288263556233",
-    "timestamp": "2025-12-03T04:47:54Z"
-  },
-  {
-    "title": "Mistral发布Mistral 3模型家族，聚焦开放与企业实用",
-    "url": "https://www.pingwest.com/w/309561",
-    "timestamp": "2025-12-03T04:47:54Z"
-  },
-  {
-    "title": "阿里千问参加美国高考，分数超过ChatGPT和Gemini",
-    "url": "https://www.pingwest.com/w/309560",
-    "timestamp": "2025-12-03T04:47:54Z"
-  },
-  {
-    "title": "蔡浩宇旗下Anuttacon推出情绪化AI聊天模型AnuNeko",
-    "url": "https://www.pingwest.com/w/309558",
-    "timestamp": "2025-12-03T04:47:54Z"
-  },
-  {
-    "title": "OpenAI探索ChatGPT与Apple Health集成",
-    "url": "https://www.pingwest.com/w/309557",
-    "timestamp": "2025-12-03T04:47:54Z"
-  },
-  {
-    "title": "AI业务增长超50%，百度用“双轮驱动”重塑模型引擎",
-    "url": "https://www.pingwest.com/w/309556",
-    "timestamp": "2025-12-03T04:47:54Z"
-  },
-  {
-    "title": "字节跳动发布GR-RL框架，实现机器人穿鞋带新突破",
-    "url": "https://www.pingwest.com/w/309555",
-    "timestamp": "2025-12-03T04:47:54Z"
-  },
-  {
-    "title": "OpenAI加速研发代号“Garlic”的新大模型",
-    "url": "https://www.pingwest.com/w/309552",
-    "timestamp": "2025-12-03T04:47:54Z"
-  },
-  {
-    "title": "云计算一哥10分钟发了25个新品！Kimi和MiniMax首次上桌",
-    "url": "https://www.qbitai.com/2025/12/358330.html",
-    "timestamp": "2025-12-03T04:47:54Z"
-  },
-  {
     "title": "前端转战后端：JavaScript 与 Java 对照学习指南（第三篇 —— Map 对象）",
     "url": "https://juejin.cn/post/7579164768063176731",
     "timestamp": "2025-12-03T04:47:54Z"
@@ -4998,5 +4858,145 @@
     "title": "AI光芯片：高端供不应求，国产加速崛起",
     "url": "https://wallstreetcn.com/member/articles/3760872",
     "timestamp": "2025-12-07T10:37:53Z"
+  },
+  {
+    "title": "中国驻日大使就日本自卫队飞机滋扰中国海军航母编队训练提出严正交涉",
+    "url": "https://news.10jqka.com.cn/20251207/c673020050.shtml",
+    "timestamp": "2025-12-07T13:02:43Z"
+  },
+  {
+    "title": "中国人形机器人亮相日本国际机器人展",
+    "url": "https://news.10jqka.com.cn/20251207/c673019929.shtml",
+    "timestamp": "2025-12-07T13:02:43Z"
+  },
+  {
+    "title": "Java Hello World, LLVM Edition",
+    "url": "https://www.javaadvent.com/2025/12/java-hello-world-llvm-edition.html",
+    "timestamp": "2025-12-07T13:02:43Z"
+  },
+  {
+    "title": "彻底搞定大模型流式输出：从二进制碎块到“嘚嘚嘚”打字机效果，让底层逻辑飞起来",
+    "url": "https://juejin.cn/post/7580389111920705599",
+    "timestamp": "2025-12-07T13:02:43Z"
+  },
+  {
+    "title": "Vue3计算属性如何通过缓存特性优化表单验证与数据过滤？",
+    "url": "https://juejin.cn/post/7580547126360588351",
+    "timestamp": "2025-12-07T13:02:43Z"
+  },
+  {
+    "title": "深入解析：基于 Vue 3 与 DeepSeek API 构建流式大模型聊天应用的完整实现",
+    "url": "https://juejin.cn/post/7580373352421244954",
+    "timestamp": "2025-12-07T13:02:43Z"
+  },
+  {
+    "title": "AI打字机的秘密：一个 buffer 如何让机器学会“慢慢说话”",
+    "url": "https://juejin.cn/post/7580394927977594899",
+    "timestamp": "2025-12-07T13:02:43Z"
+  },
+  {
+    "title": "国产蒸汽朋克新作不会过度使用AI：保持设计的真实感",
+    "url": "https://www.gamersky.com/news/202512/2055263.shtml",
+    "timestamp": "2025-12-07T13:02:43Z"
+  },
+  {
+    "title": "太劣质了！《莎木4》TGA泄露预告 外媒质疑是AI做的",
+    "url": "https://www.gamersky.com/news/202512/2055245.shtml",
+    "timestamp": "2025-12-07T13:02:43Z"
+  },
+  {
+    "title": "新游被指使用AI 发行商破防开骂：赤石去吧！",
+    "url": "https://www.gamersky.com/news/202512/2055243.shtml",
+    "timestamp": "2025-12-07T13:02:43Z"
+  },
+  {
+    "title": "周五突发的好消息，含金量如何？",
+    "url": "https://www.huxiu.com/article/4814686.html",
+    "timestamp": "2025-12-07T13:02:43Z"
+  },
+  {
+    "title": "用AI图仅退款，这批羊毛党把商家薅麻了",
+    "url": "https://www.huxiu.com/article/4814682.html",
+    "timestamp": "2025-12-07T13:02:43Z"
+  },
+  {
+    "title": "下一个Transformer可能又被Google做出来了",
+    "url": "https://www.pingwest.com/a/309637",
+    "timestamp": "2025-12-07T13:02:43Z"
+  },
+  {
+    "title": "“大空头”：AI泡沫破灭，两年够了",
+    "url": "https://wallstreetcn.com/charts/41958194",
+    "timestamp": "2025-12-07T13:02:43Z"
+  },
+  {
+    "title": "【岩石种类识别系统】Python+TensorFlow+Django+人工智能+深度学习+卷积神经网络算法",
+    "url": "https://juejin.cn/post/7580374090365927462",
+    "timestamp": "2025-12-07T13:02:43Z"
+  },
+  {
+    "title": "【中草药识别系统】Python+TensorFlow+Django+人工智能+深度学习+卷积神经网络算法",
+    "url": "https://juejin.cn/post/7581004702927126537",
+    "timestamp": "2025-12-07T13:02:43Z"
+  },
+  {
+    "title": "关键词读懂“十五五”｜“人工智能+” 为千行百业安装“智慧大脑”",
+    "url": "https://china.huanqiu.com/article/4PRoN1Uwo9z",
+    "timestamp": "2025-12-07T13:02:43Z"
+  },
+  {
+    "title": "驻日大使吴江浩就日本自卫队飞机滋扰中国海军航母编队训练提出严正交涉",
+    "url": "https://wallstreetcn.com/livenews/3016414",
+    "timestamp": "2025-12-07T13:02:43Z"
+  },
+  {
+    "title": "2026量产元年，人形机器人机会在哪？",
+    "url": "https://www.gelonghui.com/p/3332086",
+    "timestamp": "2025-12-07T13:02:43Z"
+  },
+  {
+    "title": "apple pencil 2 可以转成 apple pencil pro 模式吗",
+    "url": "https://www.v2ex.com/t/1177400",
+    "timestamp": "2025-12-07T13:02:43Z"
+  },
+  {
+    "title": "收一个搬瓦工 MEGABOX-PRO 有原邮活着 biggerbox-pro 也行，荷兰 DC1 也行",
+    "url": "https://www.v2ex.com/t/1177394",
+    "timestamp": "2025-12-07T13:02:43Z"
+  },
+  {
+    "title": "《辐射》第二季新预告发布 那个乐观的露西又回来了",
+    "url": "https://www.cnbeta.com.tw/articles/movie/1539958.htm",
+    "timestamp": "2025-12-07T13:02:43Z"
+  },
+  {
+    "title": "吉田修平：日本游戏行业难以复制中国同行的开发速度",
+    "url": "https://www.cnbeta.com.tw/articles/game/1539950.htm",
+    "timestamp": "2025-12-07T13:02:43Z"
+  },
+  {
+    "title": "《塞尔达传说》系列唱片《海拉鲁叙事诗III》发布",
+    "url": "https://www.cnbeta.com.tw/articles/game/1539946.htm",
+    "timestamp": "2025-12-07T13:02:43Z"
+  },
+  {
+    "title": "特斯拉Robotaxi应用已向11地区iOS用户开放下载",
+    "url": "https://www.cnbeta.com.tw/articles/tech/1539944.htm",
+    "timestamp": "2025-12-07T13:02:43Z"
+  },
+  {
+    "title": "NVIDIA售后被指双标：1万美元显卡坏了免费换 1千美元的不管",
+    "url": "https://www.cnbeta.com.tw/articles/tech/1539942.htm",
+    "timestamp": "2025-12-07T13:02:43Z"
+  },
+  {
+    "title": "微软将允许用户从Windows 11文件资源管理器中移除“AI 动作”入口",
+    "url": "https://www.cnbeta.com.tw/articles/tech/1539940.htm",
+    "timestamp": "2025-12-07T13:02:43Z"
+  },
+  {
+    "title": "CEO 亲自演示：众擎机器人 T800 一脚踹翻 75 公斤级老板赵同阳",
+    "url": "https://www.ithome.com/0/903/156.htm",
+    "timestamp": "2025-12-07T13:02:43Z"
   }
 ]
