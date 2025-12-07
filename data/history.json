@@ -1,30 +1,5 @@
 [
   {
-    "title": "🌟 Vibe Coding 时代：用自然语言打造你的专属 AI 单词应用",
-    "url": "https://juejin.cn/post/7579176524131729459",
-    "timestamp": "2025-12-03T06:52:53Z"
-  },
-  {
-    "title": "PromiseResolveThenableJobTask 的在Promise中的使用",
-    "url": "https://juejin.cn/post/7579229538791358470",
-    "timestamp": "2025-12-03T06:52:53Z"
-  },
-  {
-    "title": "第 33 题：Vue3 v-model 原理（语法糖 → props + emit → modelValue → update:modelValue）",
-    "url": "https://juejin.cn/post/7579256547797958697",
-    "timestamp": "2025-12-03T06:52:53Z"
-  },
-  {
-    "title": "第 32 题：Vue3 Template 编译原理（Template → AST → Transform → Codegen → Render 函数）",
-    "url": "https://juejin.cn/post/7579256547797942313",
-    "timestamp": "2025-12-03T06:52:53Z"
-  },
-  {
-    "title": "第 30 题：Vue3 自定义渲染器（Custom Renderer）原理- 为什么 Vue 能渲染到 DOM / Canvas / WebGL / 三方平台",
-    "url": "https://juejin.cn/post/7579229538791243782",
-    "timestamp": "2025-12-03T06:52:53Z"
-  },
-  {
     "title": "github star 基础IO 文件在内核中是怎么被管理的 重定向的含义 在自定义shell中加入重定向",
     "url": "https://juejin.cn/post/7579213860571054134",
     "timestamp": "2025-12-03T06:52:53Z"
@@ -4998,5 +4973,30 @@
     "title": "有将 chatgpt 网页版 封装成 api 的开源项目么？",
     "url": "https://www.v2ex.com/t/1177433",
     "timestamp": "2025-12-07T20:41:28Z"
+  },
+  {
+    "title": "Dollar-stores overcharge cash-strapped customers while promising low prices",
+    "url": "https://www.theguardian.com/us-news/2025/dec/03/customers-pay-more-rising-dollar-store-costs",
+    "timestamp": "2025-12-07T22:36:59Z"
+  },
+  {
+    "title": "Estimates are difficult for developers and product owners",
+    "url": "https://thorsell.io/2025/12/07/estimates.html",
+    "timestamp": "2025-12-07T22:36:59Z"
+  },
+  {
+    "title": "榕江通报荒野求生女选手疑遭骚扰。活动中止，成立专班，开展调查。开赛才4天啊…听这几位选手说的，假如是真的，这位安全员真的是拿着鸡毛当令箭，有着一点权力就为所欲为祸害人，还害了这场活动…调查如果是真的，就好好严惩，对当地影响太坏了！",
+    "url": "https://dig.ichouti.cn/link/45714021",
+    "timestamp": "2025-12-07T22:36:59Z"
+  },
+  {
+    "title": "Impatience grows in Honduras as reporting of election results remains stalled",
+    "url": "https://www.reuters.com/world/americas/impatience-grows-honduras-reporting-election-results-remains-stalled-2025-12-07/",
+    "timestamp": "2025-12-07T22:36:59Z"
+  },
+  {
+    "title": "更多全黑 Vision Pro 原型零件在网上曝光",
+    "url": "https://www.cnbeta.com.tw/articles/tech/1539970.htm",
+    "timestamp": "2025-12-07T22:36:59Z"
   }
 ]
