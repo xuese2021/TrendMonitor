@@ -1,195 +1,5 @@
 [
   {
-    "title": "Apple Music发布2025年度中国大陆最热歌曲TOP100 周杰伦继续霸榜",
-    "url": "https://www.cnbeta.com.tw/articles/music/1539078.htm",
-    "timestamp": "2025-12-02T18:54:21Z"
-  },
-  {
-    "title": "富士通公布下一代 Arm 架构 Monaka 数据中心处理器路线图",
-    "url": "https://www.cnbeta.com.tw/articles/tech/1539072.htm",
-    "timestamp": "2025-12-02T18:54:21Z"
-  },
-  {
-    "title": "Java.lang.Runtime 深度解析",
-    "url": "https://juejin.cn/post/7579093412331651082",
-    "timestamp": "2025-12-02T18:54:21Z"
-  },
-  {
-    "title": "C++智能指针避坑指南：90%人会犯的3个致命错误",
-    "url": "https://juejin.cn/post/7579101504289488950",
-    "timestamp": "2025-12-02T18:54:21Z"
-  },
-  {
-    "title": "【Hadoop+Spark+python毕设】中国租房信息可视化分析系统、计算机毕业设计、包括数据爬取、Spark、数据分析、数据可视化、Hadoop",
-    "url": "https://juejin.cn/post/7579127397497192499",
-    "timestamp": "2025-12-02T18:54:21Z"
-  },
-  {
-    "title": "MaxKB4j — 基于 Java 的开源 RAG 知识库与 LLM 工作流平台",
-    "url": "https://juejin.cn/post/7579190764766068776",
-    "timestamp": "2025-12-02T18:54:21Z"
-  },
-  {
-    "title": "SpringBoot 动态菜单权限系统设计的企业级解决方案",
-    "url": "https://juejin.cn/post/7578836326475776027",
-    "timestamp": "2025-12-02T18:54:21Z"
-  },
-  {
-    "title": "【Hadoop+Spark+python毕设】中式早餐店订单数据分析与可视化系统、计算机毕业设计、包括数据爬取、数据分析、数据可视化",
-    "url": "https://juejin.cn/post/7578876665696616457",
-    "timestamp": "2025-12-02T18:54:21Z"
-  },
-  {
-    "title": "Node.js 全栈实战：5分钟对接天远风控 API与数据清洗",
-    "url": "https://juejin.cn/post/7578832575504973866",
-    "timestamp": "2025-12-02T18:54:21Z"
-  },
-  {
-    "title": "腾讯办了场比赛，要让00后来“整顿”广告算法",
-    "url": "https://www.pingwest.com/a/309547",
-    "timestamp": "2025-12-02T18:54:21Z"
-  },
-  {
-    "title": "AI泡沫原罪：英伟达是AI戒不掉的“毒丸”？",
-    "url": "https://www.huxiu.com/article/4812661.html",
-    "timestamp": "2025-12-02T18:54:21Z"
-  },
-  {
-    "title": "能买下1.36个阿里的钱，只够OpenAI建一座数据中心？",
-    "url": "https://www.huxiu.com/article/4812045.html",
-    "timestamp": "2025-12-02T18:54:21Z"
-  },
-  {
-    "title": "法国Mistral AI针对英伟达系统发布新款定制AI模型",
-    "url": "https://wallstreetcn.com/livenews/3013862",
-    "timestamp": "2025-12-02T18:54:21Z"
-  },
-  {
-    "title": "英伟达CFO：5000亿美元AI芯片预订不含OpenAI协议，仍在谈最终合作",
-    "url": "https://wallstreetcn.com/articles/3760559",
-    "timestamp": "2025-12-02T18:54:21Z"
-  },
-  {
-    "title": "亚马逊重磅发布挑战谷歌英伟达：AI芯片Trainium 3更快更节能，四款Nova 2模型，首创“开放式训练”",
-    "url": "https://wallstreetcn.com/articles/3760564",
-    "timestamp": "2025-12-02T18:54:21Z"
-  },
-  {
-    "title": "OpenAI加速研发全新模型“Garlic”，直面谷歌AI进展压力",
-    "url": "https://wallstreetcn.com/articles/3760561",
-    "timestamp": "2025-12-02T18:54:21Z"
-  },
-  {
-    "title": "美国初创公司 Arcee AI 发布开源 MoE 模型 Trinity",
-    "url": "https://www.oschina.net/news/387214/arcee-ai-trinity-manifesto",
-    "timestamp": "2025-12-02T18:54:21Z"
-  },
-  {
-    "title": "抖音自研文生图评估体系 EvalMuse 入选 AAAI 2026",
-    "url": "https://www.oschina.net/news/387209",
-    "timestamp": "2025-12-02T18:54:21Z"
-  },
-  {
-    "title": "Lovart Touch Edit 上线，AI 图像编辑进入“零蒙版”时代",
-    "url": "https://www.oschina.net/news/387206",
-    "timestamp": "2025-12-02T18:54:21Z"
-  },
-  {
-    "title": "生数科技宣布 Vidu Q2 全新上线文生图与图像编辑功能",
-    "url": "https://www.oschina.net/news/387196",
-    "timestamp": "2025-12-02T18:54:21Z"
-  },
-  {
-    "title": "澳大利亚发布国家人工智能计划",
-    "url": "https://www.oschina.net/news/387195",
-    "timestamp": "2025-12-02T18:54:21Z"
-  },
-  {
-    "title": "京东自研智能体引擎平台 JoyAgent 正式开源多模态 RAG 能力",
-    "url": "https://my.oschina.net/u/4090830/blog/18855106",
-    "timestamp": "2025-12-02T18:54:21Z"
-  },
-  {
-    "title": "孙正义称“哭着”清仓英伟达，并驳斥 AI 泡沫论",
-    "url": "https://www.oschina.net/news/387188",
-    "timestamp": "2025-12-02T18:54:21Z"
-  },
-  {
-    "title": "MIT 创企 Liquid AI 推出企业级小模型训练蓝图 LFM2",
-    "url": "https://www.oschina.net/news/387185",
-    "timestamp": "2025-12-02T18:54:21Z"
-  },
-  {
-    "title": "特朗普：我和埃隆（马斯克）相处得很好",
-    "url": "https://jinse.cn/lives/489764.html",
-    "timestamp": "2025-12-02T20:43:13Z"
-  },
-  {
-    "title": "Google将AI通知摘要功能推广至更多Android设备",
-    "url": "https://www.cnbeta.com.tw/articles/tech/1539094.htm",
-    "timestamp": "2025-12-02T20:43:13Z"
-  },
-  {
-    "title": "苹果加大力度敦促仍使用iOS 18的用户升级至iOS 26",
-    "url": "https://www.cnbeta.com.tw/articles/tech/1539090.htm",
-    "timestamp": "2025-12-02T20:43:13Z"
-  },
-  {
-    "title": "苹果iPhone 17助推智能手机市场创纪录 2026年或迎涨价与降量双重压力",
-    "url": "https://www.cnbeta.com.tw/articles/tech/1539088.htm",
-    "timestamp": "2025-12-02T20:43:13Z"
-  },
-  {
-    "title": "亚马逊推出据称可连续工作数日的AI智能体",
-    "url": "https://www.cnbeta.com.tw/articles/tech/1539086.htm",
-    "timestamp": "2025-12-02T20:43:13Z"
-  },
-  {
-    "title": "Amazon Enters AI Arms Race as Crypto and Risk Asset Fears Mount",
-    "url": "https://www.coindesk.com/markets/2025/12/02/amazon-enters-ai-arms-race-as-crypto-and-risk-asset-fears-mount",
-    "timestamp": "2025-12-02T20:43:13Z"
-  },
-  {
-    "title": "Anthropic acquires Bun",
-    "url": "https://bun.com/blog/bun-joins-anthropic",
-    "timestamp": "2025-12-02T20:43:13Z"
-  },
-  {
-    "title": "Amazon launches Trainium3",
-    "url": "https://techcrunch.com/2025/12/02/amazon-releases-an-impressive-new-ai-chip-and-teases-a-nvidia-friendly-roadmap/",
-    "timestamp": "2025-12-02T20:43:13Z"
-  },
-  {
-    "title": "OpenAI declares 'code red' as Google catches up in AI race",
-    "url": "https://www.theverge.com/news/836212/openai-code-red-chatgpt",
-    "timestamp": "2025-12-02T20:43:13Z"
-  },
-  {
-    "title": "现在的免费 cloudns 用户是不是不能自定义 ns 了?",
-    "url": "https://www.v2ex.com/t/1176499",
-    "timestamp": "2025-12-02T20:43:13Z"
-  },
-  {
-    "title": "google scholar 用 xray 怎么访问",
-    "url": "https://www.v2ex.com/t/1176498",
-    "timestamp": "2025-12-02T20:43:13Z"
-  },
-  {
-    "title": "github copilot 提供的免费模型里面，哪个模型的代码能力更好一点？",
-    "url": "https://www.v2ex.com/t/1176497",
-    "timestamp": "2025-12-02T20:43:13Z"
-  },
-  {
-    "title": "“豆包”加持，3499元的手机，一天就卖光，闲鱼挂价最高近万元",
-    "url": "https://wallstreetcn.com/articles/3760570",
-    "timestamp": "2025-12-02T20:43:13Z"
-  },
-  {
-    "title": "华尔街机构警告：经济韧性叠加AI浪潮，做空美股正变成高危交易",
-    "url": "https://wallstreetcn.com/articles/3760569",
-    "timestamp": "2025-12-02T20:43:13Z"
-  },
-  {
     "title": "英伟达官宣新合作成就：Mistral开源模型提速，任意规模均提高效率和精度",
     "url": "https://wallstreetcn.com/articles/3760567",
     "timestamp": "2025-12-02T20:43:13Z"
@@ -4998,5 +4808,195 @@
     "title": "全球首款2nm手机芯片！三星Exynos 2600还未量产",
     "url": "https://m.mydrivers.com/newsview/1090998.html",
     "timestamp": "2025-12-06T22:37:38Z"
+  },
+  {
+    "title": "Trains cancelled over fake bridge collapse image",
+    "url": "https://www.bbc.com/news/articles/cwygqqll9k2o",
+    "timestamp": "2025-12-07T02:26:17Z"
+  },
+  {
+    "title": "United States Antarctic Program Field Manual (2024) [pdf]",
+    "url": "https://www.usap.gov/usapgov/travelAndDeployment/documents/Continental-Field-Manual-2024.pdf",
+    "timestamp": "2025-12-07T02:26:17Z"
+  },
+  {
+    "title": "Removed Rust to Gain Speed",
+    "url": "https://www.prisma.io/blog/announcing-prisma-orm-7-0-0",
+    "timestamp": "2025-12-07T02:26:17Z"
+  },
+  {
+    "title": "数十年来人事从未如此动荡！苹果爆发高管离职潮，库克去向备受关注",
+    "url": "https://wallstreetcn.com/articles/3760859",
+    "timestamp": "2025-12-07T02:26:17Z"
+  },
+  {
+    "title": "重大转向！美国发布最新《国家安全战略》：放弃全球霸权，将调整与中国经济关系，“以互惠平等为原则”，承认中美“近乎对等”！欧洲炸锅",
+    "url": "https://wallstreetcn.com/articles/3760857",
+    "timestamp": "2025-12-07T02:26:17Z"
+  },
+  {
+    "title": "美国家安全战略报告提出“西半球优先”，美防长称门罗主义“比以往任何时候都更加强大”",
+    "url": "https://wallstreetcn.com/articles/3760856",
+    "timestamp": "2025-12-07T02:26:17Z"
+  },
+  {
+    "title": "Salesforce CEO“大模型没有护城河”，大空头“OpenAI就是下一个网景”",
+    "url": "https://wallstreetcn.com/charts/41958189",
+    "timestamp": "2025-12-07T02:26:17Z"
+  },
+  {
+    "title": "vxe-gantt vue table 甘特图子任务多层级自定义模板用法",
+    "url": "https://juejin.cn/post/7580373352420491290",
+    "timestamp": "2025-12-07T02:26:17Z"
+  },
+  {
+    "title": "从零构建Vue项目的完全指南：手把手打造现代化前端工程",
+    "url": "https://juejin.cn/post/7580373352420474906",
+    "timestamp": "2025-12-07T02:26:17Z"
+  },
+  {
+    "title": "# Vue 渲染系统的四个关键阶段：从模板编译到新旧 VDOM Patch 的完整机制解析",
+    "url": "https://juejin.cn/post/7580310413754564658",
+    "timestamp": "2025-12-07T02:26:17Z"
+  },
+  {
+    "title": "vue也支持声明式UI了，向移动端kotlin，swift看齐，抛弃html，pug升级版，进来看看新语法吧",
+    "url": "https://juejin.cn/post/7580287383788585003",
+    "timestamp": "2025-12-07T02:26:17Z"
+  },
+  {
+    "title": "AI真好玩系列-Three.js手势控制游戏开发教程 | Interactive Game Development with Three.js Hand Con",
+    "url": "https://juejin.cn/post/7580287383788503083",
+    "timestamp": "2025-12-07T02:26:17Z"
+  },
+  {
+    "title": "JSON 转 BPMN 实战：如何用 Flowable 把前端流程图JSON转成 XML（附完整代码）",
+    "url": "https://juejin.cn/post/7580312375372136488",
+    "timestamp": "2025-12-07T02:26:17Z"
+  },
+  {
+    "title": "在 UmiJS + Vue 3 项目中实现 WebP 图片自动转换和优化",
+    "url": "https://juejin.cn/post/7580282751628509225",
+    "timestamp": "2025-12-07T02:26:17Z"
+  },
+  {
+    "title": "js入门指南之Promise：从''承诺''到理解，告别回调地域",
+    "url": "https://juejin.cn/post/7580310413754335282",
+    "timestamp": "2025-12-07T02:26:17Z"
+  },
+  {
+    "title": "美乌结束3天会谈 主要讨论领土和安全保障问题",
+    "url": "https://news.cctv.com/2025/12/07/ARTIzrdjZQn4jIkzWcQqJUr9251207.shtml",
+    "timestamp": "2025-12-07T02:26:17Z"
+  },
+  {
+    "title": "晨报|延期多年的星战大作终于要发布? 陶德盛赞光与影",
+    "url": "https://www.gamersky.com/news/202512/2055128.shtml",
+    "timestamp": "2025-12-07T02:26:17Z"
+  },
+  {
+    "title": "Russian strike hits Ukrainian city of Kremenchuk, cutting utilities, mayor says",
+    "url": "https://www.reuters.com/world/russian-strike-hits-ukrainian-city-kremenchuk-cutting-utilities-mayor-says-2025-12-07/",
+    "timestamp": "2025-12-07T02:26:17Z"
+  },
+  {
+    "title": "At least 23 people dead after fire in India's Goa state, chief minister says",
+    "url": "https://www.reuters.com/world/india/least-23-people-dead-after-fire-indias-goa-chief-minister-says-2025-12-06/",
+    "timestamp": "2025-12-07T02:26:17Z"
+  },
+  {
+    "title": "Chinese jets directed fire-control radar at Japanese aircraft, Japan says",
+    "url": "https://www.reuters.com/world/china/chinese-fighter-jets-directed-radar-japanese-aircraft-japan-says-2025-12-06/",
+    "timestamp": "2025-12-07T02:26:17Z"
+  },
+  {
+    "title": "国家安全部披露：有境外间谍在机关周边设置恶意 Wi-Fi",
+    "url": "https://www.ithome.com/0/903/050.htm",
+    "timestamp": "2025-12-07T02:26:17Z"
+  },
+  {
+    "title": "网红“甲亢哥”直播暴力损毁人形机器人“Rizzbot”，后者开发公司起诉索赔",
+    "url": "https://www.ithome.com/0/903/049.htm",
+    "timestamp": "2025-12-07T02:26:17Z"
+  },
+  {
+    "title": "阿祖的终局之战：亚马逊《黑袍纠察队》第五季先导预告发布，明年 4 月 8 日开播",
+    "url": "https://www.ithome.com/0/903/045.htm",
+    "timestamp": "2025-12-07T02:26:17Z"
+  },
+  {
+    "title": "科技昨夜今晨 1207：苹果 2026 年初新品前瞻；华为终端可持续发展报告 2024-2025 发布；黄仁勋称华为是全球最强科技公司之一...",
+    "url": "https://www.ithome.com/0/903/040.htm",
+    "timestamp": "2025-12-07T02:26:17Z"
+  },
+  {
+    "title": "苹果经历数十年来最大规模人事变动，消息称芯片主管斯鲁吉考虑离职",
+    "url": "https://www.ithome.com/0/903/034.htm",
+    "timestamp": "2025-12-07T02:26:17Z"
+  },
+  {
+    "title": "美国联邦法官裁定：谷歌的默认搜索引擎及 AI 应用合作协议须每年重新谈判",
+    "url": "https://www.ithome.com/0/903/032.htm",
+    "timestamp": "2025-12-07T02:26:17Z"
+  },
+  {
+    "title": "马斯克：SpaceX 正以 8000 亿美元估值融资的消息并不准确",
+    "url": "https://www.ithome.com/0/903/031.htm",
+    "timestamp": "2025-12-07T02:26:17Z"
+  },
+  {
+    "title": "Golang GMP 实现原理",
+    "url": "https://juejin.cn/post/7580288235031085056",
+    "timestamp": "2025-12-07T02:26:17Z"
+  },
+  {
+    "title": "SpringBoot自动装配注解",
+    "url": "https://juejin.cn/post/7580303864604999689",
+    "timestamp": "2025-12-07T02:26:17Z"
+  },
+  {
+    "title": "广西“十五五”规划建议：积极发展股权、债券等直接融资，培育壮大耐心资本，支持上市公司提质",
+    "url": "https://wallstreetcn.com/livenews/3016339",
+    "timestamp": "2025-12-07T02:26:17Z"
+  },
+  {
+    "title": "广西“十五五”规划建议：高标准建设中国—东盟国家人工智能应用合作中心",
+    "url": "https://wallstreetcn.com/livenews/3016337",
+    "timestamp": "2025-12-07T02:26:17Z"
+  },
+  {
+    "title": "Stripe 激活要求网站域名要和企业名字一致是什么意思？",
+    "url": "https://www.v2ex.com/t/1177327",
+    "timestamp": "2025-12-07T02:26:17Z"
+  },
+  {
+    "title": "M5 芯片的苹果本没有 15 寸吗？",
+    "url": "https://www.v2ex.com/t/1177322",
+    "timestamp": "2025-12-07T02:26:17Z"
+  },
+  {
+    "title": "苹果高管地震还在持续：芯片负责人考虑离职",
+    "url": "https://www.36kr.com/p/3584760231459717",
+    "timestamp": "2025-12-07T02:26:17Z"
+  },
+  {
+    "title": "AI作图+仅退款，正在围猎电商卖家",
+    "url": "https://www.36kr.com/p/3583943830313091",
+    "timestamp": "2025-12-07T02:26:17Z"
+  },
+  {
+    "title": "广西“十五五”规划建议：高标准建设中国—东盟国家人工智能应用合作中心",
+    "url": "https://news.10jqka.com.cn/20251207/c673017642.shtml",
+    "timestamp": "2025-12-07T02:26:17Z"
+  },
+  {
+    "title": "欧盟敢罚马斯克？美国外交“一二把手”接连开喷",
+    "url": "https://dig.ichouti.cn/link/45710733",
+    "timestamp": "2025-12-07T02:26:17Z"
+  },
+  {
+    "title": "突发｜苹果高管地震还在持续：芯片负责人考虑离职",
+    "url": "https://www.ifanr.com/1647638?utm_source=rss\u0026utm_medium=rss\u0026utm_campaign=",
+    "timestamp": "2025-12-07T02:26:17Z"
   }
 ]
