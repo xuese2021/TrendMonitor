@@ -1,30 +1,5 @@
 [
   {
-    "title": "各位 AI 大佬，请教一下私有化部署 AI 模型的问题?",
-    "url": "https://www.v2ex.com/t/1176637",
-    "timestamp": "2025-12-03T06:52:53Z"
-  },
-  {
-    "title": "[NVIDIA 内推 | 核心团队急招] 加入 Megatron Core，定义大模型训练的未来！🚀",
-    "url": "https://www.v2ex.com/t/1176636",
-    "timestamp": "2025-12-03T06:52:53Z"
-  },
-  {
-    "title": "厨子限制第三方输入法语音免跳转，是为了安全？",
-    "url": "https://www.v2ex.com/t/1176635",
-    "timestamp": "2025-12-03T06:52:53Z"
-  },
-  {
-    "title": "我用 GitHub Copilot 分析了一下 GitHub Copilot 的源代码，然后生成了一本 30 万字的书",
-    "url": "https://www.v2ex.com/t/1176631",
-    "timestamp": "2025-12-03T06:52:53Z"
-  },
-  {
-    "title": "LG 电子 CES 2026 发布会将于北京时间明年 1 月 6 日 00:00 举行",
-    "url": "https://www.ithome.com/0/902/129.htm",
-    "timestamp": "2025-12-03T06:52:53Z"
-  },
-  {
     "title": "🌟 Vibe Coding 时代：用自然语言打造你的专属 AI 单词应用",
     "url": "https://juejin.cn/post/7579176524131729459",
     "timestamp": "2025-12-03T06:52:53Z"
@@ -4998,5 +4973,30 @@
     "title": "韩电信公司 LG U+ 人工智能服务用户通话信息遭泄，事发 14 个小时后才知情",
     "url": "https://www.ithome.com/0/903/164.htm",
     "timestamp": "2025-12-07T18:48:06Z"
+  },
+  {
+    "title": "Nigerian government secures release of 100 kidnapped schoolchildren, Channels TV says",
+    "url": "https://www.reuters.com/world/africa/nigerian-government-secures-release-100-abducted-schoolchildren-channels-2025-12-07/",
+    "timestamp": "2025-12-07T20:41:28Z"
+  },
+  {
+    "title": "Italy's Meloni pledges emergency aid to Ukraine in call with Zelenskiy",
+    "url": "https://www.reuters.com/world/italys-meloni-pledges-emergency-aid-ukraine-call-with-zelenskiy-2025-12-07/",
+    "timestamp": "2025-12-07T20:41:28Z"
+  },
+  {
+    "title": "C++对象生命周期与析构顺序深度解析",
+    "url": "https://juejin.cn/post/7580606750291181619",
+    "timestamp": "2025-12-07T20:41:28Z"
+  },
+  {
+    "title": "C++异常安全保证：从理论到实践",
+    "url": "https://juejin.cn/post/7580378958073823242",
+    "timestamp": "2025-12-07T20:41:28Z"
+  },
+  {
+    "title": "有将 chatgpt 网页版 封装成 api 的开源项目么？",
+    "url": "https://www.v2ex.com/t/1177433",
+    "timestamp": "2025-12-07T20:41:28Z"
   }
 ]
