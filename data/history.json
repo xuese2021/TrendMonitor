@@ -1,55 +1,5 @@
 [
   {
-    "title": "恒生指数收涨0.58%，恒生科技指数涨0.84%。保险股领涨，中国平安涨近7%，中国人寿涨超5%。百度集团涨逾5%，领涨科网股；新能源车概念股反弹，小鹏汽车、蔚来涨逾...",
-    "url": "https://wallstreetcn.com/livenews/3015750",
-    "timestamp": "2025-12-05T08:48:37Z"
-  },
-  {
-    "title": "比亚迪王传福：未来还有更多重磅技术发布",
-    "url": "https://wallstreetcn.com/livenews/3015748",
-    "timestamp": "2025-12-05T08:48:37Z"
-  },
-  {
-    "title": "“中国版英伟达”上市，首日暴涨背后的资本狂欢与冷思考",
-    "url": "https://www.36kr.com/p/3582277263195268",
-    "timestamp": "2025-12-05T08:48:37Z"
-  },
-  {
-    "title": "昔日“标杆”的困局：10万亿兴业银行从监管重罚到业绩失速",
-    "url": "https://www.36kr.com/p/3581983276669056",
-    "timestamp": "2025-12-05T08:48:37Z"
-  },
-  {
-    "title": "Taiwan opposition says ban of China's Rednote app is censorship",
-    "url": "https://www.reuters.com/sustainability/society-equity/taiwan-opposition-says-ban-chinas-rednote-app-is-censorship-2025-12-05/",
-    "timestamp": "2025-12-05T08:48:37Z"
-  },
-  {
-    "title": "Hong Kong faces low election turnout as residents mourn deadly fire",
-    "url": "https://www.reuters.com/world/china/hong-kong-faces-low-election-turnout-residents-mourn-deadly-fire-2025-12-05/",
-    "timestamp": "2025-12-05T08:48:37Z"
-  },
-  {
-    "title": "Taiwan, Japan voice concern over Chinese military movements",
-    "url": "https://www.reuters.com/world/china/taiwan-japan-voice-concern-over-chinese-military-movements-2025-12-05/",
-    "timestamp": "2025-12-05T08:48:37Z"
-  },
-  {
-    "title": "Russia says Azov Sea's port of Temryuk damaged in Ukrainian attack",
-    "url": "https://www.reuters.com/business/aerospace-defense/russia-says-azov-seas-port-temryuk-damaged-ukrainian-attack-2025-12-05/",
-    "timestamp": "2025-12-05T08:48:37Z"
-  },
-  {
-    "title": "Spring Authorization Server 打造认证中心（四）自定义登录逻辑",
-    "url": "https://juejin.cn/post/7579926120096940095",
-    "timestamp": "2025-12-05T08:48:37Z"
-  },
-  {
-    "title": "【Oracle入门到删库跑路-05】核心技能：PL/SQL编程基础",
-    "url": "https://juejin.cn/post/7579945518345191439",
-    "timestamp": "2025-12-05T08:48:37Z"
-  },
-  {
     "title": "Java泛型不变性引发的类型转换问题及解决方案",
     "url": "https://juejin.cn/post/7579935414422716462",
     "timestamp": "2025-12-05T08:48:37Z"
@@ -4998,5 +4948,55 @@
     "title": "开源一个 AI 图像视频生成平台模板前端代码，可直接商用",
     "url": "https://www.v2ex.com/t/1177905",
     "timestamp": "2025-12-09T18:50:00Z"
+  },
+  {
+    "title": "霍华德·马克斯警告：AI就业冲击“令人恐惧”，科技巨头疯狂举债埋下隐患",
+    "url": "https://wallstreetcn.com/articles/3761045",
+    "timestamp": "2025-12-09T20:41:12Z"
+  },
+  {
+    "title": "美国商品期货交易委员会（CFTC）将加速补充发布因特朗普政府关门事件而造成的持仓周报（COT）发布。",
+    "url": "https://wallstreetcn.com/livenews/3017874",
+    "timestamp": "2025-12-09T20:41:12Z"
+  },
+  {
+    "title": "周二（12月9日）纽约尾盘，ICE美元指数涨0.13%，报99.217点，北京时间17:48跌至98.954点刷新日低，随后持续走高，23:00发布美联储青睐的职位空缺（就业数据）之...",
+    "url": "https://wallstreetcn.com/livenews/3017870",
+    "timestamp": "2025-12-09T20:41:12Z"
+  },
+  {
+    "title": "If you're going to vibe code, why not do it in C?",
+    "url": "https://stephenramsay.net/posts/vibe-coding.html",
+    "timestamp": "2025-12-09T20:41:12Z"
+  },
+  {
+    "title": "Pebble Index 01 – External memory for your brain",
+    "url": "https://repebble.com/blog/meet-pebble-index-01-external-memory-for-your-brain",
+    "timestamp": "2025-12-09T20:41:12Z"
+  },
+  {
+    "title": "Donating the Model Context Protocol and Establishing the Agentic AI Foundation",
+    "url": "https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation",
+    "timestamp": "2025-12-09T20:41:12Z"
+  },
+  {
+    "title": "Luxor拓展硬件业务至GPU，助力比特币矿企转型AI基础设施",
+    "url": "https://jinse.cn/lives/490808.html",
+    "timestamp": "2025-12-09T20:41:12Z"
+  },
+  {
+    "title": "UN chief condemns Houthi referral of some detained UN staff to court",
+    "url": "https://www.reuters.com/world/middle-east/un-chief-condemns-houthi-referral-some-detained-un-staff-court-2025-12-09/",
+    "timestamp": "2025-12-09T20:41:12Z"
+  },
+  {
+    "title": "Ukraine's Zelenskiy says ready for elections, calls on partners to ensure security",
+    "url": "https://www.reuters.com/world/europe/ukraines-zelenskiy-says-ready-elections-calls-partners-ensure-security-2025-12-09/",
+    "timestamp": "2025-12-09T20:41:12Z"
+  },
+  {
+    "title": "Top Ukrainian commander: troops hold part of Pokrovsk but have withdrawn from some positions",
+    "url": "https://www.reuters.com/world/top-ukrainian-commander-troops-hold-part-pokrovsk-have-withdrawn-some-positions-2025-12-09/",
+    "timestamp": "2025-12-09T20:41:12Z"
   }
 ]
