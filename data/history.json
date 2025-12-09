@@ -1,50 +1,5 @@
 [
   {
-    "title": "Java泛型不变性引发的类型转换问题及解决方案",
-    "url": "https://juejin.cn/post/7579935414422716462",
-    "timestamp": "2025-12-05T08:48:37Z"
-  },
-  {
-    "title": "VUE3项目--路由切换时展示进度条",
-    "url": "https://juejin.cn/post/7580174845771022345",
-    "timestamp": "2025-12-05T08:48:37Z"
-  },
-  {
-    "title": "React交互学习篇",
-    "url": "https://juejin.cn/post/7579949847395532800",
-    "timestamp": "2025-12-05T08:48:37Z"
-  },
-  {
-    "title": "Prompt 还能哄女朋友！你真的知道如何问 ai 问题吗？",
-    "url": "https://juejin.cn/post/7579935414423027758",
-    "timestamp": "2025-12-05T08:48:37Z"
-  },
-  {
-    "title": "webpack实用配置dev--react（一）",
-    "url": "https://juejin.cn/post/7579985751937843234",
-    "timestamp": "2025-12-05T08:48:37Z"
-  },
-  {
-    "title": "AIGC 时代，数据库终于可以“听懂人话”了：从零打造自然语言操作 SQLite 的完整实战",
-    "url": "https://juejin.cn/post/7579946275436265482",
-    "timestamp": "2025-12-05T08:48:37Z"
-  },
-  {
-    "title": "诺顿全球免费开放AI原生安全浏览器Norton Neo",
-    "url": "https://www.pingwest.com/w/309626",
-    "timestamp": "2025-12-05T08:48:37Z"
-  },
-  {
-    "title": "OpenAI 推出 GPT-5.1-Codex-Max，GitHub Copilot 支持预览",
-    "url": "https://www.pingwest.com/w/309623",
-    "timestamp": "2025-12-05T08:48:37Z"
-  },
-  {
-    "title": "Nothing开启500万美元社区融资轮，估值维持13亿美元",
-    "url": "https://www.pingwest.com/w/309618",
-    "timestamp": "2025-12-05T08:48:37Z"
-  },
-  {
     "title": "Google测试整合AI Overviews与AI Mode，强化搜索对话体验",
     "url": "https://www.pingwest.com/w/309616",
     "timestamp": "2025-12-05T08:48:37Z"
@@ -4998,5 +4953,50 @@
     "title": "Top Ukrainian commander: troops hold part of Pokrovsk but have withdrawn from some positions",
     "url": "https://www.reuters.com/world/top-ukrainian-commander-troops-hold-part-pokrovsk-have-withdrawn-some-positions-2025-12-09/",
     "timestamp": "2025-12-09T20:41:12Z"
+  },
+  {
+    "title": "Django: what’s new in 6.0",
+    "url": "https://adamj.eu/tech/2025/12/03/django-whats-new-6.0/",
+    "timestamp": "2025-12-09T22:37:41Z"
+  },
+  {
+    "title": "请教一下 AI 如何写前端代码",
+    "url": "https://www.v2ex.com/t/1177910",
+    "timestamp": "2025-12-09T22:37:41Z"
+  },
+  {
+    "title": "Proposed ‘AfterDark’ Bitcoin ETF Would Skip U.S. Trading Hours",
+    "url": "https://www.coindesk.com/markets/2025/12/09/nicholas-proposes-afterdark-bitcoin-etf-that-skips-u-s-trading-hours",
+    "timestamp": "2025-12-09T22:37:41Z"
+  },
+  {
+    "title": "微软宣布230亿美元AI投资：175亿美元押注印度，加拿大投资同步扩张",
+    "url": "https://wallstreetcn.com/articles/3761049",
+    "timestamp": "2025-12-09T22:37:41Z"
+  },
+  {
+    "title": "马斯克旗下SpaceX料将在2026年IPO，融资将远超300亿美元",
+    "url": "https://wallstreetcn.com/articles/3761046",
+    "timestamp": "2025-12-09T22:37:41Z"
+  },
+  {
+    "title": "警方通报2人在女更衣室偷拍被刑拘！12月9日，重庆市公安局沙坪坝分局发布警情通报：网传 “一温泉酒店更衣室疑似存在偷拍行为”，警方迅速开展调查，并于 12 月 9 日上午 7 时许，将犯罪嫌疑人施某（男，32 岁）、周某（女，19 岁）抓获",
+    "url": "https://dig.ichouti.cn/link/45725052",
+    "timestamp": "2025-12-09T22:37:41Z"
+  },
+  {
+    "title": "Google2025年度热搜榜视频  看了一下，不知道是故意还是怎么的，基本上没中国的东西  有点意思  忽视的有点刻意了",
+    "url": "https://dig.ichouti.cn/link/45723076",
+    "timestamp": "2025-12-09T22:37:41Z"
+  },
+  {
+    "title": "深圳发布公积金提取新规 12月15日起施行",
+    "url": "https://china.huanqiu.com/article/4PTr4vf1qiX",
+    "timestamp": "2025-12-09T22:37:41Z"
+  },
+  {
+    "title": "中方呼吁构建均衡、有效、可持续的欧洲安全架构",
+    "url": "https://news.10jqka.com.cn/20251210/c673087504.shtml",
+    "timestamp": "2025-12-09T22:37:41Z"
   }
 ]
