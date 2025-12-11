@@ -1,255 +1,5 @@
 [
   {
-    "title": "中国人形机器人亮相日本国际机器人展",
-    "url": "https://news.10jqka.com.cn/20251207/c673019929.shtml",
-    "timestamp": "2025-12-07T13:02:43Z"
-  },
-  {
-    "title": "Java Hello World, LLVM Edition",
-    "url": "https://www.javaadvent.com/2025/12/java-hello-world-llvm-edition.html",
-    "timestamp": "2025-12-07T13:02:43Z"
-  },
-  {
-    "title": "彻底搞定大模型流式输出：从二进制碎块到“嘚嘚嘚”打字机效果，让底层逻辑飞起来",
-    "url": "https://juejin.cn/post/7580389111920705599",
-    "timestamp": "2025-12-07T13:02:43Z"
-  },
-  {
-    "title": "Vue3计算属性如何通过缓存特性优化表单验证与数据过滤？",
-    "url": "https://juejin.cn/post/7580547126360588351",
-    "timestamp": "2025-12-07T13:02:43Z"
-  },
-  {
-    "title": "深入解析：基于 Vue 3 与 DeepSeek API 构建流式大模型聊天应用的完整实现",
-    "url": "https://juejin.cn/post/7580373352421244954",
-    "timestamp": "2025-12-07T13:02:43Z"
-  },
-  {
-    "title": "AI打字机的秘密：一个 buffer 如何让机器学会“慢慢说话”",
-    "url": "https://juejin.cn/post/7580394927977594899",
-    "timestamp": "2025-12-07T13:02:43Z"
-  },
-  {
-    "title": "国产蒸汽朋克新作不会过度使用AI：保持设计的真实感",
-    "url": "https://www.gamersky.com/news/202512/2055263.shtml",
-    "timestamp": "2025-12-07T13:02:43Z"
-  },
-  {
-    "title": "太劣质了！《莎木4》TGA泄露预告 外媒质疑是AI做的",
-    "url": "https://www.gamersky.com/news/202512/2055245.shtml",
-    "timestamp": "2025-12-07T13:02:43Z"
-  },
-  {
-    "title": "新游被指使用AI 发行商破防开骂：赤石去吧！",
-    "url": "https://www.gamersky.com/news/202512/2055243.shtml",
-    "timestamp": "2025-12-07T13:02:43Z"
-  },
-  {
-    "title": "周五突发的好消息，含金量如何？",
-    "url": "https://www.huxiu.com/article/4814686.html",
-    "timestamp": "2025-12-07T13:02:43Z"
-  },
-  {
-    "title": "用AI图仅退款，这批羊毛党把商家薅麻了",
-    "url": "https://www.huxiu.com/article/4814682.html",
-    "timestamp": "2025-12-07T13:02:43Z"
-  },
-  {
-    "title": "下一个Transformer可能又被Google做出来了",
-    "url": "https://www.pingwest.com/a/309637",
-    "timestamp": "2025-12-07T13:02:43Z"
-  },
-  {
-    "title": "“大空头”：AI泡沫破灭，两年够了",
-    "url": "https://wallstreetcn.com/charts/41958194",
-    "timestamp": "2025-12-07T13:02:43Z"
-  },
-  {
-    "title": "【岩石种类识别系统】Python+TensorFlow+Django+人工智能+深度学习+卷积神经网络算法",
-    "url": "https://juejin.cn/post/7580374090365927462",
-    "timestamp": "2025-12-07T13:02:43Z"
-  },
-  {
-    "title": "【中草药识别系统】Python+TensorFlow+Django+人工智能+深度学习+卷积神经网络算法",
-    "url": "https://juejin.cn/post/7581004702927126537",
-    "timestamp": "2025-12-07T13:02:43Z"
-  },
-  {
-    "title": "关键词读懂“十五五”｜“人工智能+” 为千行百业安装“智慧大脑”",
-    "url": "https://china.huanqiu.com/article/4PRoN1Uwo9z",
-    "timestamp": "2025-12-07T13:02:43Z"
-  },
-  {
-    "title": "驻日大使吴江浩就日本自卫队飞机滋扰中国海军航母编队训练提出严正交涉",
-    "url": "https://wallstreetcn.com/livenews/3016414",
-    "timestamp": "2025-12-07T13:02:43Z"
-  },
-  {
-    "title": "2026量产元年，人形机器人机会在哪？",
-    "url": "https://www.gelonghui.com/p/3332086",
-    "timestamp": "2025-12-07T13:02:43Z"
-  },
-  {
-    "title": "apple pencil 2 可以转成 apple pencil pro 模式吗",
-    "url": "https://www.v2ex.com/t/1177400",
-    "timestamp": "2025-12-07T13:02:43Z"
-  },
-  {
-    "title": "收一个搬瓦工 MEGABOX-PRO 有原邮活着 biggerbox-pro 也行，荷兰 DC1 也行",
-    "url": "https://www.v2ex.com/t/1177394",
-    "timestamp": "2025-12-07T13:02:43Z"
-  },
-  {
-    "title": "《辐射》第二季新预告发布 那个乐观的露西又回来了",
-    "url": "https://www.cnbeta.com.tw/articles/movie/1539958.htm",
-    "timestamp": "2025-12-07T13:02:43Z"
-  },
-  {
-    "title": "吉田修平：日本游戏行业难以复制中国同行的开发速度",
-    "url": "https://www.cnbeta.com.tw/articles/game/1539950.htm",
-    "timestamp": "2025-12-07T13:02:43Z"
-  },
-  {
-    "title": "《塞尔达传说》系列唱片《海拉鲁叙事诗III》发布",
-    "url": "https://www.cnbeta.com.tw/articles/game/1539946.htm",
-    "timestamp": "2025-12-07T13:02:43Z"
-  },
-  {
-    "title": "特斯拉Robotaxi应用已向11地区iOS用户开放下载",
-    "url": "https://www.cnbeta.com.tw/articles/tech/1539944.htm",
-    "timestamp": "2025-12-07T13:02:43Z"
-  },
-  {
-    "title": "NVIDIA售后被指双标：1万美元显卡坏了免费换 1千美元的不管",
-    "url": "https://www.cnbeta.com.tw/articles/tech/1539942.htm",
-    "timestamp": "2025-12-07T13:02:43Z"
-  },
-  {
-    "title": "微软将允许用户从Windows 11文件资源管理器中移除“AI 动作”入口",
-    "url": "https://www.cnbeta.com.tw/articles/tech/1539940.htm",
-    "timestamp": "2025-12-07T13:02:43Z"
-  },
-  {
-    "title": "CEO 亲自演示：众擎机器人 T800 一脚踹翻 75 公斤级老板赵同阳",
-    "url": "https://www.ithome.com/0/903/156.htm",
-    "timestamp": "2025-12-07T13:02:43Z"
-  },
-  {
-    "title": "AMD苏姿丰再次否认AI泡沫：让我睡不着的不是友商 而是创新",
-    "url": "https://www.cnbeta.com.tw/articles/tech/1539962.htm",
-    "timestamp": "2025-12-07T14:37:00Z"
-  },
-  {
-    "title": "NVIDIA护城河20年来最大更新 CUDA 13.1正式发布",
-    "url": "https://www.cnbeta.com.tw/articles/tech/1539960.htm",
-    "timestamp": "2025-12-07T14:37:00Z"
-  },
-  {
-    "title": "佩斯科夫：美国家安全战略不再将俄称为“直接威胁”是积极举措",
-    "url": "https://news.cctv.com/2025/12/07/ARTISJXewjku4OdlHJmSpCOa251207.shtml",
-    "timestamp": "2025-12-07T14:37:00Z"
-  },
-  {
-    "title": "驻日本大使吴江浩就日本自卫队飞机滋扰中国海军航母编队训练提出严正交涉",
-    "url": "https://news.cctv.com/2025/12/07/ARTI13fROKzXPmECZ080n0FG251207.shtml",
-    "timestamp": "2025-12-07T14:37:00Z"
-  },
-  {
-    "title": "Michael Saylor再次发布比特币Tracker信息，下周或将披露增持数据",
-    "url": "https://jinse.cn/lives/490451.html",
-    "timestamp": "2025-12-07T14:37:00Z"
-  },
-  {
-    "title": "中国电信董事长柯瑞文：加快推进算力基础设施建设 强化国产算力芯片适配",
-    "url": "https://news.10jqka.com.cn/20251207/c673020281.shtml",
-    "timestamp": "2025-12-07T14:37:00Z"
-  },
-  {
-    "title": "Bitcoin Market Echoes Early 2022 as Onchain Stress Mounts: Glassnode",
-    "url": "https://www.coindesk.com/markets/2025/12/05/bitcoin-market-echoes-early-2022-as-onchain-stress-mounts-glassnode",
-    "timestamp": "2025-12-07T14:37:00Z"
-  },
-  {
-    "title": "这个周末使用 Cursor 开发一个在线批量生成二维码的网站。",
-    "url": "https://www.v2ex.com/t/1177415",
-    "timestamp": "2025-12-07T14:37:00Z"
-  },
-  {
-    "title": "wireguard 还是 tailscale",
-    "url": "https://www.v2ex.com/t/1177414",
-    "timestamp": "2025-12-07T14:37:00Z"
-  },
-  {
-    "title": "后端开发求职（成都）",
-    "url": "https://www.v2ex.com/t/1177408",
-    "timestamp": "2025-12-07T14:37:00Z"
-  },
-  {
-    "title": "请教如果领取了 Gemini pro 一年会员，以后会因为 ip 变化被回收吗？",
-    "url": "https://www.v2ex.com/t/1177407",
-    "timestamp": "2025-12-07T14:37:00Z"
-  },
-  {
-    "title": "适合学习的知识库开源项目",
-    "url": "https://www.v2ex.com/t/1177406",
-    "timestamp": "2025-12-07T14:37:00Z"
-  },
-  {
-    "title": "nano-banana-pro 高清生图、gemini-3-pro、gpt-4o-mini、sora-2、veo3.1、suno、deepseek3.2、jimeng4.5",
-    "url": "https://www.v2ex.com/t/1177405",
-    "timestamp": "2025-12-07T14:37:00Z"
-  },
-  {
-    "title": "Michael Saylor 再次发布比特币 Tracker 信息，下周或将披露增持数据",
-    "url": "https://www.techflowpost.com/newsletter/detail_107722.html",
-    "timestamp": "2025-12-07T14:37:00Z"
-  },
-  {
-    "title": "Goodbye, Microsoft: Schleswig-Holstein Relies on Open Source and Saves Millions",
-    "url": "https://www.heise.de/en/news/Goodbye-Microsoft-Schleswig-Holstein-relies-on-Open-Source-and-saves-millions-11105459.html",
-    "timestamp": "2025-12-07T14:37:00Z"
-  },
-  {
-    "title": "Google Titans architecture, helping AI have long-term memory",
-    "url": "https://research.google/blog/titans-miras-helping-ai-have-long-term-memory/",
-    "timestamp": "2025-12-07T14:37:00Z"
-  },
-  {
-    "title": "高德上线“AI停车雷达”：直观呈现沿途道路车位空闲状态",
-    "url": "https://m.mydrivers.com/newsview/1091088.html",
-    "timestamp": "2025-12-07T14:37:00Z"
-  },
-  {
-    "title": "AI芯片明年6倍增长 百度回应昆仑芯上市计划：不保证会进行",
-    "url": "https://m.mydrivers.com/newsview/1091085.html",
-    "timestamp": "2025-12-07T14:37:00Z"
-  },
-  {
-    "title": "AMD苏姿丰再次否认AI泡沫：让我睡不着的不是友商 而是创新",
-    "url": "https://m.mydrivers.com/newsview/1091084.html",
-    "timestamp": "2025-12-07T14:37:00Z"
-  },
-  {
-    "title": "未来将手握4万亿现金流 NVIDIA钱多到发愁：怎么花是个问题",
-    "url": "https://m.mydrivers.com/newsview/1091083.html",
-    "timestamp": "2025-12-07T14:37:00Z"
-  },
-  {
-    "title": "NVIDIA护城河20年来最大更新！CUDA 13.1正式发布",
-    "url": "https://m.mydrivers.com/newsview/1091082.html",
-    "timestamp": "2025-12-07T14:37:00Z"
-  },
-  {
-    "title": "在实际调研中，他发现，许多地方制定“十五五”规划还是主要抓投资、抓项目，对消费、民生、需求重视不够。“实际上，如果把后者抓好了，科技自立自强、产业转型升级才有更大的发展空间”。  刘世锦建议，有条件有意愿的地方可以在消费、民生、需求等方面积极探索、先行先试，步子大一些，走得快一些，...",
-    "url": "https://dig.ichouti.cn/link/45713128",
-    "timestamp": "2025-12-07T16:42:43.669367"
-  },
-  {
-    "title": "【机器人租赁价格“膝斩” 至千元起】《科创板日报》记者近日调查发现，机器人租赁市场价格较年初“万元日薪”高点大幅回落，呈现“膝斩”。基础人形机器人日租金已降至2000元左右，四足机器人日租最低约500元。商家普遍改为展示更具吸引力的标价以引流，实际成交价需进一步商谈。当前年末年会、商演等 ...",
-    "url": "https://dig.ichouti.cn/link/45713265",
-    "timestamp": "2025-12-07T16:42:43.669480"
-  },
-  {
     "title": "周末要闻汇总：券商行业迎重磅利好，吴清称适度拓宽其杠杆上限；A股将迎超千亿增量资金。周末影响市场的重要资讯有：①吴清：适度拓宽券商资本空间与杠杆上限 从价格竞争转向价值竞争；②金融监管总局：调整保险公司投资相关股票的风险因子 培育壮大耐心资本；③美股三大指数上周五小幅收涨；④业绩 ...",
     "url": "https://dig.ichouti.cn/link/45713266",
     "timestamp": "2025-12-07T16:42:43.669602"
@@ -356,7 +106,7 @@
   },
   {
     "title": "早报｜定金 28 万，领克百万赛车售罄/Netflix 收购华纳兄弟细节曝光/反击 Gemini，曝 GPT-5.2 本周见",
-    "url": "https://www.ifanr.com/1647689?utm_source=rss&utm_medium=rss&utm_campaign=",
+    "url": "https://www.ifanr.com/1647689?utm_source=rss\u0026utm_medium=rss\u0026utm_campaign=",
     "timestamp": "2025-12-08T01:39:38.747388"
   },
   {
@@ -595,7 +345,7 @@
     "timestamp": "2025-12-08T04:51:17Z"
   },
   {
-    "title": "ROCK&ROLL：阿里双框架协同推动 Agentic RL 规模化应用",
+    "title": "ROCK\u0026ROLL：阿里双框架协同推动 Agentic RL 规模化应用",
     "url": "https://www.oschina.net/news/388446",
     "timestamp": "2025-12-08T04:51:17Z"
   },
@@ -821,7 +571,7 @@
   },
   {
     "title": "豆包手机助手让海外炸锅，歪果仁：这是第一款真正意义上的智能手机",
-    "url": "https://www.ifanr.com/1647590?utm_source=rss&utm_medium=rss&utm_campaign=",
+    "url": "https://www.ifanr.com/1647590?utm_source=rss\u0026utm_medium=rss\u0026utm_campaign=",
     "timestamp": "2025-12-08T10:43:40.647676"
   },
   {
@@ -831,7 +581,7 @@
   },
   {
     "title": "Model YL 平替，奔驰新一代 GLB 发布，告别 1.3T 发动机",
-    "url": "https://www.ifanr.com/1647716?utm_source=rss&utm_medium=rss&utm_campaign=",
+    "url": "https://www.ifanr.com/1647716?utm_source=rss\u0026utm_medium=rss\u0026utm_campaign=",
     "timestamp": "2025-12-08T14:41:02.567724"
   },
   {
@@ -1501,12 +1251,12 @@
   },
   {
     "title": "早报｜苹果芯片高管回应离职传闻:短期内无计划/DeepSeek创始人入选《自然》年度人物/经典版QQ回归",
-    "url": "https://www.ifanr.com/1647798?utm_source=rss&utm_medium=rss&utm_campaign=",
+    "url": "https://www.ifanr.com/1647798?utm_source=rss\u0026utm_medium=rss\u0026utm_campaign=",
     "timestamp": "2025-12-09T01:37:54.361519"
   },
   {
     "title": "Google 眼镜杀回来了！最强 AI 上头，两大潮牌站台，还有一款中国造",
-    "url": "https://www.ifanr.com/1647779?utm_source=rss&utm_medium=rss&utm_campaign=",
+    "url": "https://www.ifanr.com/1647779?utm_source=rss\u0026utm_medium=rss\u0026utm_campaign=",
     "timestamp": "2025-12-09T01:37:54.361584"
   },
   {
@@ -1691,7 +1441,7 @@
   },
   {
     "title": "逼得奥特曼紧急掏出 GPT-5.2，Gemini 3 凭什么逆风翻盘 | Google 首席 AI 架构师首次揭秘",
-    "url": "https://www.ifanr.com/1647214?utm_source=rss&utm_medium=rss&utm_campaign=",
+    "url": "https://www.ifanr.com/1647214?utm_source=rss\u0026utm_medium=rss\u0026utm_campaign=",
     "timestamp": "2025-12-09T02:18:30Z"
   },
   {
@@ -1856,12 +1606,12 @@
   },
   {
     "title": "100 万亿 Token 揭秘全球用户怎么用 AI：一半算力用在「不可描述」的地方",
-    "url": "https://www.ifanr.com/1647711?utm_source=rss&utm_medium=rss&utm_campaign=",
+    "url": "https://www.ifanr.com/1647711?utm_source=rss\u0026utm_medium=rss\u0026utm_campaign=",
     "timestamp": "2025-12-09T03:40:38.670547"
   },
   {
     "title": "特斯拉机器人又被抓包：疑似遥控「摘头显」摔倒，名场面诞生",
-    "url": "https://www.ifanr.com/1647828?utm_source=rss&utm_medium=rss&utm_campaign=",
+    "url": "https://www.ifanr.com/1647828?utm_source=rss\u0026utm_medium=rss\u0026utm_campaign=",
     "timestamp": "2025-12-09T04:50:21Z"
   },
   {
@@ -2951,7 +2701,7 @@
   },
   {
     "title": "早报｜苹果首款折叠 iPhone 产量或超千万/小米中国区人事大调整/鸿蒙智行首款旗舰 MPV 官宣",
-    "url": "https://www.ifanr.com/1647908?utm_source=rss&utm_medium=rss&utm_campaign=",
+    "url": "https://www.ifanr.com/1647908?utm_source=rss\u0026utm_medium=rss\u0026utm_campaign=",
     "timestamp": "2025-12-10T01:51:38.819775"
   },
   {
@@ -3166,7 +2916,7 @@
   },
   {
     "title": "GPT-5.2 内幕曝光：停掉 Sora，八周内死磕 ChatGPT 求生，AGI 梦想向生存低头",
-    "url": "https://www.ifanr.com/1647912?utm_source=rss&utm_medium=rss&utm_campaign=",
+    "url": "https://www.ifanr.com/1647912?utm_source=rss\u0026utm_medium=rss\u0026utm_campaign=",
     "timestamp": "2025-12-10T03:43:48.586264"
   },
   {
@@ -3471,7 +3221,7 @@
   },
   {
     "title": "真乐队退出，但AI冒牌却在Spotify「拼好歌」冲榜",
-    "url": "https://www.ifanr.com/1647948?utm_source=rss&utm_medium=rss&utm_campaign=",
+    "url": "https://www.ifanr.com/1647948?utm_source=rss\u0026utm_medium=rss\u0026utm_campaign=",
     "timestamp": "2025-12-10T08:47:54.611845"
   },
   {
@@ -3481,7 +3231,7 @@
   },
   {
     "title": "好莱坞首位 AI 女演员幕后：花 6 万美元「整」出黑眼圈，毙掉 2000 版，卡梅隆：令人毛骨悚然",
-    "url": "https://www.ifanr.com/1647967?utm_source=rss&utm_medium=rss&utm_campaign=",
+    "url": "https://www.ifanr.com/1647967?utm_source=rss\u0026utm_medium=rss\u0026utm_campaign=",
     "timestamp": "2025-12-10T10:43:59.770699"
   },
   {
@@ -3841,7 +3591,7 @@
   },
   {
     "title": "ChatGPT 三周年之际，我怀念我写得很烂的时候",
-    "url": "https://www.ifanr.com/1647583?utm_source=rss&utm_medium=rss&utm_campaign=",
+    "url": "https://www.ifanr.com/1647583?utm_source=rss\u0026utm_medium=rss\u0026utm_campaign=",
     "timestamp": "2025-12-10T14:42:54.975666"
   },
   {
@@ -4216,7 +3966,7 @@
   },
   {
     "title": "早报｜大疆Pocket 4外观遭曝光：或配备双摄/苹果上线iPhone免费「闪送」/理想自动驾驶负责人回应宇树王兴兴质疑",
-    "url": "https://www.ifanr.com/1648099?utm_source=rss&utm_medium=rss&utm_campaign=",
+    "url": "https://www.ifanr.com/1648099?utm_source=rss\u0026utm_medium=rss\u0026utm_campaign=",
     "timestamp": "2025-12-11T01:39:51.599949"
   },
   {
@@ -4446,7 +4196,7 @@
   },
   {
     "title": "不装了，偷师国产 AI 模型，Meta 加班裁员两手抓，救命稻草「牛油果」还闭源了",
-    "url": "https://www.ifanr.com/1648071?utm_source=rss&utm_medium=rss&utm_campaign=",
+    "url": "https://www.ifanr.com/1648071?utm_source=rss\u0026utm_medium=rss\u0026utm_campaign=",
     "timestamp": "2025-12-11T03:46:35.302025"
   },
   {
@@ -4696,7 +4446,7 @@
   },
   {
     "title": "MiniMax 闫俊杰和罗永浩四小时访谈：走出中国 AI 的第三条路，大山并非不可翻越",
-    "url": "https://www.ifanr.com/1647849?utm_source=rss&utm_medium=rss&utm_campaign=",
+    "url": "https://www.ifanr.com/1647849?utm_source=rss\u0026utm_medium=rss\u0026utm_campaign=",
     "timestamp": "2025-12-11T04:53:16Z"
   },
   {
@@ -4780,7 +4530,7 @@
     "timestamp": "2025-12-11T08:52:29Z"
   },
   {
-    "title": "MEET2026挤爆了，AI圈今年最该听的20+场演讲&对谈都在这",
+    "title": "MEET2026挤爆了，AI圈今年最该听的20+场演讲\u0026对谈都在这",
     "url": "https://www.qbitai.com/2025/12/360136.html",
     "timestamp": "2025-12-11T08:52:29Z"
   },
@@ -5008,5 +4758,245 @@
     "title": "网警：男子AI生成车展低俗视频被拘",
     "url": "https://www.baidu.com/s?wd=%E7%BD%91%E8%AD%A6%EF%BC%9A%E7%94%B7%E5%AD%90AI%E7%94%9F%E6%88%90%E8%BD%A6%E5%B1%95%E4%BD%8E%E4%BF%97%E8%A7%86%E9%A2%91%E8%A2%AB%E6%8B%98",
     "timestamp": "2025-12-11T13:03:48.565926"
+  },
+  {
+    "title": "“期末焦虑”引爆AI需求：千问APP学习类需求周环比大涨超70%",
+    "url": "https://www.pingwest.com/w/309779",
+    "timestamp": "2025-12-11T14:42:10Z"
+  },
+  {
+    "title": "OPPO整合AI业务，推出“超级小布”项目",
+    "url": "https://www.pingwest.com/w/309778",
+    "timestamp": "2025-12-11T14:42:10Z"
+  },
+  {
+    "title": "暴涨47.5%，Meta也不敢提的真相：P站正在\"拯救\"VR行业？",
+    "url": "https://dig.ichouti.cn/link/45737925",
+    "timestamp": "2025-12-11T14:42:10Z"
+  },
+  {
+    "title": "梳理各方对《2025美国国家安全战略》的评价",
+    "url": "https://dig.ichouti.cn/link/45737926",
+    "timestamp": "2025-12-11T14:42:10Z"
+  },
+  {
+    "title": "美股大型科技股盘前多数下跌，英伟达跌超1%",
+    "url": "https://www.36kr.com/newsflashes/3591131025260809",
+    "timestamp": "2025-12-11T14:42:10Z"
+  },
+  {
+    "title": "主线科技向港交所提交上市申请",
+    "url": "https://www.36kr.com/newsflashes/3591129483886850",
+    "timestamp": "2025-12-11T14:42:10Z"
+  },
+  {
+    "title": "无人机攻防、智能调度……直击民兵多课目实战化演练现场",
+    "url": "https://military.cctv.com/2025/12/11/ARTIaz5bJff7sjxwfISCCdz7251211.shtml",
+    "timestamp": "2025-12-11T14:42:10Z"
+  },
+  {
+    "title": "6天涨7倍 “国产NVIDIA”市值破4400亿 摩尔线程紧急公告",
+    "url": "https://m.mydrivers.com/newsview/1092049.html",
+    "timestamp": "2025-12-11T14:42:10Z"
+  },
+  {
+    "title": "小米17 Pro系列搭载LOFIC 卢伟冰：会是手机影像趋势性技术",
+    "url": "https://m.mydrivers.com/newsview/1092048.html",
+    "timestamp": "2025-12-11T14:42:10Z"
+  },
+  {
+    "title": "日本芯片工艺要从28nm跃升到4nm 台积电关键时刻出手",
+    "url": "https://m.mydrivers.com/newsview/1092047.html",
+    "timestamp": "2025-12-11T14:42:10Z"
+  },
+  {
+    "title": "2万亿订单也没带动 AI明星甲骨文股价暴跌：带崩NV、AMD",
+    "url": "https://m.mydrivers.com/newsview/1092045.html",
+    "timestamp": "2025-12-11T14:42:10Z"
+  },
+  {
+    "title": "外卖骑手玩套路！接单后反手取消 iPhone 16 Pro Max被直接骗走",
+    "url": "https://m.mydrivers.com/newsview/1092042.html",
+    "timestamp": "2025-12-11T14:42:10Z"
+  },
+  {
+    "title": "NVIDIA H200能卖但HBM3E仍被禁：华为已有自研替代品",
+    "url": "https://m.mydrivers.com/newsview/1092041.html",
+    "timestamp": "2025-12-11T14:42:10Z"
+  },
+  {
+    "title": "ai 相关的开发应该做什么方向",
+    "url": "https://www.v2ex.com/t/1178377",
+    "timestamp": "2025-12-11T14:42:10Z"
+  },
+  {
+    "title": "想在美区 Google Play 花掉账户里的 balance 金额，怎么破",
+    "url": "https://www.v2ex.com/t/1178376",
+    "timestamp": "2025-12-11T14:42:10Z"
+  },
+  {
+    "title": "HiCyou 开源网址导航/目录 用 Supabase 和 Vercel 不花一分钱部署详细教程",
+    "url": "https://www.v2ex.com/t/1178371",
+    "timestamp": "2025-12-11T14:42:10Z"
+  },
+  {
+    "title": "高通万卫星：混合AI与分布式协同是未来 | MEET2026",
+    "url": "https://www.qbitai.com/2025/12/360405.html",
+    "timestamp": "2025-12-11T14:42:10Z"
+  },
+  {
+    "title": "张亚勤院士：基础大模型最终不超过10个，十年后机器人比人多 | MEET2026",
+    "url": "https://www.qbitai.com/2025/12/360373.html",
+    "timestamp": "2025-12-11T14:42:10Z"
+  },
+  {
+    "title": "How might Russia react to any EU decision to use its frozen assets for Ukraine?",
+    "url": "https://www.reuters.com/business/finance/how-might-russia-react-any-eu-decision-use-its-frozen-assets-ukraine-2025-12-11/",
+    "timestamp": "2025-12-11T14:42:10Z"
+  },
+  {
+    "title": "EU aims to agree by Friday to long-term freeze of Russian central bank assets",
+    "url": "https://www.reuters.com/business/finance/eu-aims-agree-by-friday-long-term-freeze-russian-central-bank-assets-2025-12-11/",
+    "timestamp": "2025-12-11T14:42:10Z"
+  },
+  {
+    "title": "More than 12 million face acute hunger in Myanmar, WFP says",
+    "url": "https://www.reuters.com/world/asia-pacific/more-than-12-million-face-acute-hunger-myanmar-wfp-says-2025-12-11/",
+    "timestamp": "2025-12-11T14:42:10Z"
+  },
+  {
+    "title": "Brothers detained in Thailand after nightclub fire kills 25 in Goa",
+    "url": "https://www.reuters.com/world/asia-pacific/brothers-detained-thailand-after-nightclub-fire-kills-25-goa-2025-12-11/",
+    "timestamp": "2025-12-11T14:42:10Z"
+  },
+  {
+    "title": "设备每次插入Linux识别的串口不一样？试试udev！",
+    "url": "https://juejin.cn/post/7582267229842767872",
+    "timestamp": "2025-12-11T14:42:10Z"
+  },
+  {
+    "title": "从C++/MFC到CEF与TypeScript的桌面架构演进",
+    "url": "https://juejin.cn/post/7582393212767797302",
+    "timestamp": "2025-12-11T14:42:10Z"
+  },
+  {
+    "title": "magic-api使用",
+    "url": "https://juejin.cn/post/7582401182934089743",
+    "timestamp": "2025-12-11T14:42:10Z"
+  },
+  {
+    "title": "Goroutine + Channel 高效在哪？一文吃透 Go 并发底层 G-M-P 调度与实现",
+    "url": "https://juejin.cn/post/7582393212767354934",
+    "timestamp": "2025-12-11T14:42:10Z"
+  },
+  {
+    "title": "A “frozen” dictionary for Python",
+    "url": "https://lwn.net/SubscriberLink/1047238/25c270b077849dc0/",
+    "timestamp": "2025-12-11T14:42:10Z"
+  },
+  {
+    "title": "Show HN: Local Privacy Firewall-blocks PII and secrets before ChatGPT sees them",
+    "url": "https://github.com/privacyshield-ai/privacy-firewall",
+    "timestamp": "2025-12-11T14:42:10Z"
+  },
+  {
+    "title": "Meta shuts down global accounts linked to abortion advice and queer content",
+    "url": "https://www.theguardian.com/global-development/2025/dec/11/meta-shuts-down-global-accounts-linked-to-abortion-advice-and-queer-content",
+    "timestamp": "2025-12-11T14:42:10Z"
+  },
+  {
+    "title": "OKX闪赚发布第1-10期数据：OKB、USDT收益表现亮眼",
+    "url": "https://jinse.cn/lives/491170.html",
+    "timestamp": "2025-12-11T14:42:10Z"
+  },
+  {
+    "title": "迪士尼将对OpenAI进行10亿美元股权投资",
+    "url": "https://jinse.cn/lives/491164.html",
+    "timestamp": "2025-12-11T14:42:10Z"
+  },
+  {
+    "title": "Inveniam 收购 Swarm 拟联合推出代币化智能资产管理平台",
+    "url": "https://jinse.cn/lives/491162.html",
+    "timestamp": "2025-12-11T14:42:10Z"
+  },
+  {
+    "title": "↩️🖼 《时代》周刊2025年年度人物出炉。今年年度人物为“人工智能的建筑师”。",
+    "url": "https://t.me/tnews365/34609",
+    "timestamp": "2025-12-11T14:42:10Z"
+  },
+  {
+    "title": "广东丸美生物科技向港交所提交上市申请",
+    "url": "https://news.10jqka.com.cn/20251211/c673148694.shtml",
+    "timestamp": "2025-12-11T14:42:10Z"
+  },
+  {
+    "title": "Opera Neon代理AI浏览器正式发布 月费19.9美元",
+    "url": "https://www.cnbeta.com.tw/articles/tech/1540594.htm",
+    "timestamp": "2025-12-11T14:42:10Z"
+  },
+  {
+    "title": "投资者称马斯克旗下SpaceX的上市将成“史上最疯狂IPO”",
+    "url": "https://www.cnbeta.com.tw/articles/tech/1540580.htm",
+    "timestamp": "2025-12-11T14:42:10Z"
+  },
+  {
+    "title": "Google推出第八代TPU：TPUv8ax专注训练、TPUv8x面向推理",
+    "url": "https://www.cnbeta.com.tw/articles/tech/1540578.htm",
+    "timestamp": "2025-12-11T14:42:10Z"
+  },
+  {
+    "title": "2026年美股展望：AI泡沫的内部熔点与外部拐点",
+    "url": "https://www.gelonghui.com/p/3353461",
+    "timestamp": "2025-12-11T14:42:10Z"
+  },
+  {
+    "title": "霍华德·马克斯最值得一看的备忘录：AI有泡沫吗？",
+    "url": "https://www.gelonghui.com/p/3353426",
+    "timestamp": "2025-12-11T14:42:10Z"
+  },
+  {
+    "title": "三星首款三折叠Galaxy Z TriFold国内亮相，Galaxy AI落到10英寸大屏上丨最前线",
+    "url": "https://www.36kr.com/p/3591144639955206",
+    "timestamp": "2025-12-11T14:42:10Z"
+  },
+  {
+    "title": "最牛打工妹，瞄准人形机器人",
+    "url": "https://www.36kr.com/p/3591057628037121",
+    "timestamp": "2025-12-11T14:42:10Z"
+  },
+  {
+    "title": "欠中国公司25亿，全球机器人霸主：兜里没钱了",
+    "url": "https://www.36kr.com/p/3591058889097222",
+    "timestamp": "2025-12-11T14:42:10Z"
+  },
+  {
+    "title": "腾讯为何也要买华纳：引入HBO、参投哈利波特或纯财务？",
+    "url": "https://www.36kr.com/p/3591085106708745",
+    "timestamp": "2025-12-11T14:42:10Z"
+  },
+  {
+    "title": "周鸿祎：豆包手机拿捏大厂命门，不想做手机的腾讯，或该考虑了",
+    "url": "https://www.36kr.com/p/3591047953138177",
+    "timestamp": "2025-12-11T14:42:10Z"
+  },
+  {
+    "title": "🕳️ React 避坑指南：\"闭包陷阱\"",
+    "url": "https://juejin.cn/post/7582401182934188047",
+    "timestamp": "2025-12-11T14:42:10Z"
+  },
+  {
+    "title": "从后端拼模板到 Vue 响应式：前端界面的三次进化",
+    "url": "https://juejin.cn/post/7582232291621699622",
+    "timestamp": "2025-12-11T14:42:10Z"
+  },
+  {
+    "title": "tauri2+vue+vite实现基于webview视图渲染的桌面端开发",
+    "url": "https://juejin.cn/post/7582207260200157238",
+    "timestamp": "2025-12-11T14:42:10Z"
+  },
+  {
+    "title": "Vue 3 统一面包屑导航系统：从配置地狱到单一数据源",
+    "url": "https://juejin.cn/post/7582358932027998223",
+    "timestamp": "2025-12-11T14:42:10Z"
   }
 ]
