@@ -1,90 +1,5 @@
 [
   {
-    "title": "Chinese carrier conducting intense air operations near Japan, Tokyo says",
-    "url": "https://www.reuters.com/world/china/chinese-carrier-conducting-intense-air-operations-near-japan-tokyo-says-2025-12-08/",
-    "timestamp": "2025-12-08T02:20:57Z"
-  },
-  {
-    "title": "Thai army says air strikes launched along disputed border area with Cambodia",
-    "url": "https://www.reuters.com/world/asia-pacific/thai-army-says-air-strikes-launched-along-disputed-border-area-with-cambodia-2025-12-08/",
-    "timestamp": "2025-12-08T02:20:57Z"
-  },
-  {
-    "title": "Zelenskiy says Ukraine's peace talks with US constructive but not easy",
-    "url": "https://www.reuters.com/world/europe/zelenskiy-says-ukraines-peace-talks-with-us-constructive-not-easy-2025-12-07/",
-    "timestamp": "2025-12-08T02:20:57Z"
-  },
-  {
-    "title": "A股算力硬件股涨势扩大，东田微20cm涨停，天孚通信涨超18%，源杰科技涨超10%，长光华芯、仕佳光子、中际旭创、永鼎股份涨超7%，股价均创出历史新高。",
-    "url": "https://wallstreetcn.com/livenews/3016618",
-    "timestamp": "2025-12-08T02:20:57Z"
-  },
-  {
-    "title": "创业板指涨超2%，沪指涨0.27%，深成指涨0.9%，算力硬件、商业航天、券商、福建等方向领涨，沪深京三市上涨个股超3100只。",
-    "url": "https://wallstreetcn.com/livenews/3016611",
-    "timestamp": "2025-12-08T02:20:57Z"
-  },
-  {
-    "title": "韩媒：韩日商界探讨人工智能与半导体合作",
-    "url": "https://wallstreetcn.com/livenews/3016595",
-    "timestamp": "2025-12-08T02:20:57Z"
-  },
-  {
-    "title": "我驻日大使就日本自卫队飞机滋扰中国海军航母编队训练提出严正交涉，如何看待日方这一挑衅行为？",
-    "url": "https://www.zhihu.com/question/1981110643517040156",
-    "timestamp": "2025-12-08T03:46:37.714873"
-  },
-  {
-    "title": "新国标电动车实测，爬陡坡吃力得靠人推，如何看待这类现实痛点？实用性与安全性如何兼顾？",
-    "url": "https://www.zhihu.com/question/1981035982577955237",
-    "timestamp": "2025-12-08T03:46:37.714993"
-  },
-  {
-    "title": "为什么说大模型训练很难？",
-    "url": "https://www.zhihu.com/question/498271491",
-    "timestamp": "2025-12-08T03:46:37.715094"
-  },
-  {
-    "title": "特斯拉中国官网显示，新款Model 3高性能全轮驱动版预计交付日期更新为2026年2月。",
-    "url": "https://wallstreetcn.com/livenews/3016703",
-    "timestamp": "2025-12-08T04:51:17Z"
-  },
-  {
-    "title": "AI进入“液冷时代”，市场低估了“转变力度”，国产供应链正加速入局",
-    "url": "https://wallstreetcn.com/articles/3760892",
-    "timestamp": "2025-12-08T04:51:17Z"
-  },
-  {
-    "title": "特斯拉新款Model 3高性能版预计交付日期更新为明年2月",
-    "url": "https://www.36kr.com/newsflashes/3586401428503688",
-    "timestamp": "2025-12-08T04:51:17Z"
-  },
-  {
-    "title": "高宏斌接任中国钢研科技集团董事长",
-    "url": "https://www.36kr.com/newsflashes/3586373888670848",
-    "timestamp": "2025-12-08T04:51:17Z"
-  },
-  {
-    "title": "“鹿明机器人”完成Pre-A1和Pre-A2轮融资",
-    "url": "https://www.36kr.com/newsflashes/3586371827022728",
-    "timestamp": "2025-12-08T04:51:17Z"
-  },
-  {
-    "title": "“演生潮”完成A轮融资数亿元",
-    "url": "https://www.36kr.com/newsflashes/3586370129050496",
-    "timestamp": "2025-12-08T04:51:17Z"
-  },
-  {
-    "title": "恒指午间休盘跌1.1%，恒生科技指数跌0.24%",
-    "url": "https://www.36kr.com/newsflashes/3586368503856001",
-    "timestamp": "2025-12-08T04:51:17Z"
-  },
-  {
-    "title": "马斯克：希望下个月毫无保留地开源 X 平台全部代码",
-    "url": "https://www.oschina.net/news/388450",
-    "timestamp": "2025-12-08T04:51:17Z"
-  },
-  {
     "title": "ROCK\u0026ROLL：阿里双框架协同推动 Agentic RL 规模化应用",
     "url": "https://www.oschina.net/news/388446",
     "timestamp": "2025-12-08T04:51:17Z"
@@ -4998,5 +4913,90 @@
     "title": "科技小院：让青年助农梦落地生根",
     "url": "https://www.huxiu.com/article/4816646.html",
     "timestamp": "2025-12-11T20:43:59Z"
+  },
+  {
+    "title": "迪斯尼跟OpenAI官宣合作。迪斯尼投资OpenAI十亿美元，并将200多个角色进行授权，以后可以用ChatGPT和Sora直接生成迪斯尼版权的图片和视频，优秀的AI视频还将登陆Disney+流媒体平台供用户观看。迪斯尼也将成为OpenAI的主要客户，用API 构建包括Disney+等产品，而且为员工部署 ChatGPT。",
+    "url": "https://dig.ichouti.cn/link/45739614",
+    "timestamp": "2025-12-11T22:41:26Z"
+  },
+  {
+    "title": "微软消费者 AI 业务负责人苏莱曼：要创造“符合人类利益”的超级智能",
+    "url": "https://www.ithome.com/0/904/346.htm",
+    "timestamp": "2025-12-11T22:41:26Z"
+  },
+  {
+    "title": "Argentina's Milei submits labor reform proposal to Congress",
+    "url": "https://www.reuters.com/business/world-at-work/argentinas-milei-submits-labor-reform-proposal-congress-2025-12-11/",
+    "timestamp": "2025-12-11T22:41:26Z"
+  },
+  {
+    "title": "Trump can maintain good relations with both Japan and China, White House says",
+    "url": "https://www.reuters.com/world/china/trump-can-maintain-good-relations-with-both-japan-china-white-house-says-2025-12-11/",
+    "timestamp": "2025-12-11T22:41:26Z"
+  },
+  {
+    "title": "博通：预计未来六个季度人工智能芯片销售额最低将达730亿美元",
+    "url": "https://news.10jqka.com.cn/20251212/c673150398.shtml",
+    "timestamp": "2025-12-11T22:41:26Z"
+  },
+  {
+    "title": "博通CFO：第一财季毛利润率将因AI产品而收缩1%",
+    "url": "https://news.10jqka.com.cn/20251212/c673150358.shtml",
+    "timestamp": "2025-12-11T22:41:26Z"
+  },
+  {
+    "title": "一款开源、现代化的 WinForm UI 控件库",
+    "url": "https://juejin.cn/post/7582438809378193450",
+    "timestamp": "2025-12-11T22:41:26Z"
+  },
+  {
+    "title": "openai 破釜沉舟，是原地暴死还是咸鱼翻身？",
+    "url": "https://www.v2ex.com/t/1178397",
+    "timestamp": "2025-12-11T22:41:26Z"
+  },
+  {
+    "title": "刚刚，GPT-5.2 正式发布！让打工人每周少干 10 小时，成人模式明年见",
+    "url": "https://www.ifanr.com/1648210?utm_source=rss\u0026utm_medium=rss\u0026utm_campaign=",
+    "timestamp": "2025-12-11T22:41:26Z"
+  },
+  {
+    "title": "博通CFO：第一财季毛利润率将因AI产品而收缩1%。",
+    "url": "https://wallstreetcn.com/livenews/3019442",
+    "timestamp": "2025-12-11T22:41:26Z"
+  },
+  {
+    "title": "泽连斯基：若获安全保障 愿支持在战时举行大选",
+    "url": "https://wallstreetcn.com/livenews/3019438",
+    "timestamp": "2025-12-11T22:41:26Z"
+  },
+  {
+    "title": "博通：预计AI芯片开支动能将在2026财年增长。 上个季度，第四家客户是Anthropic，从对方获得110亿美元额外的订单。 本公司已经从第五家AI芯片客户锁定10亿美元订...",
+    "url": "https://wallstreetcn.com/livenews/3019434",
+    "timestamp": "2025-12-11T22:41:26Z"
+  },
+  {
+    "title": "需求爆表！博通上季AI芯片收入加速增74%，料本季翻倍猛增 | 财报见闻",
+    "url": "https://wallstreetcn.com/articles/3761222",
+    "timestamp": "2025-12-11T22:41:26Z"
+  },
+  {
+    "title": "AI牛市两重天：美股“泡沫”价，东亚“打折”卖",
+    "url": "https://wallstreetcn.com/member/articles/3761200",
+    "timestamp": "2025-12-11T22:41:26Z"
+  },
+  {
+    "title": "12月12日会员早报：OpenAI发布GPT-5.2并透露即将推出自家芯片",
+    "url": "https://wallstreetcn.com/member/articles/3761218",
+    "timestamp": "2025-12-11T22:41:26Z"
+  },
+  {
+    "title": "Rivian放大招挑战英伟达：AI芯片+L4路线公布，股价却一度大跌10%",
+    "url": "https://wallstreetcn.com/articles/3761217",
+    "timestamp": "2025-12-11T22:41:26Z"
+  },
+  {
+    "title": "Bitcoin Rebounds to $93K From Post-Fed Lows, but Altcoins Remain Under Pressure",
+    "url": "https://www.coindesk.com/markets/2025/12/11/bitcoin-rebounds-to-usd93k-from-post-fed-lows-but-altcoins-remain-under-pressure",
+    "timestamp": "2025-12-11T22:41:26Z"
   }
 ]
