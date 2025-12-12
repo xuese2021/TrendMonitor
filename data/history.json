@@ -1,120 +1,5 @@
 [
   {
-    "title": "警惕心理漏洞成为泄密“催化剂” 国家安全机关提示",
-    "url": "https://china.huanqiu.com/article/4PT2FodGdgf",
-    "timestamp": "2025-12-09T02:18:30Z"
-  },
-  {
-    "title": "AI手机板块短线拉升",
-    "url": "https://news.10jqka.com.cn/20251209/c673062095.shtml",
-    "timestamp": "2025-12-09T02:18:30Z"
-  },
-  {
-    "title": "一批重要国家标准发布 涉及新兴领域、交通运输和环境保护等方面",
-    "url": "https://news.10jqka.com.cn/20251209/c673062061.shtml",
-    "timestamp": "2025-12-09T02:18:30Z"
-  },
-  {
-    "title": "谷歌与XREAL合作智能眼镜Project Aura 将主要依托中国产业链",
-    "url": "https://news.10jqka.com.cn/20251209/c673061903.shtml",
-    "timestamp": "2025-12-09T02:18:30Z"
-  },
-  {
-    "title": "苹果芯片业务负责人澄清：近期没有离职打算",
-    "url": "https://news.10jqka.com.cn/20251209/c673061722.shtml",
-    "timestamp": "2025-12-09T02:18:30Z"
-  },
-  {
-    "title": "Horses: AI progress is steady. Human equivalence is sudden",
-    "url": "https://andyljones.com/posts/horses.html",
-    "timestamp": "2025-12-09T02:18:30Z"
-  },
-  {
-    "title": "The power of proximity to coworkers [pdf]",
-    "url": "https://pallais.scholars.harvard.edu/sites/g/files/omnuum5926/files/2025-11/Power%20of%20Proximity%20to%20Coworkers%20November%202025.pdf",
-    "timestamp": "2025-12-09T02:18:30Z"
-  },
-  {
-    "title": "想把 NAS 的服务通过 FRP 映射到公网，只通过域名访问不暴露端口，风险大吗？",
-    "url": "https://www.v2ex.com/t/1177654",
-    "timestamp": "2025-12-09T02:18:30Z"
-  },
-  {
-    "title": "最近发现 iPhone + 小米手环真的绝配",
-    "url": "https://www.v2ex.com/t/1177570",
-    "timestamp": "2025-12-09T02:18:30Z"
-  },
-  {
-    "title": "逼得奥特曼紧急掏出 GPT-5.2，Gemini 3 凭什么逆风翻盘 | Google 首席 AI 架构师首次揭秘",
-    "url": "https://www.ifanr.com/1647214?utm_source=rss&utm_medium=rss&utm_campaign=",
-    "timestamp": "2025-12-09T02:18:30Z"
-  },
-  {
-    "title": "AI需要能自我改进！AI圈越来越多人认为“当前AI训练方法无法突破”",
-    "url": "https://wallstreetcn.com/articles/3760969",
-    "timestamp": "2025-12-09T02:18:30Z"
-  },
-  {
-    "title": "A股低开，算力硬件、光伏回调，商业航天继续活跃，港股指数表现分化，新能源车走强",
-    "url": "https://wallstreetcn.com/articles/3760975",
-    "timestamp": "2025-12-09T02:18:30Z"
-  },
-  {
-    "title": "中外六大模型决战金融市场，谁才是实战投资之王？【王开大师课 加餐】",
-    "url": "https://wallstreetcn.com/member/articles/3760611",
-    "timestamp": "2025-12-09T02:18:30Z"
-  },
-  {
-    "title": "特斯拉机器人“露馅”了？这是远程人员想摘头显？！",
-    "url": "https://wallstreetcn.com/charts/41958204",
-    "timestamp": "2025-12-09T02:18:30Z"
-  },
-  {
-    "title": "环球网：特朗普宣布允许英伟达向中国出售H200芯片",
-    "url": "https://wallstreetcn.com/articles/3760972",
-    "timestamp": "2025-12-09T02:18:30Z"
-  },
-  {
-    "title": "争夺印度市场，美国AI巨头轮番访印，祭出“免费”大招",
-    "url": "https://wallstreetcn.com/articles/3760965",
-    "timestamp": "2025-12-09T02:18:30Z"
-  },
-  {
-    "title": "环球网：特朗普宣布允许英伟达向中国出售H200芯片，收取25%的分成",
-    "url": "https://wallstreetcn.com/livenews/3017241",
-    "timestamp": "2025-12-09T02:18:30Z"
-  },
-  {
-    "title": "11月下跌后，高盛客户对明年的美股和AI交易更加谨慎了",
-    "url": "https://wallstreetcn.com/articles/3760962",
-    "timestamp": "2025-12-09T02:18:30Z"
-  },
-  {
-    "title": "市场监管总局批准发布一批重要国家标准",
-    "url": "https://wallstreetcn.com/livenews/3017301",
-    "timestamp": "2025-12-09T02:18:30Z"
-  },
-  {
-    "title": "创业板指涨超1%，沪指跌0.04%，深成指涨0.31%，算力硬件、创新药、影视、商业航天等方向领涨，沪深京三市上涨个股超2200只。",
-    "url": "https://wallstreetcn.com/livenews/3017296",
-    "timestamp": "2025-12-09T02:18:30Z"
-  },
-  {
-    "title": "小米中国区近期开启一系列人事调整，涉及手机、汽车、大家电等核心运营类岗位。此次的调整跟小米近期中国区业绩“承压”有关。（界面新闻）",
-    "url": "https://wallstreetcn.com/livenews/3017292",
-    "timestamp": "2025-12-09T02:18:30Z"
-  },
-  {
-    "title": "Aware 首席信息官警告人工智能融资将亮起 \"橙色 \"灯",
-    "url": "https://wallstreetcn.com/livenews/3017286",
-    "timestamp": "2025-12-09T02:18:30Z"
-  },
-  {
-    "title": "卢比奥称美国将继续推进“澳英美联盟”(AUKUS)安全伙伴关系",
-    "url": "https://wallstreetcn.com/livenews/3017281",
-    "timestamp": "2025-12-09T02:18:30Z"
-  },
-  {
     "title": "A股商业航天概念继续活跃，龙洲股份5连板，宝胜股份、西部材料3连板，陕西华达涨超10%，达华智能、航天宏图、雷科防务、顺灏股份跟涨。",
     "url": "https://wallstreetcn.com/livenews/3017276",
     "timestamp": "2025-12-09T02:18:30Z"
@@ -211,12 +96,12 @@
   },
   {
     "title": "100 万亿 Token 揭秘全球用户怎么用 AI：一半算力用在「不可描述」的地方",
-    "url": "https://www.ifanr.com/1647711?utm_source=rss&utm_medium=rss&utm_campaign=",
+    "url": "https://www.ifanr.com/1647711?utm_source=rss\u0026utm_medium=rss\u0026utm_campaign=",
     "timestamp": "2025-12-09T03:40:38.670547"
   },
   {
     "title": "特斯拉机器人又被抓包：疑似遥控「摘头显」摔倒，名场面诞生",
-    "url": "https://www.ifanr.com/1647828?utm_source=rss&utm_medium=rss&utm_campaign=",
+    "url": "https://www.ifanr.com/1647828?utm_source=rss\u0026utm_medium=rss\u0026utm_campaign=",
     "timestamp": "2025-12-09T04:50:21Z"
   },
   {
@@ -1306,7 +1191,7 @@
   },
   {
     "title": "早报｜苹果首款折叠 iPhone 产量或超千万/小米中国区人事大调整/鸿蒙智行首款旗舰 MPV 官宣",
-    "url": "https://www.ifanr.com/1647908?utm_source=rss&utm_medium=rss&utm_campaign=",
+    "url": "https://www.ifanr.com/1647908?utm_source=rss\u0026utm_medium=rss\u0026utm_campaign=",
     "timestamp": "2025-12-10T01:51:38.819775"
   },
   {
@@ -1521,7 +1406,7 @@
   },
   {
     "title": "GPT-5.2 内幕曝光：停掉 Sora，八周内死磕 ChatGPT 求生，AGI 梦想向生存低头",
-    "url": "https://www.ifanr.com/1647912?utm_source=rss&utm_medium=rss&utm_campaign=",
+    "url": "https://www.ifanr.com/1647912?utm_source=rss\u0026utm_medium=rss\u0026utm_campaign=",
     "timestamp": "2025-12-10T03:43:48.586264"
   },
   {
@@ -1826,7 +1711,7 @@
   },
   {
     "title": "真乐队退出，但AI冒牌却在Spotify「拼好歌」冲榜",
-    "url": "https://www.ifanr.com/1647948?utm_source=rss&utm_medium=rss&utm_campaign=",
+    "url": "https://www.ifanr.com/1647948?utm_source=rss\u0026utm_medium=rss\u0026utm_campaign=",
     "timestamp": "2025-12-10T08:47:54.611845"
   },
   {
@@ -1836,7 +1721,7 @@
   },
   {
     "title": "好莱坞首位 AI 女演员幕后：花 6 万美元「整」出黑眼圈，毙掉 2000 版，卡梅隆：令人毛骨悚然",
-    "url": "https://www.ifanr.com/1647967?utm_source=rss&utm_medium=rss&utm_campaign=",
+    "url": "https://www.ifanr.com/1647967?utm_source=rss\u0026utm_medium=rss\u0026utm_campaign=",
     "timestamp": "2025-12-10T10:43:59.770699"
   },
   {
@@ -2196,7 +2081,7 @@
   },
   {
     "title": "ChatGPT 三周年之际，我怀念我写得很烂的时候",
-    "url": "https://www.ifanr.com/1647583?utm_source=rss&utm_medium=rss&utm_campaign=",
+    "url": "https://www.ifanr.com/1647583?utm_source=rss\u0026utm_medium=rss\u0026utm_campaign=",
     "timestamp": "2025-12-10T14:42:54.975666"
   },
   {
@@ -2571,7 +2456,7 @@
   },
   {
     "title": "早报｜大疆Pocket 4外观遭曝光：或配备双摄/苹果上线iPhone免费「闪送」/理想自动驾驶负责人回应宇树王兴兴质疑",
-    "url": "https://www.ifanr.com/1648099?utm_source=rss&utm_medium=rss&utm_campaign=",
+    "url": "https://www.ifanr.com/1648099?utm_source=rss\u0026utm_medium=rss\u0026utm_campaign=",
     "timestamp": "2025-12-11T01:39:51.599949"
   },
   {
@@ -2801,7 +2686,7 @@
   },
   {
     "title": "不装了，偷师国产 AI 模型，Meta 加班裁员两手抓，救命稻草「牛油果」还闭源了",
-    "url": "https://www.ifanr.com/1648071?utm_source=rss&utm_medium=rss&utm_campaign=",
+    "url": "https://www.ifanr.com/1648071?utm_source=rss\u0026utm_medium=rss\u0026utm_campaign=",
     "timestamp": "2025-12-11T03:46:35.302025"
   },
   {
@@ -3051,7 +2936,7 @@
   },
   {
     "title": "MiniMax 闫俊杰和罗永浩四小时访谈：走出中国 AI 的第三条路，大山并非不可翻越",
-    "url": "https://www.ifanr.com/1647849?utm_source=rss&utm_medium=rss&utm_campaign=",
+    "url": "https://www.ifanr.com/1647849?utm_source=rss\u0026utm_medium=rss\u0026utm_campaign=",
     "timestamp": "2025-12-11T04:53:16Z"
   },
   {
@@ -3135,7 +3020,7 @@
     "timestamp": "2025-12-11T08:52:29Z"
   },
   {
-    "title": "MEET2026挤爆了，AI圈今年最该听的20+场演讲&对谈都在这",
+    "title": "MEET2026挤爆了，AI圈今年最该听的20+场演讲\u0026对谈都在这",
     "url": "https://www.qbitai.com/2025/12/360136.html",
     "timestamp": "2025-12-11T08:52:29Z"
   },
@@ -3625,7 +3510,7 @@
     "timestamp": "2025-12-11T16:53:31Z"
   },
   {
-    "title": "招聘<远程>社区运营",
+    "title": "招聘\u003c远程\u003e社区运营",
     "url": "https://www.v2ex.com/t/1178384",
     "timestamp": "2025-12-11T16:53:31Z"
   },
@@ -3906,7 +3791,7 @@
   },
   {
     "title": "刚刚，GPT-5.2 正式发布！让打工人每周少干 10 小时，成人模式明年见",
-    "url": "https://www.ifanr.com/1648210?utm_source=rss&utm_medium=rss&utm_campaign=",
+    "url": "https://www.ifanr.com/1648210?utm_source=rss\u0026utm_medium=rss\u0026utm_campaign=",
     "timestamp": "2025-12-11T22:41:26Z"
   },
   {
@@ -3966,7 +3851,7 @@
   },
   {
     "title": "早报｜OpenAI发布GPT-5.2回应竞争/B站辟谣「所有视频都要会员」：已报警/OPPO整合AI部门，打造全新「超级小布」",
-    "url": "https://www.ifanr.com/1648227?utm_source=rss&utm_medium=rss&utm_campaign=",
+    "url": "https://www.ifanr.com/1648227?utm_source=rss\u0026utm_medium=rss\u0026utm_campaign=",
     "timestamp": "2025-12-12T01:40:40.804079"
   },
   {
@@ -4456,7 +4341,7 @@
   },
   {
     "title": "实测 GPT-5.2 ：价格暴涨能力微涨，凭什么反击 Gemini",
-    "url": "https://www.ifanr.com/1648254?utm_source=rss&utm_medium=rss&utm_campaign=",
+    "url": "https://www.ifanr.com/1648254?utm_source=rss\u0026utm_medium=rss\u0026utm_campaign=",
     "timestamp": "2025-12-12T06:52:46.865243"
   },
   {
@@ -4476,12 +4361,12 @@
   },
   {
     "title": "大疆 Pocket 4 爆料汇总：下个月发布，更强也更难抢？",
-    "url": "https://www.ifanr.com/1648343?utm_source=rss&utm_medium=rss&utm_campaign=",
+    "url": "https://www.ifanr.com/1648343?utm_source=rss\u0026utm_medium=rss\u0026utm_campaign=",
     "timestamp": "2025-12-12T08:48:53.414706"
   },
   {
     "title": "最便宜智能戒指：不充电、不联网、不 AI，只卖 500 块",
-    "url": "https://www.ifanr.com/1648329?utm_source=rss&utm_medium=rss&utm_campaign=",
+    "url": "https://www.ifanr.com/1648329?utm_source=rss\u0026utm_medium=rss\u0026utm_campaign=",
     "timestamp": "2025-12-12T08:48:53.414774"
   },
   {
@@ -4501,7 +4386,7 @@
   },
   {
     "title": "造型撞脸小米 YU7，绝不做 SUV 的迈凯伦，还是妥协了",
-    "url": "https://www.ifanr.com/1648388?utm_source=rss&utm_medium=rss&utm_campaign=",
+    "url": "https://www.ifanr.com/1648388?utm_source=rss\u0026utm_medium=rss\u0026utm_campaign=",
     "timestamp": "2025-12-12T12:59:38.817792"
   },
   {
@@ -5018,5 +4903,100 @@
     "title": "“丑化小米高管被投诉下架”事件当事人道歉：今后一定会规范自己的网络言行",
     "url": "https://m.ithome.com/html/904638.htm",
     "timestamp": "2025-12-12T20:38:36.984622"
+  },
+  {
+    "title": "土耳其呼吁俄乌保障黑海航行安全 以避免局势升级",
+    "url": "https://news.cctv.com/2025/12/13/ARTI4StlGLj4UmUcQQ60uNgu251213.shtml",
+    "timestamp": "2025-12-12T22:40:04Z"
+  },
+  {
+    "title": "AI担忧雪上加霜！甲骨文被爆部分数据中心推迟至2028年竣工",
+    "url": "https://wallstreetcn.com/articles/3761309",
+    "timestamp": "2025-12-12T22:40:04Z"
+  },
+  {
+    "title": "甲骨文3000亿美元豪赌：AI泡沫的“震中”，市场的“晴雨表”",
+    "url": "https://wallstreetcn.com/articles/3761312",
+    "timestamp": "2025-12-12T22:40:04Z"
+  },
+  {
+    "title": "加码近8%！江西铜业第三次报价收购SolGold，瞄准南美顶级铜金矿",
+    "url": "https://wallstreetcn.com/articles/3761310",
+    "timestamp": "2025-12-12T22:40:04Z"
+  },
+  {
+    "title": "美股三大指数集体收跌 英伟达跌超3%",
+    "url": "https://news.10jqka.com.cn/20251213/c673183376.shtml",
+    "timestamp": "2025-12-12T22:40:04Z"
+  },
+  {
+    "title": "美海军调查认定V-22“鱼鹰”飞机存大量安全隐患",
+    "url": "https://news.10jqka.com.cn/20251213/c673183355.shtml",
+    "timestamp": "2025-12-12T22:40:04Z"
+  },
+  {
+    "title": "US forces raided ship headed to Iran from China in Indian Ocean, WSJ says",
+    "url": "https://www.reuters.com/world/china/us-forces-raided-ship-headed-iran-china-indian-ocean-wsj-says-2025-12-12/",
+    "timestamp": "2025-12-12T22:40:04Z"
+  },
+  {
+    "title": "Senior US Democrats urge release of Venezuela boat strike video",
+    "url": "https://www.reuters.com/world/us/senior-us-democrats-urge-release-venezuela-boat-strike-video-2025-12-12/",
+    "timestamp": "2025-12-12T22:40:04Z"
+  },
+  {
+    "title": "Colombia's Clan del Golfo leaders to face jail in possible peace deal, negotiator says",
+    "url": "https://www.reuters.com/world/americas/colombias-clan-del-golfo-leaders-face-jail-possible-peace-deal-negotiator-says-2025-12-12/",
+    "timestamp": "2025-12-12T22:40:04Z"
+  },
+  {
+    "title": "Citadel Securities and DeFi Waging War of Words Through SEC Correspondence",
+    "url": "https://www.coindesk.com/policy/2025/12/12/citadel-securities-and-defi-waging-war-of-words-through-sec-correspondence",
+    "timestamp": "2025-12-12T22:40:04Z"
+  },
+  {
+    "title": "[开源] LiteMonitor：写了一个高颜值的桌面硬件监控小工具，主打轻量",
+    "url": "https://www.v2ex.com/t/1178637",
+    "timestamp": "2025-12-12T22:40:04Z"
+  },
+  {
+    "title": "Coze Studio 二次开发（一）支持 MCP Server 静态配置",
+    "url": "https://juejin.cn/post/7582808491607261238",
+    "timestamp": "2025-12-12T22:40:04Z"
+  },
+  {
+    "title": "AWS Lambda Python 链路可观测最佳实践",
+    "url": "https://juejin.cn/post/7582776967817936896",
+    "timestamp": "2025-12-12T22:40:04Z"
+  },
+  {
+    "title": "开箱即用的 GoWind Admin｜风行，企业级前后端一体中后台框架：基于 GORM 从零实现新服务",
+    "url": "https://juejin.cn/post/7582786292087832627",
+    "timestamp": "2025-12-12T22:40:04Z"
+  },
+  {
+    "title": "后端进阶：使用 Go 处理天远API的 KV 数组结构与并发风控",
+    "url": "https://juejin.cn/post/7582787460418142250",
+    "timestamp": "2025-12-12T22:40:04Z"
+  },
+  {
+    "title": "三种方式打 Java 可执行 JAR 包，你用对了吗？",
+    "url": "https://juejin.cn/post/7582786292087455795",
+    "timestamp": "2025-12-12T22:40:04Z"
+  },
+  {
+    "title": "Go -- 模板方法模式 (Template Method)",
+    "url": "https://juejin.cn/post/7582779306730733603",
+    "timestamp": "2025-12-12T22:40:04Z"
+  },
+  {
+    "title": "从一维到二维：用Spire.XLS轻松将Python列表导出到Excel",
+    "url": "https://juejin.cn/post/7582808491606687798",
+    "timestamp": "2025-12-12T22:40:04Z"
+  },
+  {
+    "title": "SpringBoot 企业级接口加密【通用、可配置、解耦的组件】「开闭原则+模板方法+拦截器/中间件模式」",
+    "url": "https://juejin.cn/post/7582786292087324723",
+    "timestamp": "2025-12-12T22:40:04Z"
   }
 ]
