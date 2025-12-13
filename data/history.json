@@ -1,160 +1,5 @@
 [
   {
-    "title": "智谱AI开源多模态大模型GLM-4.6V系列",
-    "url": "https://www.pingwest.com/w/309698",
-    "timestamp": "2025-12-09T04:50:21Z"
-  },
-  {
-    "title": "智谱AI开源AutoGLM，推动AI Agent“使用手机”能力普及",
-    "url": "https://www.pingwest.com/w/309697",
-    "timestamp": "2025-12-09T04:50:21Z"
-  },
-  {
-    "title": "Bitcoin Traders Target $20K Bitcoin Strike as Deep Out of the Money Options Gain Traction",
-    "url": "https://www.coindesk.com/markets/2025/12/08/bitcoin-traders-target-usd20k-bitcoin-strike-as-deep-out-of-the-money-options-gain-traction",
-    "timestamp": "2025-12-09T04:50:21Z"
-  },
-  {
-    "title": "掀桌！豆包被“围攻”后，智谱把手机Agent开源，让人人皆可打造AI手机",
-    "url": "https://wallstreetcn.com/articles/3760976",
-    "timestamp": "2025-12-09T04:50:21Z"
-  },
-  {
-    "title": "继续发债继续跌，“英伟达亲儿子”CoreWeave陷入“债务恶性循环”",
-    "url": "https://wallstreetcn.com/articles/3760971",
-    "timestamp": "2025-12-09T04:50:21Z"
-  },
-  {
-    "title": "Kroger acknowledges that its bet on robotics went too far",
-    "url": "https://www.grocerydive.com/news/kroger-ocado-close-automated-fulfillment-centers-robotics-grocery-ecommerce/805931/",
-    "timestamp": "2025-12-09T04:50:21Z"
-  },
-  {
-    "title": "Arkham 宣布已支持 Zcash 链上数据追踪",
-    "url": "https://www.techflowpost.com/newsletter/detail_107892.html",
-    "timestamp": "2025-12-09T04:50:21Z"
-  },
-  {
-    "title": "UXLINK 发布 9 月 22 日安全事件报告：超 1100 万美元资产被盗，否认“跑路”指控",
-    "url": "https://www.techflowpost.com/newsletter/detail_107888.html",
-    "timestamp": "2025-12-09T04:50:21Z"
-  },
-  {
-    "title": "React 插槽（Slot）完全指南：从基础到实战的灵活组件通信方案",
-    "url": "https://juejin.cn/post/7581412054903128073",
-    "timestamp": "2025-12-09T04:50:21Z"
-  },
-  {
-    "title": "为什么React的漏洞能攻破服务器？Next.js与RSC入门基础",
-    "url": "https://juejin.cn/post/7581619505584341043",
-    "timestamp": "2025-12-09T04:50:21Z"
-  },
-  {
-    "title": "React 避坑指南：彻底搞定不必要的重新渲染",
-    "url": "https://juejin.cn/post/7581412607061131310",
-    "timestamp": "2025-12-09T04:50:21Z"
-  },
-  {
-    "title": "nest.js / hono.js 一起学！开发前必备！",
-    "url": "https://juejin.cn/post/7581448482544713754",
-    "timestamp": "2025-12-09T04:50:21Z"
-  },
-  {
-    "title": "请教 iOS 雪球 App 如何去广告？",
-    "url": "https://www.v2ex.com/t/1177762",
-    "timestamp": "2025-12-09T04:50:21Z"
-  },
-  {
-    "title": "iOS 26.1 降低透明度不能立即生效，通过开关一次省电模式才能生效",
-    "url": "https://www.v2ex.com/t/1177755",
-    "timestamp": "2025-12-09T04:50:21Z"
-  },
-  {
-    "title": "这个沙雕开发让我找回了 2 年前的 V2EX 账号-1",
-    "url": "https://www.v2ex.com/t/1177751",
-    "timestamp": "2025-12-09T04:50:21Z"
-  },
-  {
-    "title": "智元撞线5000台，人形机器人离规模商业化还有多远？",
-    "url": "https://www.36kr.com/p/3587759254913280",
-    "timestamp": "2025-12-09T04:50:21Z"
-  },
-  {
-    "title": "“AI DemoDay，怎么来的都是老登？”",
-    "url": "https://www.36kr.com/p/3587713718354180",
-    "timestamp": "2025-12-09T04:50:21Z"
-  },
-  {
-    "title": "特朗普称英伟达对华出售H200芯片的收入25%上缴美国政府",
-    "url": "https://news.cctv.com/2025/12/09/ARTIQAo8mrEtHxQswXkbECmG251209.shtml",
-    "timestamp": "2025-12-09T04:50:21Z"
-  },
-  {
-    "title": "透过税收数据看亮点！沉浸式、场景式、个性化、健康类……消费新热点持续涌现",
-    "url": "https://news.cctv.com/2025/12/09/ARTIQjm0erLcXfn6lCkMn2LF251209.shtml",
-    "timestamp": "2025-12-09T04:50:21Z"
-  },
-  {
-    "title": "中国人权研究会发布《中国人权事业发展报告（2025）》",
-    "url": "https://news.cctv.com/2025/12/09/ARTIAi2IfKTpJfJ6uSVKDgfF251209.shtml",
-    "timestamp": "2025-12-09T04:50:21Z"
-  },
-  {
-    "title": "新手入门必学！OpenAgents 更新 5 个 Demo，从单智能体对话到多智能体协作",
-    "url": "https://www.oschina.net/news/388676",
-    "timestamp": "2025-12-09T04:50:21Z"
-  },
-  {
-    "title": "智谱开源多模态大模型 GLM-4.6V 系列",
-    "url": "https://www.oschina.net/news/388666/z-ai-glm-4-6v",
-    "timestamp": "2025-12-09T04:50:21Z"
-  },
-  {
-    "title": "IntelliJ IDEA 2025.3 正式发布",
-    "url": "https://www.oschina.net/news/388665/intellij-idea-2025-3",
-    "timestamp": "2025-12-09T04:50:21Z"
-  },
-  {
-    "title": "ip2region 3.11.0 发布 - Go 并发安全支持 / Java 优化",
-    "url": "https://www.oschina.net/news/388663/ip2region-3-11-0-released",
-    "timestamp": "2025-12-09T04:50:21Z"
-  },
-  {
-    "title": "腾讯新闻 APP 的消息推送 Push 架构技术重构实践",
-    "url": "https://my.oschina.net/jb2011/blog/18911294",
-    "timestamp": "2025-12-09T04:50:21Z"
-  },
-  {
-    "title": "英伟达确认可向中国出售 H200 芯片：美方批准出口并抽成 25%",
-    "url": "https://www.oschina.net/news/388659",
-    "timestamp": "2025-12-09T04:50:21Z"
-  },
-  {
-    "title": "Presto 0.296 发布",
-    "url": "https://www.oschina.net/news/388652/presto-0-296-releaased",
-    "timestamp": "2025-12-09T04:50:21Z"
-  },
-  {
-    "title": "抖音副总裁李亮：AI 手机助手是机主授权的创新，与隐私无关",
-    "url": "https://www.oschina.net/news/388650",
-    "timestamp": "2025-12-09T04:50:21Z"
-  },
-  {
-    "title": "智谱开源“会操作手机的 AI Agent”：AutoGLM",
-    "url": "https://www.oschina.net/news/388649",
-    "timestamp": "2025-12-09T04:50:21Z"
-  },
-  {
-    "title": "Solana网络活跃验证者数量下降明显，引发社区热议",
-    "url": "https://jinse.cn/lives/490700.html",
-    "timestamp": "2025-12-09T04:50:21Z"
-  },
-  {
-    "title": "MetaMask永续合约功能上线，支持多只美股及股票市场交易",
-    "url": "https://jinse.cn/lives/490695.html",
-    "timestamp": "2025-12-09T04:50:21Z"
-  },
-  {
     "title": "努比亚总裁倪飞回应豆包手机争议：开放合作是AI手机发展的必选项",
     "url": "https://www.cnbeta.com.tw/articles/tech/1540192.htm",
     "timestamp": "2025-12-09T06:55:11Z"
@@ -4998,5 +4843,160 @@
     "title": "防范二手电子产品流通数据泄露风险，《数据安全技术 电子产品信息清除技术要求》强制性国家标准获批发布",
     "url": "https://wallstreetcn.com/livenews/3020171",
     "timestamp": "2025-12-13T02:13:59Z"
+  },
+  {
+    "title": "投资AI的VC会变成AI吗？",
+    "url": "https://www.36kr.com/p/3593388129648647",
+    "timestamp": "2025-12-13T03:34:34Z"
+  },
+  {
+    "title": "Canada’s Blockchain Advantage: Small Enough to Move Fast, Big Enough to Matter",
+    "url": "https://www.coindesk.com/consensus-toronto-2025-coverage/2025/04/23/canadas-blockchain-advantage-small-enough-to-move-fast-big-enough-to-matter",
+    "timestamp": "2025-12-13T03:34:34Z"
+  },
+  {
+    "title": "The GPT Gold Rush Is Failing Crypto Traders",
+    "url": "https://www.coindesk.com/consensus-toronto-2025-coverage/2025/04/21/the-gpt-gold-rush-is-failing-crypto-traders",
+    "timestamp": "2025-12-13T03:34:34Z"
+  },
+  {
+    "title": "iOS 26.2 值得关注的新特性",
+    "url": "https://sspai.com/post/104408",
+    "timestamp": "2025-12-13T03:34:34Z"
+  },
+  {
+    "title": "北电数智杨震：从“工具赋能”到“产业重塑”，AI新国企产业创新实践丨2025科创大会",
+    "url": "https://www.infzm.com/contents/309617",
+    "timestamp": "2025-12-13T03:34:34Z"
+  },
+  {
+    "title": "从AI交易、美联储新主席到铜，这是高盛列出的“2026年最重要的五大交易主题”",
+    "url": "https://wallstreetcn.com/articles/3761321",
+    "timestamp": "2025-12-13T03:34:34Z"
+  },
+  {
+    "title": "AI“鬼故事”不断！热门数据中心概念股Fermi差点“一日腰斩”，其联创系前特朗普政府能源部长",
+    "url": "https://wallstreetcn.com/articles/3761324",
+    "timestamp": "2025-12-13T03:34:34Z"
+  },
+  {
+    "title": "理解 Proxy 原理及如何拦截 Map、Set 等集合方法调用实现自定义拦截和日志——含示例代码解析",
+    "url": "https://juejin.cn/post/7582776967818395648",
+    "timestamp": "2025-12-13T03:34:34Z"
+  },
+  {
+    "title": "使用Trae SOLO模式开发一个视频提取文字并总结归纳的工具——附线上预览地址",
+    "url": "https://juejin.cn/post/7582779306731585571",
+    "timestamp": "2025-12-13T03:34:34Z"
+  },
+  {
+    "title": "Vue组件缓存终极指南：keep-alive原理与动态更新实战",
+    "url": "https://juejin.cn/post/7582846276505501734",
+    "timestamp": "2025-12-13T03:34:34Z"
+  },
+  {
+    "title": "Java Map遍历的“优雅”合集",
+    "url": "https://juejin.cn/post/7582791876366827558",
+    "timestamp": "2025-12-13T03:34:34Z"
+  },
+  {
+    "title": "国产GPU第一股行为引争议！摩尔线程：拟使用75亿元闲置募集资金进行现金管理",
+    "url": "https://m.mydrivers.com/newsview/1092339.html",
+    "timestamp": "2025-12-13T03:34:34Z"
+  },
+  {
+    "title": "《异形》新作开发中",
+    "url": "https://m.mydrivers.com/newsview/1092338.html",
+    "timestamp": "2025-12-13T03:34:34Z"
+  },
+  {
+    "title": "徕芬回应发布会撞景《周处除三害》灵修场面：与电影无关 2023年就用过",
+    "url": "https://m.mydrivers.com/newsview/1092337.html",
+    "timestamp": "2025-12-13T03:34:34Z"
+  },
+  {
+    "title": "长沙交警配发AI眼镜：一眼看透车辆信息",
+    "url": "https://m.mydrivers.com/newsview/1092336.html",
+    "timestamp": "2025-12-13T03:34:34Z"
+  },
+  {
+    "title": "市场监管出手规范“卖车须明码标价及交付” 小鹏汽车迅速表态",
+    "url": "https://m.mydrivers.com/newsview/1092335.html",
+    "timestamp": "2025-12-13T03:34:34Z"
+  },
+  {
+    "title": "国内首个太空计算实验室成立 将聚焦天基算力网需求",
+    "url": "https://m.mydrivers.com/newsview/1092331.html",
+    "timestamp": "2025-12-13T03:34:34Z"
+  },
+  {
+    "title": "甲骨文退出自研 AI 芯片赛道，董事长埃里森阐述背后原因",
+    "url": "https://www.ithome.com/0/904/697.htm",
+    "timestamp": "2025-12-13T03:34:34Z"
+  },
+  {
+    "title": "微软谷歌攻守易型，跌落神坛的OpenAI“亮血条”了？",
+    "url": "https://dig.ichouti.cn/link/45746859",
+    "timestamp": "2025-12-13T03:34:34Z"
+  },
+  {
+    "title": "《时代》周刊年度人物：人工智能架构师",
+    "url": "https://dig.ichouti.cn/link/45746263",
+    "timestamp": "2025-12-13T03:34:34Z"
+  },
+  {
+    "title": "OpenAI are quietly adopting skills, now available in ChatGPT and Codex CLI",
+    "url": "https://simonwillison.net/2025/Dec/12/openai-skills/",
+    "timestamp": "2025-12-13T03:34:34Z"
+  },
+  {
+    "title": "macOS 26.2 enables fast AI clusters with RDMA over Thunderbolt",
+    "url": "https://developer.apple.com/documentation/macos-release-notes/macos-26_2-release-notes#RDMA-over-Thunderbolt",
+    "timestamp": "2025-12-13T03:34:34Z"
+  },
+  {
+    "title": "Show HN: Tiny VM sandbox in C with apps in Rust, C and Zig",
+    "url": "https://github.com/ringtailsoftware/uvm32",
+    "timestamp": "2025-12-13T03:34:34Z"
+  },
+  {
+    "title": "50 years of proof assistants",
+    "url": "https://lawrencecpaulson.github.io//2025/12/05/History_of_Proof_Assistants.html",
+    "timestamp": "2025-12-13T03:34:34Z"
+  },
+  {
+    "title": "甲骨文：与OpenAI的合作安排“没有延迟”",
+    "url": "https://www.36kr.com/newsflashes/3593385420406787",
+    "timestamp": "2025-12-13T03:34:34Z"
+  },
+  {
+    "title": "上海市人形机器人中试联盟发布",
+    "url": "https://www.36kr.com/newsflashes/3593369108774918",
+    "timestamp": "2025-12-13T03:34:34Z"
+  },
+  {
+    "title": "google 账号被停用了",
+    "url": "https://www.v2ex.com/t/1178599",
+    "timestamp": "2025-12-13T03:34:34Z"
+  },
+  {
+    "title": "深圳将建全国首个机器人友好示范城区",
+    "url": "https://wallstreetcn.com/livenews/3020190",
+    "timestamp": "2025-12-13T03:34:34Z"
+  },
+  {
+    "title": "上海市人形机器人中试联盟发布",
+    "url": "https://wallstreetcn.com/livenews/3020189",
+    "timestamp": "2025-12-13T03:34:34Z"
+  },
+  {
+    "title": "广期所发布对部分客户采取限制开仓监管措施的公告",
+    "url": "https://wallstreetcn.com/livenews/3020187",
+    "timestamp": "2025-12-13T03:34:34Z"
+  },
+  {
+    "title": "疑似 Polychain Capital 钱包将 411.4 万枚 PENDLE 转入 FalconX，或亏损 325 万美元",
+    "url": "https://www.techflowpost.com/newsletter/detail_108439.html",
+    "timestamp": "2025-12-13T03:34:34Z"
   }
 ]
