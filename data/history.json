@@ -1,125 +1,5 @@
 [
   {
-    "title": "开发者工具箱 Kairoa v1.1.7 发布，新增两大功能",
-    "url": "https://www.oschina.net/news/388855",
-    "timestamp": "2025-12-10T02:19:39Z"
-  },
-  {
-    "title": "阿里千问公测23天月活突破3000万",
-    "url": "https://wallstreetcn.com/livenews/3018061",
-    "timestamp": "2025-12-10T02:19:39Z"
-  },
-  {
-    "title": "第三份《中国对拉丁美洲和加勒比政策文件》发布",
-    "url": "https://wallstreetcn.com/livenews/3018059",
-    "timestamp": "2025-12-10T02:19:39Z"
-  },
-  {
-    "title": "摩尔线程股价站上700元关口，目前报718元，涨幅超14%。摩尔线程昨日称即将发布新一代GPU架构。",
-    "url": "https://wallstreetcn.com/livenews/3018058",
-    "timestamp": "2025-12-10T02:19:39Z"
-  },
-  {
-    "title": "摩尔线程涨超10%，成交额超34亿元。昨日摩尔线程称即将发布新一代GPU架构。",
-    "url": "https://wallstreetcn.com/livenews/3018055",
-    "timestamp": "2025-12-10T02:19:39Z"
-  },
-  {
-    "title": "spring boot集成spring ai调用deepseek",
-    "url": "https://juejin.cn/post/7581870491756478499",
-    "timestamp": "2025-12-10T02:19:39Z"
-  },
-  {
-    "title": "资源泄漏从代码缺陷到系统级架构挑战",
-    "url": "https://juejin.cn/post/7581738974424596499",
-    "timestamp": "2025-12-10T02:19:39Z"
-  },
-  {
-    "title": "RustFS分布式文件存储：Mac Book M1安装全攻略",
-    "url": "https://juejin.cn/post/7581698635866374170",
-    "timestamp": "2025-12-10T02:19:39Z"
-  },
-  {
-    "title": "【RuoYi-SpringBoot3-Pro】：多数据库支持，再也不用为数据库选型烦恼了",
-    "url": "https://juejin.cn/post/7581727073581236275",
-    "timestamp": "2025-12-10T02:19:39Z"
-  },
-  {
-    "title": "2026 金球奖提名揭晓：苹果靠《人生切割术》等杀疯了，确立“高端美剧”霸主地位",
-    "url": "https://www.ithome.com/0/903/763.htm",
-    "timestamp": "2025-12-10T02:19:39Z"
-  },
-  {
-    "title": "科技昨夜今晨 1210：美政府批准对华出售 H200 芯片；19999 元起三星首款三折叠手机国行预订；摩尔线程将发布新一代 GPU 架构...",
-    "url": "https://www.ithome.com/0/903/762.htm",
-    "timestamp": "2025-12-10T02:19:39Z"
-  },
-  {
-    "title": "覆盖 Facebook、YouTube 等 10 平台！澳大利亚正式禁止 16 岁以下未成年人用社交媒体",
-    "url": "https://www.ithome.com/0/903/761.htm",
-    "timestamp": "2025-12-10T02:19:39Z"
-  },
-  {
-    "title": "微软宣布未来四年将在印度投资 175 亿美元，布局 AI 与云计算业务",
-    "url": "https://www.ithome.com/0/903/752.htm",
-    "timestamp": "2025-12-10T02:19:39Z"
-  },
-  {
-    "title": "11 月刚退休：前苹果“二号人物”Jeff Williams 获迪士尼董事会提名",
-    "url": "https://www.ithome.com/0/903/748.htm",
-    "timestamp": "2025-12-10T02:19:39Z"
-  },
-  {
-    "title": "警惕伪装成办公文件的木马病毒窃密 国家安全机关提示",
-    "url": "https://news.cctv.com/2025/12/10/ARTIAfny0bdDxbk5qGDYVHg8251210.shtml",
-    "timestamp": "2025-12-10T02:19:39Z"
-  },
-  {
-    "title": "Jair Bolsonaro's lawyers request his removal from jail to hospital for 'surgical procedures'",
-    "url": "https://www.reuters.com/world/americas/jair-bolsonaros-lawyers-request-his-removal-jail-hospital-surgical-procedures-2025-12-10/",
-    "timestamp": "2025-12-10T02:19:39Z"
-  },
-  {
-    "title": "Russian bombers join Chinese air patrol near Japan as Tokyo-Beijing tie strains",
-    "url": "https://www.reuters.com/business/aerospace-defense/russian-bombers-join-chinese-air-patrol-near-japan-tokyo-beijing-tie-strains-2025-12-10/",
-    "timestamp": "2025-12-10T02:19:39Z"
-  },
-  {
-    "title": "Russia sends aid to Sri Lanka after devastating cyclone",
-    "url": "https://www.reuters.com/world/asia-pacific/russia-sends-aid-sri-lanka-after-devastating-cyclone-2025-12-09/",
-    "timestamp": "2025-12-10T02:19:39Z"
-  },
-  {
-    "title": "AI代理“行会”成立 谷歌、微软、亚马逊、OpenAI、彭博均在列",
-    "url": "https://www.cnbeta.com.tw/articles/tech/1540292.htm",
-    "timestamp": "2025-12-10T02:19:39Z"
-  },
-  {
-    "title": "苹果前COO威廉姆斯火速就业 已被提名为迪士尼董事",
-    "url": "https://www.cnbeta.com.tw/articles/tech/1540290.htm",
-    "timestamp": "2025-12-10T02:19:39Z"
-  },
-  {
-    "title": "追随沙特步伐 卡塔尔设立“国家级AI公司”抢滩未来",
-    "url": "https://www.cnbeta.com.tw/articles/tech/1540286.htm",
-    "timestamp": "2025-12-10T02:19:39Z"
-  },
-  {
-    "title": "美国银行：人工智能将提升效率并导致裁员",
-    "url": "https://www.cnbeta.com.tw/articles/tech/1540284.htm",
-    "timestamp": "2025-12-10T02:19:39Z"
-  },
-  {
-    "title": "何一微信账号疑似被盗，发布涉及 meme 币信息",
-    "url": "https://www.techflowpost.com/newsletter/detail_108017.html",
-    "timestamp": "2025-12-10T02:19:39Z"
-  },
-  {
-    "title": "A股震荡调整，创业板跌超2%，算力硬件走弱，中科曙光跌停，港股指数表现分化，中芯国际上涨",
-    "url": "https://wallstreetcn.com/articles/3761064",
-    "timestamp": "2025-12-10T02:19:39Z"
-  },
-  {
     "title": "谷歌带来最严峻挑战，OpenAI“重大战略调整”：“增强用户活跃”优先于“实现AGI”",
     "url": "https://wallstreetcn.com/articles/3761056",
     "timestamp": "2025-12-10T02:19:39Z"
@@ -4998,5 +4878,125 @@
     "title": "郭朴连赢三位日本选手夺冠！17岁中国小将郭朴在日本福冈2025年霹雳舞世锦赛女子组决赛中夺冠，为中国实现该赛事金牌零的突破。她坦言：“来到日本就知道这是一场很难打的比赛，进入决赛就想着要赢，要让中华人民共和国国歌在这里响起。”全运会后她未曾停止训练，备赛过程中虽然感到紧张，但经教练 ...",
     "url": "https://dig.ichouti.cn/link/45750989",
     "timestamp": "2025-12-14T04:54:57Z"
+  },
+  {
+    "title": "If a Meta AI model can read a brain-wide signal, why wouldn't the brain?",
+    "url": "https://1393.xyz/writing/if-a-meta-ai-model-can-read-a-brain-wide-signal-why-wouldnt-the-brain",
+    "timestamp": "2025-12-14T06:51:27Z"
+  },
+  {
+    "title": "Lean Theorem Prover Mathlib",
+    "url": "https://github.com/leanprover-community/mathlib4",
+    "timestamp": "2025-12-14T06:51:27Z"
+  },
+  {
+    "title": "造型撞脸小米 YU7，绝不做 SUV 的迈凯伦，还是妥协了",
+    "url": "https://www.36kr.com/p/3594788694196484",
+    "timestamp": "2025-12-14T06:51:27Z"
+  },
+  {
+    "title": "中国香港和印度助力亚洲融资迎来辉煌的一年",
+    "url": "https://wallstreetcn.com/livenews/3020346",
+    "timestamp": "2025-12-14T06:51:27Z"
+  },
+  {
+    "title": "react beginwork",
+    "url": "https://juejin.cn/post/7583174749067591726",
+    "timestamp": "2025-12-14T06:51:27Z"
+  },
+  {
+    "title": "Vue项目Axios封装全攻略：从零到一打造优雅的HTTP请求层",
+    "url": "https://juejin.cn/post/7583174749066412078",
+    "timestamp": "2025-12-14T06:51:27Z"
+  },
+  {
+    "title": "深度复盘 III： 核心逻辑篇：构建 WebGL 数字孪生的“业务中枢”与“安全防线”",
+    "url": "https://juejin.cn/post/7582879379442909227",
+    "timestamp": "2025-12-14T06:51:27Z"
+  },
+  {
+    "title": "JavaScript 事件循环机制详解及项目中的应用",
+    "url": "https://juejin.cn/post/7582905804048187419",
+    "timestamp": "2025-12-14T06:51:27Z"
+  },
+  {
+    "title": "OpenAI突然开源新模型！99.9%的权重是0，新稀疏性方法代替MoE",
+    "url": "https://www.qbitai.com/2025/12/360864.html",
+    "timestamp": "2025-12-14T06:51:27Z"
+  },
+  {
+    "title": "防止AI人才外流，OpenAI调整薪酬政策",
+    "url": "https://news.10jqka.com.cn/20251214/c673191876.shtml",
+    "timestamp": "2025-12-14T06:51:27Z"
+  },
+  {
+    "title": "《同乐者》冠绝Apple TV",
+    "url": "https://m.mydrivers.com/newsview/1092442.html",
+    "timestamp": "2025-12-14T06:51:27Z"
+  },
+  {
+    "title": "Spring事件机制：解耦利器与实战",
+    "url": "https://juejin.cn/post/7583225356904382504",
+    "timestamp": "2025-12-14T06:51:27Z"
+  },
+  {
+    "title": "Paimon源码解读 -- Compaction-6.CompactStrategy",
+    "url": "https://juejin.cn/post/7583244688121135113",
+    "timestamp": "2025-12-14T06:51:27Z"
+  },
+  {
+    "title": "开箱即用的 GoWind Admin｜风行，企业级前后端一体中后台框架：极速搭建微服务应用",
+    "url": "https://juejin.cn/post/7583324039302119475",
+    "timestamp": "2025-12-14T06:51:27Z"
+  },
+  {
+    "title": "3、Solr CCS （Cross Collection Search）与协调节点（Coordinator Node）的协同工作逻辑及自定义开发指南",
+    "url": "https://juejin.cn/post/7583168260796612648",
+    "timestamp": "2025-12-14T06:51:27Z"
+  },
+  {
+    "title": "AI修真的一年：学者们怎么看“真智能”？",
+    "url": "https://www.huxiu.com/article/4817210.html",
+    "timestamp": "2025-12-14T06:51:27Z"
+  },
+  {
+    "title": "马斯克硅谷对谈，抛出了神预言",
+    "url": "https://www.huxiu.com/article/4817203.html",
+    "timestamp": "2025-12-14T06:51:27Z"
+  },
+  {
+    "title": "Thailand declares curfew along coast as Cambodia border fighting spreads",
+    "url": "https://www.reuters.com/world/asia-pacific/thailand-declares-curfew-along-coast-cambodia-border-fighting-spreads-2025-12-14/",
+    "timestamp": "2025-12-14T06:51:27Z"
+  },
+  {
+    "title": "二次开发，全面投产！我国在这一领域实现重大跨越",
+    "url": "https://china.huanqiu.com/article/4PXRvbuB7ap",
+    "timestamp": "2025-12-14T06:51:27Z"
+  },
+  {
+    "title": "Berachain 流动性质押协议 Infrared 宣布将于 12 月 17 日 TGE",
+    "url": "https://www.techflowpost.com/newsletter/detail_108482.html",
+    "timestamp": "2025-12-14T06:51:27Z"
+  },
+  {
+    "title": "以太坊共识层客户端 Prysm 发布 Fusaka 主网 12 月 4 日故障事后分析报告",
+    "url": "https://www.techflowpost.com/newsletter/detail_108481.html",
+    "timestamp": "2025-12-14T06:51:27Z"
+  },
+  {
+    "title": "本周 16 家加密初创公司融资 1.76 亿美元，今年总融资额超过 250 亿美元",
+    "url": "https://www.techflowpost.com/newsletter/detail_108480.html",
+    "timestamp": "2025-12-14T06:51:27Z"
+  },
+  {
+    "title": "苹果 DRAM 长期订单协议即将到期：三星、SK 海力士被曝 2026 年 1 月起涨价，iPhone、MacBook 等产品线恐受冲击",
+    "url": "https://www.ithome.com/0/904/871.htm",
+    "timestamp": "2025-12-14T06:51:27Z"
+  },
+  {
+    "title": "比哈佛还难进，人形机器人初创公司 Figure AI 录用率仅 0.24%",
+    "url": "https://www.ithome.com/0/904/844.htm",
+    "timestamp": "2025-12-14T06:51:27Z"
   }
 ]
